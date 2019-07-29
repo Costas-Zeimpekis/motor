@@ -87,70 +87,87 @@ nav ul li a {
 }
 
 .github-span {
-  width: 139.6px;
-  height: 18px;
   font-family: var(--font-family);
-  font-size: 14px;
   color: var(--purpley-pink);
 }
 
-.What-you-can-do-spo-section {
-  text-align: left;
-}
-
-.what-can-you-do-top {
-  width: 267px;
-  margin-bottom: 32px;
-}
-
-.What-you-can-do-spo {
+.what-you-can-do-title {
   font-family: var(--font-family);
-  font-size: 20px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: var(--blue-dark);
-  margin-bottom: 16px;
 }
 
 .what-can-you-do-top hr {
-  width: 178px;
-  height: 10px;
   border-radius: 13.5px;
   background-color: #d7d7d7;
   margin: 0;
 }
 
-.Simple-syntax-attra,
+.what-can-you-do-article-title {
+  font-family: var(--font-family);
+  color: var(--blue-dark);
+}
 .Runtime-Control-Seq,
 .Powerful-API-Smooth {
   width: 220px;
   font-family: var(--font-family);
   font-size: 16px;
   font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: var(--blue-dark);
   margin-bottom: 16px;
 }
 
-.The-Skinny-On-Lcd-Mo {
+.what-can-you-do-article-text {
   width: 272px;
   font-family: var(--font-family);
   font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: var(--blue-dark);
 }
 
-.Milky-section,
+.milky-way-section {
+  height: 367px;
+}
+
+.milky-way-section nav li {
+  height: 18px;
+  display: flex;
+  justify-content: flex-end;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--blue-dark);
+}
+
+.milky-way-section nav li span {
+  margin-right: 24px;
+}
+
+.milky-way-editor-box {
+  background-color: #1d1e21;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* .tabs span {
+  color: #1d1e21;
+} */
+
+.tabcontent::-webkit-scrollbar {
+  width: 5px;
+  height: 125px;
+  border-radius: 2.5px;
+}
+
+.tabcontent::-webkit-scrollbar-track {
+  background-color: #1d1e21;
+}
+
+.tabcontent::-webkit-scrollbar-thumb {
+  background-color: #656976;
+}
+
+.tabcontent::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .Planet-section,
 .Space-section {
   background: black;
@@ -162,15 +179,22 @@ nav ul li a {
   justify-content: center;
 }
 
-.Milky {
-  order: 0;
+.tabcontent {
+  height: 80%;
 }
 
 .Space {
   order: 0;
 }
 
-.Milky,
+.milky-way-img {
+  background-image: -webkit-linear-gradient(
+    -14deg,
+    transparent 16%,
+    #ffffff 16%
+  );
+}
+
 .Planet,
 .Space {
   width: 100%;
@@ -194,15 +218,6 @@ nav ul li a {
   object-fit: contain;
 }
 
-.Milky-bottom {
-  order: 1;
-}
-
-.Space-bottom {
-  order: 1;
-}
-
-.Milky-bottom,
 .Planet-bottom {
   flex-flow: column;
 }
@@ -469,7 +484,7 @@ nav ul li a {
     margin-top: 24px;
   }
 
-  .What-you-can-do-spo {
+  .what-you-can-do-title {
     width: 635px;
   }
 
@@ -486,16 +501,12 @@ nav ul li a {
     width: 588px;
   }
 
-  .Milky-section {
+  .milky-section {
     flex-flow: row;
   }
 
   .Milky {
     order: 1;
-  }
-
-  .Milky-bottom {
-    order: 0;
   }
 
   .Runtime-Control-Seq {
@@ -524,6 +535,10 @@ nav ul li a {
 }
 
 @media (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+
   .main-header {
     height: 30px;
   }
@@ -538,5 +553,9 @@ nav ul li a {
 
   .main-header nav li a {
     font-size: 16px;
+  }
+
+  .what-can-you-do-article-text {
+    width: 577px;
   }
 }
