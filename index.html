@@ -14,6 +14,7 @@
   </head>
   <body>
     <aside id="sideBar" class="side-bar w-screen h-screen absolute justify-center items-center z-10 hidden">
+      <nav>
       <ul class="list-none text-center p-0">
         <li class="mb-8"><a>DOCUMENTATION</a></li>
         <li class="mb-8"><a>EXAMPLES</a></li>
@@ -21,19 +22,20 @@
         <li class="mb-24"><a>GITHUB</a></li>
         <li><a>MIT-LICENCE</a></li>
       </ul>
+    </nav>
     </aside>
     <div class="container m-auto py-4 px-6">
-      <header class="main-header">
+      <header class="main-header flex justify-between h-6 mb-10">
         <div class="logo-container">
           <div class="logo-icon mr-4">
             <img src="./images/fill-1.svg" alt="logo icon of MotorCortex" />
           </div>
-          <div class="Logo-text">
+          <div class="logo-text">
             <img src="./images/fill-2.svg" alt="logo text of MotorCortex" />
           </div>
         </div>
         <nav>
-          <button class="Burger" onclick="sideMenuShowHandler()">
+          <button class="burger z-20" onclick="sideMenuShowHandler()">
             <img id="imgShowSideBar" src="images/burger-close.svg" />
           </button>
           <ul class="list-none text-center p-0">
@@ -45,15 +47,15 @@
         </nav>
       </header>
       <main class="mb-24">
-        <section class="The-animation flex flex-wrap justify-center">
-            <div class="The-animation-slider">
-                <img src="./images/space.jpg" alt="">
+        <section class="animation-section flex flex-wrap justify-center items-center mb-10">
+            <div class="animation-slider xl:w-5/12">
+                <img src="./images/space.jpg" alt="image of space">
                 <div class="Slidecontainer">
                     <input type="range" min="1" max="100" value="50" class="slider">
                   </div>
             </div>
-            <div class="The-animation-text flex mb-8">
-              <h1 class="The-animation-framew">
+            <div class="animation-text flex xl:w-7/12 mb-8">
+              <h1 class="animation-title">
                 The animation framework
               </h1>
               <p class="for-creative-develop mb-8">

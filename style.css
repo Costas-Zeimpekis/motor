@@ -17,11 +17,7 @@
 }
 
 .main-header {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
   height: 23px;
-  margin-bottom: 40px;
 }
 
 .side-bar ul {
@@ -78,20 +74,12 @@ nav ul li a {
   color: var(--blue-dark);
 }
 
-.Burger {
-  z-index: 2;
+.burger {
   position: relative;
 }
 
-.The-animation {
-  margin-bottom: 43px;
-  justify-content: center;
-}
-
-.The-animation-text {
-  max-width: 235px;
+.animation-text {
   flex-flow: column;
-  justify-content: center;
   order: 1;
 }
 
@@ -134,8 +122,7 @@ nav ul li a {
   transition: opacity 0.2s;
 }
 
-.The-animation-slider {
-  width: 276px;
+.animation-slider {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -527,7 +514,7 @@ nav ul li a {
     display: none;
   }
 
-  .Burger {
+  .burger {
     display: none;
   }
 
@@ -549,12 +536,11 @@ nav ul li a {
     justify-content: space-between;
   }
 
-  .The-animation-slider {
+  .animation-slider {
     order: 1;
   }
 
-  .The-animation-text {
-    width: 328px;
+  .animation-text {
     order: 0;
   }
 
@@ -637,5 +623,9 @@ nav ul li a {
 
   .logo-text {
     height: 21px;
+  }
+
+  .main-header nav li a {
+    font-size: 16px;
   }
 }
