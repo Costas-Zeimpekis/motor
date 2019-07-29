@@ -1,0 +1,638 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --purpley-pink: #c445ad;
+  --blue-dark: #252056;
+  --font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 1620px;
+  margin: auto;
+  padding: 16px 24px;
+}
+
+.container > header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  height: 23px;
+  margin-bottom: 40px;
+}
+
+.Rectangle {
+  width: 100vw;
+  height: 100vh;
+  background-color: #252055;
+  position: absolute;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.Rectangle ul {
+  text-align: center;
+  width: 135px;
+  height: 282px;
+}
+
+.Rectangle ul li a {
+  width: 135px;
+  height: 18px;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.Logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.Fill-1 {
+  width: 25px;
+  height: 23px;
+  margin-right: 16px;
+}
+
+.Fill-2 {
+  width: 151px;
+  height: 16px;
+}
+
+header nav {
+  min-width: 24px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: none;
+}
+
+nav ul li a {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--blue-dark);
+}
+
+.Burger {
+  z-index: 2;
+  position: relative;
+}
+
+.The-animation {
+  margin-bottom: 43px;
+  justify-content: center;
+}
+
+.The-animation-text {
+  max-width: 235px;
+  flex-flow: column;
+  justify-content: center;
+  order: 1;
+}
+
+.The-animation-framew {
+  width: 235px;
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--blue-dark);
+  margin-bottom: 12px;
+}
+
+.for-creative-develop {
+  width: 272px;
+  height: 36px;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--blue-dark);
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.The-animation-slider {
+  width: 276px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 26px;
+  order: 0;
+}
+
+.Slidecontainer {
+  width: 247px;
+  margin-top: 25px;
+}
+
+.slider {
+  width: 247px;
+  height: 9px;
+  border-radius: 10.5px;
+  background-color: rgba(0, 0, 0, 0.16);
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--purpley-pink);
+  cursor: pointer;
+  width: 21.9px;
+  height: 22px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.The-animation button {
+  width: 199.4px;
+  height: 44px;
+  border-radius: 31.5px;
+  box-shadow: 0 0 30px 0 rgba(39, 60, 74, 0.31);
+  background-color: #ffffff;
+}
+
+.The-animation a {
+  width: 199.4px;
+}
+
+.Check-it-on-GitHub {
+  width: 139.6px;
+  height: 18px;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--purpley-pink);
+}
+
+.What-you-can-do-spo-section {
+  text-align: left;
+}
+
+.what-can-you-do-top {
+  width: 267px;
+  margin-bottom: 32px;
+}
+
+.What-you-can-do-spo {
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--blue-dark);
+  margin-bottom: 16px;
+}
+
+.what-can-you-do-top hr {
+  width: 178px;
+  height: 10px;
+  border-radius: 13.5px;
+  background-color: #d7d7d7;
+  margin: 0;
+}
+
+.Simple-syntax-attra,
+.Runtime-Control-Seq,
+.Powerful-API-Smooth {
+  width: 220px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--blue-dark);
+  margin-bottom: 16px;
+}
+
+.The-Skinny-On-Lcd-Mo {
+  width: 272px;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--blue-dark);
+}
+
+.Milky-section,
+.Planet-section,
+.Space-section {
+  background: black;
+  border-radius: 8px;
+  height: 420px;
+  align-content: space-between;
+  flex-flow: column;
+  padding: 0 0 15px;
+  justify-content: center;
+}
+
+.Milky {
+  order: 0;
+}
+
+.Space {
+  order: 0;
+}
+
+.Milky,
+.Planet,
+.Space {
+  width: 100%;
+  height: 363px;
+  padding: 46px 0 82px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 27px 0 rgba(37, 32, 86, 0.2);
+  background-color: transparent;
+  justify-content: center;
+  background-image: -webkit-linear-gradient(
+    80deg,
+    transparent 12%,
+    #ffffff 10%
+  );
+}
+
+.milky-way,
+.planet-earth {
+  width: 241px;
+  height: 235px;
+  object-fit: contain;
+}
+
+.Milky-bottom {
+  order: 1;
+}
+
+.Space-bottom {
+  order: 1;
+}
+
+.Milky-bottom,
+.Planet-bottom {
+  flex-flow: column;
+}
+
+.Tap-to-see-how-its {
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.Explore-section {
+  background-color: #252055;
+}
+
+.Explore-galaxies-of {
+  width: 272px;
+  height: 93px;
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--blue-dark);
+}
+
+.Browse-The-Library {
+  width: 272px;
+  height: 29px;
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.Explore-section hr {
+  width: 244px;
+  height: 10px;
+  border-radius: 13.5px;
+  background-color: #ffffff;
+}
+
+.t {
+  width: 244px;
+  height: 54px;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.Explore-section a {
+  width: 272px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 31.5px;
+  box-shadow: 0 0 8px -24px rgba(37, 32, 86, 0.2);
+  background-color: var(--purpley-pink);
+}
+
+.Check-the-animations {
+  width: 213px;
+  height: 18px;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.Whats-different-section {
+  background: #252055;
+}
+
+.Whats-different-wit {
+  width: 272px;
+  height: 58px;
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.Whats-different-section hr {
+  width: 161px;
+  height: 10px;
+  border-radius: 13.5px;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+.Open-source-Communi,
+.Plug-in-oriented-des,
+.Controls-demonstra {
+  width: 177px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.Whats-different-section a {
+  width: 272px;
+  height: 52px;
+  border-radius: 31.5px;
+  box-shadow: 0 0 27px 0 rgba(37, 32, 86, 0.2);
+  background-color: #ffffff;
+}
+
+.Check-the-Motorcorte {
+  width: 239px;
+  height: 18px;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--purpley-pink);
+}
+
+.Building-a-strong-an {
+  width: 150px;
+  height: 162px;
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: var(--blue-dark);
+}
+
+.Details-section a {
+  width: 272px;
+  height: 64px;
+  border-radius: 31.5px;
+  box-shadow: 0 0 27px 0 rgba(37, 32, 86, 0.2);
+  background-color: #ffffff;
+}
+
+.Be-a-part-of-the-com {
+  width: 251px;
+  height: 36px;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #225fb1;
+}
+
+/* .Created-section img {
+  margin: ;
+} */
+
+.Created-with {
+  width: 109px;
+  height: 19px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: var(--blue-dark);
+}
+
+.by {
+  width: 21px;
+  height: 19px;
+  transform: rotate(-360deg);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--blue-dark);
+}
+
+@media (min-width: 768px) {
+  .Rectangle {
+    display: none;
+  }
+
+  .Burger {
+    display: none;
+  }
+
+  header nav ul {
+    display: block;
+  }
+
+  header nav ul li a {
+    font-size: 14px;
+    margin-right: 24px;
+  }
+
+  header nav ul li a:last-child {
+    margin-right: 12px;
+  }
+
+  .The-animation {
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  .The-animation-slider {
+    order: 1;
+  }
+
+  .The-animation-text {
+    width: 328px;
+    order: 0;
+  }
+
+  .The-animation-framew {
+    width: 330px;
+  }
+
+  .for-creative-develop {
+    width: 238px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .what-can-you-do-top {
+    margin-top: 24px;
+  }
+
+  .What-you-can-do-spo {
+    width: 635px;
+  }
+
+  .what-can-you-do-top hr {
+    width: 200px;
+  }
+
+  .Simple-syntax-attra {
+    width: 510px;
+    margin-bottom: 8px;
+  }
+
+  .The-Skinny-On-Lcd-Mo {
+    width: 588px;
+  }
+
+  .Milky-section {
+    flex-flow: row;
+  }
+
+  .Milky {
+    order: 1;
+  }
+
+  .Milky-bottom {
+    order: 0;
+  }
+
+  .Runtime-Control-Seq {
+    width: 586px;
+  }
+
+  .Planet-section {
+    flex-flow: row;
+  }
+
+  .Powerful-API-Smooth {
+    width: 660px;
+  }
+
+  .Space-section {
+    flex-flow: row;
+  }
+
+  .Space {
+    order: 1;
+  }
+
+  .Space-bottom {
+    order: 0;
+  }
+}
