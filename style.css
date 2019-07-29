@@ -12,16 +12,7 @@
   background-color: var(--blue-dark);
 }
 
-.container {
-  max-width: 1280px;
-}
-
-.main-header {
-  height: 23px;
-}
-
 .side-bar ul {
-  text-align: center;
   width: 135px;
   height: 282px;
 }
@@ -36,106 +27,33 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: center;
   color: #ffffff;
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
-}
-
-.logo-icon {
-}
-
-.logo-text {
-  height: 16px;
+.container {
+  max-width: 1280px;
 }
 
 header nav {
   min-width: 24px;
-  height: 17px;
-}
-
-header nav ul {
-  list-style: none;
-  padding: 0;
-  display: none;
 }
 
 nav ul li a {
   font-family: var(--font-family);
   font-size: 14px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: var(--blue-dark);
 }
 
-.burger {
-  position: relative;
-}
-
-.animation-text {
-  flex-flow: column;
-  order: 1;
-}
-
-.The-animation-framew {
-  width: 235px;
-  font-family: var(--font-family);
-  font-size: 24px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: var(--blue-dark);
-  margin-bottom: 12px;
-}
-
-.for-creative-develop {
-  width: 272px;
-  height: 36px;
-  font-family: var(--font-family);
-  font-size: 14px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: var(--blue-dark);
+.slider-container {
+  width: 247px;
 }
 
 .slider {
   -webkit-appearance: none;
-  width: 100%;
-  height: 25px;
-  background: #d3d3d3;
   outline: none;
   opacity: 0.7;
-  -webkit-transition: 0.2s;
   transition: opacity 0.2s;
-}
-
-.animation-slider {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 26px;
-  order: 0;
-}
-
-.Slidecontainer {
-  width: 247px;
-  margin-top: 25px;
-}
-
-.slider {
   width: 247px;
   height: 9px;
   border-radius: 10.5px;
@@ -153,29 +71,26 @@ nav ul li a {
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
 }
 
-.The-animation button {
-  width: 199.4px;
-  height: 44px;
-  border-radius: 31.5px;
+.animation-title {
+  font-family: var(--font-family);
+  color: var(--blue-dark);
+}
+
+.animation-headline {
+  font-family: var(--font-family);
+  color: var(--blue-dark);
+}
+
+.animation-text a {
+  border-radius: 32px;
   box-shadow: 0 0 30px 0 rgba(39, 60, 74, 0.31);
-  background-color: #ffffff;
 }
 
-.The-animation a {
-  width: 199.4px;
-}
-
-.Check-it-on-GitHub {
+.github-span {
   width: 139.6px;
   height: 18px;
   font-family: var(--font-family);
   font-size: 14px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
   color: var(--purpley-pink);
 }
 
@@ -544,11 +459,7 @@ nav ul li a {
     order: 0;
   }
 
-  .The-animation-framew {
-    width: 330px;
-  }
-
-  .for-creative-develop {
+  .animation-headline {
     width: 238px;
     font-size: 16px;
     text-align: left;
