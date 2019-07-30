@@ -103,22 +103,15 @@ nav ul li a {
 }
 
 .what-can-you-do-article-title,
-.runtime-control-article-title {
+.runtime-control-article-title,
+.powerful-api-article-title {
   font-family: var(--font-family);
   color: var(--blue-dark);
-}
-
-.Powerful-API-Smooth {
-  width: 220px;
-  font-family: var(--font-family);
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--blue-dark);
-  margin-bottom: 16px;
 }
 
 .what-can-you-do-article-text,
-.runtime-control-article-text {
+.runtime-control-article-text,
+.powerful-api-article-text {
   font-family: var(--font-family);
   color: var(--blue-dark);
 }
@@ -144,7 +137,8 @@ nav ul li a {
 }
 
 .milky-way-editor-container,
-.planet-earth-editor-container {
+.planet-earth-editor-container,
+.space-editor-container {
   background-color: #1d1e21;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
@@ -175,10 +169,6 @@ nav ul li a {
   height: 80%;
 }
 
-.Space {
-  order: 0;
-}
-
 .milky-way-img-container {
   background-image: -webkit-linear-gradient(
     -14deg,
@@ -195,19 +185,18 @@ nav ul li a {
   );
 }
 
-.Space {
-  width: 100%;
-  height: 363px;
-  padding: 46px 0 82px 0;
-  border-radius: 8px;
-  box-shadow: 0 0 27px 0 rgba(37, 32, 86, 0.2);
-  background-color: transparent;
-  justify-content: center;
+.space-img-comtainer {
   background-image: -webkit-linear-gradient(
     80deg,
     transparent 12%,
-    #ffffff 10%
+    #1d1e21 10%
   );
+}
+
+.space-img {
+  width: 55%;
+  height: 156%;
+  transform: rotate(90deg);
 }
 
 .milky-way-img,
@@ -484,26 +473,6 @@ nav ul li a {
     width: 510px;
     margin-bottom: 8px;
   }
-
-  .milky-section {
-    flex-flow: row;
-  }
-
-  .Powerful-API-Smooth {
-    width: 660px;
-  }
-
-  .Space-section {
-    flex-flow: row;
-  }
-
-  .Space {
-    order: 1;
-  }
-
-  .Space-bottom {
-    order: 0;
-  }
 }
 
 @media (min-width: 1280px) {
@@ -530,7 +499,8 @@ nav ul li a {
   .what-can-you-do-article-text {
     width: 640px;
   }
-  .runtime-control-article-text {
+  .runtime-control-article-text,
+  .powerful-api-article-text {
     width: 590px;
   }
 }

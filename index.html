@@ -90,8 +90,8 @@
                   </ul>
                 </nav>
               </aside>
-              <div class="milky-way-editor-container w-11/12 flex rounded-lg bg">
-                  <div class="milky-way-img-container w-7/12 flex justify-center items-center xs:order-none md:order-1">
+              <div class="milky-way-editor-container w-11/12 flex rounded-lg">
+                  <div class="milky-way-img-container w-7/12 flex justify-center items-center xs:order-none md:order-1 rounded-r-lg">
                       <img class="milky-way-img" src="./images/milky-way.svg" alt="milky way svg">
                     </div>
                     <div class="milky-way-editor w-5/2 text-white xs:order-1 md:order-none h-full p-4 pr-0">
@@ -126,7 +126,7 @@ componentDidMount() {
       };                                        
                             </pre>
                           </div>
-                      <button class="milky-way-editor-tap flex text-white md:hidden">
+                      <button class="tap-btn flex text-white md:hidden">
                           <span class="tap-text">
                             Tap to se how it is coded
                           </span>
@@ -144,9 +144,9 @@ componentDidMount() {
                 The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd Monitors The Skinny on Lcd MonitorThe Skinny On Lcd Monitors The Skinny on Lcd Monitor 
               </p>
               <section class="planet-earth-section w-11/12 flex ml-auto">
-                  <div class="planet-earth-editor-container w-11/12 flex rounded-lg bg">
-                    <div class="planet-earth-img-container w-7/12 flex justify-center items-center">
-                      <img class="planet-earth-img " src="./images/planet-earth.svg" alt="milky way svg">
+                  <div class="planet-earth-editor-container w-11/12 flex rounded-lg">
+                    <div class="planet-earth-img-container w-7/12 flex justify-center items-center rounded-l-lg">
+                      <img class="planet-earth-img" src="./images/planet-earth.svg" alt="planet earth svg image">
                     </div>
                     <div class="planet-earth-editor w-5/2 text-white h-full p-4 pr-0">
                       <div class="tabs mb-6">
@@ -180,28 +180,62 @@ axios.get('https://newsapi.org/v1/sources')
     };                                        
                           </pre>
                         </div>
-                      <button class="planet-earth-tap flex text-white md:hidden"">
+                      <button class="tap-btn flex text-white md:hidden">
                           <span class="tap-text">Tap to se how it is coded</span>
                           <img src="./images/chevron-left-solid.svg" alt="">
                         </button>
                     </div> 
               </section>
             </article>
-            <article class="mb-8">
-                <h3 class="Powerful-API-Smooth mb-4">
+            <article class="mb-24">
+                <h3 class="powerful-api-article-title w-full text-2xl font-semibold mb-2">
                   Powerfull API, Smooth Animations, Full Compatibility
                 </h3>
-                <p class="The-Skinny-On-Lcd-Mo mb-8">
+                <p class="powerful-api-article-text text-base font-semibold mb-20">
                   The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd Monitors The Skinny on Lcd MonitorThe Skinny On Lcd Monitors The Skinny on Lcd Monitor 
                 </p>
-                <section class="Space-section flex">
-                    <div class="Space">
-                        <img src="./images/14.png" alt="milky way svg">
+                <section class="space-section  w-11/12 flex ml-auto">
+                  <div class="space-editor-container w-11/12 flex rounded-lg">
+                    <div class="space-img-comtainer w-7/12 flex justify-center items-center xs:order-none md:order-1 rounded-r-lg">
+                        <img class="space-img" src="./images/14.png" alt="space svg image">
                       </div>
-                      <div class="Space-bottom">
-                        <span class="Tap-to-see-how-its">Tap to se how it is coded</span>
-                        <img src="./images/chevron-left-solid.svg" alt="">
-                      </div>
+                      <div class="space-editor w-5/2 text-white xs:order-1 md:order-none h-full p-4 pr-0">
+                        <div class="tabs mb-6">
+                            <button class="w-20 h-8 bg-white rounded-lg"><span class="h-4 text-sm text-gray-800 font-semibold text-black">Vanilla JS</span></button>
+                            <button class="w-20 h-8  rounded-lg mr-4"><span class="h-4 text-sm font-semibold text-white">React</span></button>
+                        </div>
+                        <div id="vanillaJS" class="tabcontent w-11/12 overflow-auto ml-8">
+                            <pre class="h-full text-sm text-teal-500 mr-2">
+  componentDidMount() { 
+  axios.get('https://newsapi.org/v1/sources')
+  .then(res => {
+   console.log(res.data.sources);
+    this.props.fetchPosts(res.data.sources);
+        })                            
+      .catch(err => 
+       {this.setState({ resError: true
+          });
+            });
+          }                         
+          searchHadler = event => {
+        event.preventDefault();
+              this.setState({
+          searchTxt: event.target.value
+        });
+      };                          
+        setCategoryHandler = event => {
+          event.preventDefault();
+          this.setState({
+              selectCategory: event.target.value
+      });
+      };                                        
+                            </pre>
+                          </div>
+                        <button class="tap-btm flex text-white md:hidden"">
+                            <span class="tap-text">Tap to se how it is coded</span>
+                            <img src="./images/chevron-left-solid.svg" alt="">
+                          </button>
+                      </div> 
                 </section>
               </article>
         </section>
