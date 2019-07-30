@@ -1,6 +1,7 @@
 :root {
   --purpley-pink: #c445ad;
   --blue-dark: #252056;
+  --brownish-grey: var(--brownish-grey);
   --font-family: 'Montserrat', sans-serif;
 }
 
@@ -249,7 +250,7 @@ nav ul li a {
   font-size: 14px;
   font-weight: 500;
   text-align: center;
-  color: #656565;
+  color: var(--brownish-grey);
 }
 
 .whats-different-section {
@@ -292,33 +293,15 @@ nav ul li a {
 }
 
 
-.Created-with {
-  width: 109px;
-  height: 19px;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: right;
+.created-title-text,
+.by {
   color: var(--blue-dark);
 }
 
-.by {
-  width: 21px;
-  height: 19px;
-  transform: rotate(-360deg);
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: var(--blue-dark);
+.created-text {
+  color: var(--brownish-grey);
 }
+
 
 @media (min-width: 768px) {
   .side-bar {
