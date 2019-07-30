@@ -161,27 +161,21 @@ nav ul li a {
 }
 
 .milky-way-img-container {
-  background-image: -webkit-linear-gradient(
-    -14deg,
-    transparent 16%,
-    #ffffff 16%
-  );
+  background-image: -webkit-linear-gradient(-14deg,
+      transparent 16%,
+      #ffffff 16%);
 }
 
 .planet-earth-img-container {
-  background-image: -webkit-linear-gradient(
-    -9deg,
-    #ffffff 90%,
-    transparent 90%
-  );
+  background-image: -webkit-linear-gradient(-9deg,
+      #ffffff 90%,
+      transparent 90%);
 }
 
 .space-img-comtainer {
-  background-image: -webkit-linear-gradient(
-    80deg,
-    transparent 12%,
-    #1d1e21 10%
-  );
+  background-image: -webkit-linear-gradient(80deg,
+      transparent 12%,
+      #1d1e21 10%);
 }
 
 .space-img {
@@ -231,7 +225,7 @@ nav ul li a {
   height: 850px;
 }
 
-.build-strong-basis-section-inner > div {
+.build-strong-basis-section-inner>div {
   width: 257px;
 }
 
@@ -296,7 +290,7 @@ nav ul li a {
   color: #225fb1;
 }
 
-.detail-items > div > span:first-of-type {
+.detail-items>div>span:first-of-type {
   background-color: #2e3033;
 }
 
@@ -314,91 +308,6 @@ footer nav ul li {
   font-size: 16px;
   font-weight: bold;
   color: var(--blue-dark);
-}
-
-@media (min-width: 768px) {
-  .side-bar {
-    display: none;
-  }
-
-  .burger {
-    display: none;
-  }
-
-  header nav ul {
-    display: block;
-  }
-
-  header nav ul li a:last-child {
-    margin-right: 12px;
-  }
-
-  .The-animation {
-    flex-flow: row;
-    justify-content: space-between;
-  }
-
-  .animation-slider {
-    order: 1;
-  }
-
-  .animation-text {
-    order: 0;
-  }
-
-  .animation-headline {
-    width: 238px;
-    font-size: 16px;
-    text-align: left;
-  }
-
-  .what-can-you-do-top {
-    margin-top: 24px;
-  }
-
-  .what-you-can-do-title {
-    width: 635px;
-  }
-
-  .what-can-you-do-top hr {
-    width: 200px;
-  }
-
-  .Simple-syntax-attra {
-    width: 510px;
-    margin-bottom: 8px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    width: 1280px;
-  }
-
-  .main-header {
-    height: 30px;
-  }
-
-  .logo-container {
-    width: 240px;
-  }
-
-  .logo-text {
-    height: 21px;
-  }
-
-  .main-header nav li a {
-    font-size: 16px;
-  }
-
-  .what-can-you-do-article-text {
-    width: 640px;
-  }
-
-  .runtime-control-article-text,
-  .powerful-api-article-text {
-    width: 590px;
-  }
 }
 
 .wave-browse-container {
