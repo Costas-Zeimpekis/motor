@@ -252,40 +252,18 @@ nav ul li a {
   color: #656565;
 }
 
-.Whats-different-section {
+.whats-different-section {
   background: var(--blue-dark);
 }
 
-.Whats-different-wit {
-  width: 272px;
-  height: 58px;
-  font-size: 24px;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.Whats-different-section hr {
+.whats-different-section hr {
   width: 161px;
-  height: 10px;
-  border-radius: 13.5px;
-  background-color: #ffffff;
-  margin: 0;
 }
 
-.Open-source-Communi,
-.Plug-in-oriented-des,
-.Controls-demonstra {
-  width: 177px;
-  font-size: 16px;
-  color: #ffffff;
-}
-
-.Whats-different-section a {
+.whats-different-section a {
   width: 272px;
   height: 52px;
-  border-radius: 31.5px;
   box-shadow: 0 0 27px 0 rgba(37, 32, 86, 0.2);
-  background-color: #ffffff;
 }
 
 .Check-the-Motorcorte {
