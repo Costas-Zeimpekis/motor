@@ -102,11 +102,12 @@ nav ul li a {
   margin: 0;
 }
 
-.what-can-you-do-article-title {
+.what-can-you-do-article-title,
+.runtime-control-article-title {
   font-family: var(--font-family);
   color: var(--blue-dark);
 }
-.Runtime-Control-Seq,
+
 .Powerful-API-Smooth {
   width: 220px;
   font-family: var(--font-family);
@@ -116,14 +117,15 @@ nav ul li a {
   margin-bottom: 16px;
 }
 
-.what-can-you-do-article-text {
-  width: 272px;
+.what-can-you-do-article-text,
+.runtime-control-article-text {
   font-family: var(--font-family);
-  font-size: 14px;
   color: var(--blue-dark);
 }
 
-.milky-way-section {
+.milky-way-section,
+.planet-earth-section,
+.space-section {
   height: 367px;
 }
 
@@ -132,7 +134,7 @@ nav ul li a {
   display: flex;
   justify-content: flex-end;
   font-family: var(--font-family);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   color: var(--blue-dark);
 }
@@ -141,7 +143,8 @@ nav ul li a {
   margin-right: 24px;
 }
 
-.milky-way-editor-box {
+.milky-way-editor-container,
+.planet-earth-editor-container {
   background-color: #1d1e21;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
@@ -168,17 +171,6 @@ nav ul li a {
   background: #555;
 }
 
-.Planet-section,
-.Space-section {
-  background: black;
-  border-radius: 8px;
-  height: 420px;
-  align-content: space-between;
-  flex-flow: column;
-  padding: 0 0 15px;
-  justify-content: center;
-}
-
 .tabcontent {
   height: 80%;
 }
@@ -187,7 +179,7 @@ nav ul li a {
   order: 0;
 }
 
-.milky-way-img {
+.milky-way-img-container {
   background-image: -webkit-linear-gradient(
     -14deg,
     transparent 16%,
@@ -195,7 +187,14 @@ nav ul li a {
   );
 }
 
-.Planet,
+.planet-earth-img-container {
+  background-image: -webkit-linear-gradient(
+    -9deg,
+    #ffffff 90%,
+    transparent 90%
+  );
+}
+
 .Space {
   width: 100%;
   height: 363px;
@@ -211,28 +210,17 @@ nav ul li a {
   );
 }
 
-.milky-way,
-.planet-earth {
+.milky-way-img,
+.planet-earth-img {
   width: 241px;
   height: 235px;
   object-fit: contain;
 }
 
-.Planet-bottom {
-  flex-flow: column;
+.tap-text {
+  font-family: var(--font-family);
 }
 
-.Tap-to-see-how-its {
-  font-family: var(--font-family);
-  font-size: 12px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  margin-bottom: 5px;
-}
 .Explore-section {
   background-color: #252055;
 }
@@ -497,23 +485,7 @@ nav ul li a {
     margin-bottom: 8px;
   }
 
-  .The-Skinny-On-Lcd-Mo {
-    width: 588px;
-  }
-
   .milky-section {
-    flex-flow: row;
-  }
-
-  .Milky {
-    order: 1;
-  }
-
-  .Runtime-Control-Seq {
-    width: 586px;
-  }
-
-  .Planet-section {
     flex-flow: row;
   }
 
@@ -556,6 +528,9 @@ nav ul li a {
   }
 
   .what-can-you-do-article-text {
-    width: 577px;
+    width: 640px;
+  }
+  .runtime-control-article-text {
+    width: 590px;
   }
 }

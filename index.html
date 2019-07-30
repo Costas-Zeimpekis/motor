@@ -73,15 +73,15 @@
               <h2 class="what-you-can-do-title text-3xl font-bold mb-4">What you can do (spoiler: everything)</h2>
               <hr class="w-48 h-3 m-0">
           </header>
-          <article class="mb-8">
+          <article class="mb-24">
             <h3 class="what-can-you-do-article-title w-full text-2xl font-semibold mb-2">
               Simple syntax, attractively easy to use
             </h3>
-            <p class="what-can-you-do-article-text text-base font-semibold mb-4">
+            <p class="what-can-you-do-article-text text-base font-semibold mb-20">
               The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd Monitors The Skinny on Lcd MonitorThe Skinny On Lcd Monitors The Skinny on Lcd Monitors
             </p>
             <section class="milky-way-section w-11/12 flex ml-auto">
-              <aside class="w-1/5 flex items-center">
+              <aside class="w-1/5 flex items-center mr-6">
                 <nav>
                   <ul>
                     <li class="mb-10"><span>Load Library</span><img src="./images/chevron-right-solid.svg" alt="arrow right icon"></li>
@@ -90,18 +90,17 @@
                   </ul>
                 </nav>
               </aside>
-              <div class="milky-way-editor-box w-11/12 flex rounded-lg bg">
-                  <div class="milky-way-img w-7/12 flex justify-center items-center xs:order-none md:order-1">
-                      <img class="milky-way" src="./images/milky-way.svg" alt="milky way svg">
+              <div class="milky-way-editor-container w-11/12 flex rounded-lg bg">
+                  <div class="milky-way-img-container w-7/12 flex justify-center items-center xs:order-none md:order-1">
+                      <img class="milky-way-img" src="./images/milky-way.svg" alt="milky way svg">
                     </div>
-                    <div class="milky-way-editor w-5/2 text-white xs:order-1 md:order-none">
-                      <div class="milky-way-editor w-full h-full p-4 pr-0">
+                    <div class="milky-way-editor w-5/2 text-white xs:order-1 md:order-none h-full p-4 pr-0">
                         <div class="tabs mb-6">
                             <button class="w-20 h-8 bg-white rounded-lg"><span class="h-4 text-sm text-gray-800 font-semibold text-black">Vanilla JS</span></button>
                             <button class="w-20 h-8  rounded-lg mr-4"><span class="h-4 text-sm font-semibold text-white">React</span></button>
                         </div>
-                        <div id="vanillaJS" class="tabcontent w-11/12 overflow-auto ml-10">
-                            <pre class="h-full text-sm text-teal-500 mr-1">
+                        <div id="vanillaJS" class="tabcontent w-11/12 overflow-auto ml-8">
+                            <pre class="h-full text-sm text-teal-500 mr-2">
 componentDidMount() { 
   axios.get('https://newsapi.org/v1/sources')
   .then(res => {
@@ -127,32 +126,65 @@ componentDidMount() {
       };                                        
                             </pre>
                           </div>
-                      </div>
-                      <div class="milky-way-editor-tap md:hidden">
-                          <span class="Tap-to-see-how-its">
+                      <button class="milky-way-editor-tap flex text-white md:hidden">
+                          <span class="tap-text">
                             Tap to se how it is coded
                           </span>
                           <img src="./images/chevron-left-solid.svg" alt="">
-                      </div>
+                      </button>
                     </div>
               </div>
             </section>
           </article>
-          <article class="mb-8">
-              <h3 class="Runtime-Control-Seq mb-4">
+          <article class="mb-24">
+              <h3 class="runtime-control-article-title w-full text-2xl font-semibold mb-2">
                 Runtime Constrol, Sequenncing Tools
               </h3>
-              <p class="The-Skinny-On-Lcd-Mo mb-8">
+              <p class="runtime-control-article-text text-base font-semibold mb-20">
                 The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd Monitors The Skinny on Lcd MonitorThe Skinny On Lcd Monitors The Skinny on Lcd Monitor 
               </p>
-              <section class="Planet-section flex">
-                  <div class="Planet flex">
-                      <img class="planet-earth " src="./images/planet-earth.svg" alt="milky way svg">
+              <section class="planet-earth-section w-11/12 flex ml-auto">
+                  <div class="planet-earth-editor-container w-11/12 flex rounded-lg bg">
+                    <div class="planet-earth-img-container w-7/12 flex justify-center items-center">
+                      <img class="planet-earth-img " src="./images/planet-earth.svg" alt="milky way svg">
                     </div>
-                    <div class="Planet-bottom flex text-white">
-                      <span class="Tap-to-see-how-its">Tap to se how it is coded</span>
-                      <img src="./images/chevron-left-solid.svg" alt="">
-                    </div>
+                    <div class="planet-earth-editor w-5/2 text-white h-full p-4 pr-0">
+                      <div class="tabs mb-6">
+                          <button class="w-20 h-8 bg-white rounded-lg"><span class="h-4 text-sm text-gray-800 font-semibold text-black">Vanilla JS</span></button>
+                          <button class="w-20 h-8  rounded-lg mr-4"><span class="h-4 text-sm font-semibold text-white">React</span></button>
+                      </div>
+                      <div id="vanillaJS" class="tabcontent w-11/12 overflow-auto ml-8">
+                          <pre class="h-full text-sm text-teal-500 mr-2">
+componentDidMount() { 
+axios.get('https://newsapi.org/v1/sources')
+.then(res => {
+ console.log(res.data.sources);
+  this.props.fetchPosts(res.data.sources);
+      })                            
+    .catch(err => 
+     {this.setState({ resError: true
+        });
+          });
+        }                         
+        searchHadler = event => {
+      event.preventDefault();
+            this.setState({
+        searchTxt: event.target.value
+      });
+    };                          
+      setCategoryHandler = event => {
+        event.preventDefault();
+        this.setState({
+            selectCategory: event.target.value
+    });
+    };                                        
+                          </pre>
+                        </div>
+                      <button class="planet-earth-tap flex text-white md:hidden"">
+                          <span class="tap-text">Tap to se how it is coded</span>
+                          <img src="./images/chevron-left-solid.svg" alt="">
+                        </button>
+                    </div> 
               </section>
             </article>
             <article class="mb-8">
