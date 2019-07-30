@@ -68,7 +68,7 @@
               </a>
             </div>
         </section>
-        <section class="what-you-can-do-section w-full text-left">
+        <section class="what-you-can-do-section w-full text-left mb-32">
           <header class="what-can-you-do-top w-full mb-8">
               <h2 class="what-you-can-do-title text-3xl font-bold mb-4">What you can do (spoiler: everything)</h2>
               <hr class="w-48 h-3 m-0">
@@ -143,8 +143,8 @@ componentDidMount() {
               <p class="runtime-control-article-text text-base font-semibold mb-20">
                 The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd Monitors The Skinny on Lcd MonitorThe Skinny On Lcd Monitors The Skinny on Lcd Monitor 
               </p>
-              <section class="planet-earth-section w-11/12 flex ml-auto">
-                  <div class="planet-earth-editor-container w-11/12 flex rounded-lg">
+              <section class="planet-earth-section w-11/12 flex">
+                  <div class="planet-earth-editor-container w-11/12 flex rounded-lg mr-auto">
                     <div class="planet-earth-img-container w-7/12 flex justify-center items-center rounded-l-lg">
                       <img class="planet-earth-img" src="./images/planet-earth.svg" alt="planet earth svg image">
                     </div>
@@ -187,7 +187,7 @@ axios.get('https://newsapi.org/v1/sources')
                     </div> 
               </section>
             </article>
-            <article class="mb-24">
+            <article>
                 <h3 class="powerful-api-article-title w-full text-2xl font-semibold mb-2">
                   Powerfull API, Smooth Animations, Full Compatibility
                 </h3>
@@ -195,7 +195,7 @@ axios.get('https://newsapi.org/v1/sources')
                   The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd Monitors The Skinny on Lcd MonitorThe Skinny On Lcd Monitors The Skinny on Lcd Monitor 
                 </p>
                 <section class="space-section  w-11/12 flex ml-auto">
-                  <div class="space-editor-container w-11/12 flex rounded-lg">
+                  <div class="space-editor-container w-11/12 flex rounded-lg ml-auto">
                     <div class="space-img-comtainer w-7/12 flex justify-center items-center xs:order-none md:order-1 rounded-r-lg">
                         <img class="space-img" src="./images/14.png" alt="space svg image">
                       </div>
@@ -231,7 +231,7 @@ axios.get('https://newsapi.org/v1/sources')
       };                                        
                             </pre>
                           </div>
-                        <button class="tap-btm flex text-white md:hidden"">
+                        <button class="tap-btm flex text-white md:hidden">
                             <span class="tap-text">Tap to se how it is coded</span>
                             <img src="./images/chevron-left-solid.svg" alt="">
                           </button>
@@ -239,14 +239,22 @@ axios.get('https://newsapi.org/v1/sources')
                 </section>
               </article>
         </section>
-        <section class="Explore-section flex justify-center">
-          <h2 class="Explore-galaxies-of">
+        <section class="explore-section flex flex-col items-end">
+          <h2 class="explore-section-title w-5/12 text-right font-bold text-3xl leading-snug mb-48">
             Explore galaxies of 'ready to use' animations and pluginfs
           </h2>
-          <h3 class="Browse-The-Library">Browse the Libaray</h3>
-          <hr class="mb-6">
-          <h4 class="t mb-10">Get 'ready to use' animations, and upload your work to the community</h4>
-          <a><button><span class="Check-the-animations"> Check the animations library</span></button></a>
+          <div class="w-full flex flex-row justify-between items-center bg-blue-800">
+            <div class="w-6/12 flex flex-col items-start">
+                <h3 class="browse-librady-title w-full text-4xl text-white font-bold">Browse the Libaray</h3>
+                <hr class="m-0 mb-6 w-6/12 h-2 bg-white mb-6">
+                <p class="browse-librady-headline w-11/12 font-semibold text-base text-white">Get 'ready to use' animations clips, functional plugins to the MotorCortex core and upload your work to the community</p>
+            </div>
+          <a>
+            <span class="Check-the-animations">
+              Check the animations library
+            </span>
+          </a>
+        </div>
         </section>
         <section>
           Slider

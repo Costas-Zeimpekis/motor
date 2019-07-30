@@ -210,43 +210,17 @@ nav ul li a {
   font-family: var(--font-family);
 }
 
-.Explore-section {
-  background-color: #252055;
-}
-
-.Explore-galaxies-of {
-  width: 272px;
-  height: 93px;
+.explore-section-title {
   font-family: var(--font-family);
-  font-size: 20px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
   color: var(--blue-dark);
 }
 
-.Browse-The-Library {
-  width: 272px;
-  height: 29px;
+.browse-librady-title {
   font-family: var(--font-family);
-  font-size: 24px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
 }
 
-.Explore-section hr {
-  width: 244px;
-  height: 10px;
+.explore-section hr {
   border-radius: 13.5px;
-  background-color: #ffffff;
 }
 
 .t {
@@ -262,7 +236,7 @@ nav ul li a {
   color: #ffffff;
 }
 
-.Explore-section a {
+.explore-section a {
   width: 272px;
   height: 52px;
   display: flex;
