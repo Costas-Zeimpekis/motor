@@ -1,6 +1,6 @@
 :root {
   --purpley-pink: #c445ad;
-  --blue-dark: #252056;
+  --blue-dark: #252254;
   --brownish-grey: var(--brownish-grey);
   --font-family: 'Montserrat', sans-serif;
 }
@@ -10,6 +10,9 @@
   font-family: var(--font-family);
 }
 
+body {
+  position: relative;
+}
 
 .side-bar {
   background-color: var(--blue-dark);
@@ -36,7 +39,6 @@ header nav {
 }
 
 nav ul li a {
-  font-size: 14px;
   font-weight: bold;
   color: var(--blue-dark);
 }
@@ -159,21 +161,27 @@ nav ul li a {
 }
 
 .milky-way-img-container {
-  background-image: -webkit-linear-gradient(-14deg,
-      transparent 16%,
-      #ffffff 16%);
+  background-image: -webkit-linear-gradient(
+    -14deg,
+    transparent 16%,
+    #ffffff 16%
+  );
 }
 
 .planet-earth-img-container {
-  background-image: -webkit-linear-gradient(-9deg,
-      #ffffff 90%,
-      transparent 90%);
+  background-image: -webkit-linear-gradient(
+    -9deg,
+    #ffffff 90%,
+    transparent 90%
+  );
 }
 
 .space-img-comtainer {
-  background-image: -webkit-linear-gradient(80deg,
-      transparent 12%,
-      #1d1e21 10%);
+  background-image: -webkit-linear-gradient(
+    80deg,
+    transparent 12%,
+    #1d1e21 10%
+  );
 }
 
 .space-img {
@@ -223,7 +231,7 @@ nav ul li a {
   height: 850px;
 }
 
-.build-strong-basis-section-inner>div {
+.build-strong-basis-section-inner > div {
   width: 257px;
 }
 
@@ -288,10 +296,9 @@ nav ul li a {
   color: #225fb1;
 }
 
-.detail-items>div>span:first-of-type {
+.detail-items > div > span:first-of-type {
   background-color: #2e3033;
 }
-
 
 .created-title-text,
 .by {
@@ -302,6 +309,12 @@ nav ul li a {
   color: var(--brownish-grey);
 }
 
+footer nav ul li {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--blue-dark);
+}
 
 @media (min-width: 768px) {
   .side-bar {
@@ -314,11 +327,6 @@ nav ul li a {
 
   header nav ul {
     display: block;
-  }
-
-  header nav ul li a {
-    font-size: 14px;
-    margin-right: 24px;
   }
 
   header nav ul li a:last-child {
@@ -391,4 +399,130 @@ nav ul li a {
   .powerful-api-article-text {
     width: 590px;
   }
+}
+
+.wave-browse-container {
+  position: absolute;
+  top: 321vh;
+  left: 0;
+}
+
+#waveBrowse {
+  position: relative;
+  height: 100px;
+  width: 100vw;
+  background: var(--blue-dark);
+  bottom: -50%;
+  left: 0;
+  z-index: 0;
+}
+
+#waveBrowse:before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 79% 44% 0 0;
+  width: 130vw;
+  height: 599px;
+  background-color: rgba(50, 46, 111, 0.06);
+  left: -198px;
+  top: -446px;
+  z-index: 1;
+}
+
+#waveBrowse:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 92% 15% 0 0;
+  width: 125vw;
+  height: 320px;
+  background-color: rgba(131, 129, 161, 0.32);
+  right: -5px;
+  top: -155px;
+  z-index: 2;
+}
+
+.wave-differnt-container {
+  position: absolute;
+  top: 452vh;
+  left: 0;
+}
+
+#waveDiffernt {
+  position: relative;
+  height: 1000px;
+  width: 100vw;
+  background: var(--blue-dark);
+  bottom: -50%;
+  left: 0;
+  z-index: 0;
+}
+
+#waveDiffernt:before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 79% 44% 0 0;
+  width: 130vw;
+  height: 599px;
+  background-color: rgba(50, 46, 111, 0.06);
+  left: -198px;
+  top: -446px;
+  z-index: 1;
+}
+
+#waveDiffernt:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 92% 15% 0 0;
+  width: 125vw;
+  height: 320px;
+  background-color: rgba(131, 129, 161, 0.32);
+  right: -5px;
+  top: -155px;
+  z-index: 2;
+}
+
+.wave-footer-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#waveFooter {
+  position: relative;
+  height: 70px;
+  width: 100vw;
+  background: white;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#waveFooter:before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 79% 44% 0 0;
+  width: 130vw;
+  height: 599px;
+  background-color: rgba(50, 46, 111, 0.06);
+  left: -198px;
+  top: -446px;
+  z-index: 1;
+}
+
+#waveFooter:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 92% 15% 0 0;
+  width: 125vw;
+  height: 320px;
+  background-color: rgba(131, 129, 161, 0.32);
+  right: -5px;
+  top: -155px;
+  z-index: 2;
 }

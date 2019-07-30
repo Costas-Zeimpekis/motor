@@ -12,6 +12,15 @@
 </head>
 
 <body>
+  <div class="wave-browse-container">
+    <div id="waveBrowse"></div>
+  </div>
+  <div class="wave-differnt-container">
+    <div id="waveDiffernt"></div>
+  </div>
+  <div class="wave-footer-container">
+    <div id="waveFooter"></div>
+  </div>
   <aside id="sideBar" class="side-bar w-screen h-screen absolute justify-center items-center z-10 hidden">
     <nav>
       <ul class="list-none text-center p-0">
@@ -23,7 +32,7 @@
       </ul>
     </nav>
   </aside>
-  <div class="container m-auto py-4 px-6">
+  <div class="container relative z-10 m-auto py-4 px-6">
     <header class="main-header flex justify-between h-6 mb-10">
       <div class="logo-container flex items-center">
         <div class="logo-icon mr-4">
@@ -45,7 +54,7 @@
         </ul>
       </nav>
     </header>
-    <main class="mb-24">
+    <main class="mb-40">
       <section class="animation-section flex flex-wrap justify-center items-center mb-10">
         <div class="animation-slider flex flex-col items-center xs:mb-10 md:mb-0 order-none md:order-first xl:w-5/12">
           <img class="mb-6" src="./images/space.jpg" alt="image of space">
@@ -256,7 +265,7 @@ axios.get('https://newsapi.org/v1/sources')
         <h2 class="explore-section-title w-5/12 text-right font-bold text-3xl leading-snug mb-48">
           Explore galaxies of 'ready to use' animations and pluginfs
         </h2>
-        <div class="w-full flex flex-row justify-between items-center bg-blue-800">
+        <div class="w-full flex flex-row justify-between items-center">
           <div class="w-6/12 flex flex-col items-start">
             <h3 class="browse-librady-title w-full text-4xl text-white font-bold">Browse the Libaray</h3>
             <hr class="m-0 mb-6 w-6/12 h-2 bg-white mb-6">
@@ -417,20 +426,22 @@ axios.get('https://newsapi.org/v1/sources')
       </section>
     </main>
     <footer>
-      <div class="Logo-container mb-6">
-        <div class="Fill-1">
+      <div class="logo-container flex flex-row items-center justify-between mb-6">
+        <div class="logo-icon">
           <img src="./images/fill-1.svg" alt="logo icon of MotorCortex" />
         </div>
-        <div class="Fill-2">
+        <div class="logo-text">
           <img src="./images/fill-2.svg" alt="logo text of MotorCortex" />
         </div>
       </div>
-      <nav>
+      <nav class="flex flex-row justify-between">
         <ul class="list-none text-left p-0">
-          <li class="mb-4"><a>DOCUMENTATION</a></li>
-          <li class="mb-4"><a>EXAMPLES</a></li>
-          <li class="mb-4"><a>LIBRARY</a></li>
-          <li class="mb-8"><a>GITHUB</a></li>
+          <li class="mr-4"><a>DOCUMENTATION</a></li>
+          <li class="mr-4"><a>EXAMPLES</a></li>
+          <li class="mr-4"><a>LIBRARY</a></li>
+          <li><a>GITHUB</a></li>
+        </ul>
+        <ul>
           <li><a>MIT-LICENCE</a></li>
         </ul>
       </nav>
