@@ -275,35 +275,22 @@ nav ul li a {
   color: var(--purpley-pink);
 }
 
-.Building-a-strong-an {
-  width: 150px;
-  height: 162px;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: right;
+.details-title {
   color: var(--blue-dark);
 }
 
-.Details-section a {
-  width: 272px;
-  height: 64px;
-  border-radius: 31.5px;
+.details-section a {
   box-shadow: 0 0 27px 0 rgba(37, 32, 86, 0.2);
-  background-color: #ffffff;
 }
 
-.Be-a-part-of-the-com {
-  width: 251px;
-  height: 36px;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
+.comunity-github-link-text {
   color: #225fb1;
 }
 
-/* .Created-section img {
-  margin: ;
-} */
+.detail-items>div>span:first-of-type {
+  background-color: #2e3033;
+}
+
 
 .Created-with {
   width: 109px;
