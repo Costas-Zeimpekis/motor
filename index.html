@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <title>MotorCortex</title>
-  </head>
-  <body>
-    <aside id="sideBar" class="side-bar w-screen h-screen absolute justify-center items-center z-10 hidden">
-      <nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>MotorCortex</title>
+</head>
+
+<body>
+  <aside id="sideBar" class="side-bar w-screen h-screen absolute justify-center items-center z-10 hidden">
+    <nav>
       <ul class="list-none text-center p-0">
         <li class="mb-8"><a>DOCUMENTATION</a></li>
         <li class="mb-8"><a>EXAMPLES</a></li>
@@ -23,84 +22,91 @@
         <li><a>MIT-LICENCE</a></li>
       </ul>
     </nav>
-    </aside>
-    <div class="container m-auto py-4 px-6">
-      <header class="main-header flex justify-between h-6 mb-10">
-        <div class="logo-container flex items-center">
-          <div class="logo-icon mr-4">
-            <img src="./images/fill-1.svg" alt="logo icon of MotorCortex" />
-          </div>
-          <div class="logo-text h-4">
-            <img src="./images/fill-2.svg" alt="logo text of MotorCortex" />
+  </aside>
+  <div class="container m-auto py-4 px-6">
+    <header class="main-header flex justify-between h-6 mb-10">
+      <div class="logo-container flex items-center">
+        <div class="logo-icon mr-4">
+          <img src="./images/fill-1.svg" alt="logo icon of MotorCortex" />
+        </div>
+        <div class="logo-text h-4">
+          <img src="./images/fill-2.svg" alt="logo text of MotorCortex" />
+        </div>
+      </div>
+      <nav class="h-4">
+        <button class="burger z-20 relative" onclick="sideMenuShowHandler()">
+          <img id="imgShowSideBar" src="images/burger-close.svg" />
+        </button>
+        <ul class="list-none text-center sm:hidden md:block list-none p-0">
+          <li class="inline-block"><a>DOCUMENTATION</a></li>
+          <li class="inline-block"><a>EXAMPLES</a></li>
+          <li class="inline-block"><a>LIBRARY</a></li>
+          <li class="inline-block"><a>GITHUB</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="mb-24">
+      <section class="animation-section flex flex-wrap justify-center items-center mb-10">
+        <div class="animation-slider flex flex-col items-center xs:mb-10 md:mb-0 order-none md:order-first xl:w-5/12">
+          <img class="mb-6" src="./images/space.jpg" alt="image of space">
+          <div class="slider-container">
+            <input type="range" min="1" max="100" value="50" class="slider">
           </div>
         </div>
-        <nav class="h-4">
-          <button class="burger z-20 relative" onclick="sideMenuShowHandler()">
-            <img id="imgShowSideBar" src="images/burger-close.svg" />
-          </button>
-          <ul class="list-none text-center sm:hidden md:block list-none p-0">
-            <li class="inline-block"><a>DOCUMENTATION</a></li>
-            <li class="inline-block"><a>EXAMPLES</a></li>
-            <li class="inline-block"><a>LIBRARY</a></li>
-            <li class="inline-block"><a>GITHUB</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main class="mb-24">
-        <section class="animation-section flex flex-wrap justify-center items-center mb-10">
-            <div class="animation-slider flex flex-col items-center xs:mb-10 md:mb-0 order-none md:order-first xl:w-5/12">
-                <img class="mb-6" src="./images/space.jpg" alt="image of space">
-                <div class="slider-container">
-                    <input type="range" min="1" max="100" value="50" class="slider">
-                  </div>
-            </div>
-            <div class="animation-text flex flex-col xl:w-7/12 mb-8 order-first md:order-none">
-              <h1 class="animation-title xl:w-full xs:text-xl xl:text-4xl font-bold mb-4">
-                The animation framework
-              </h1>
-              <p class="animation-headline xl:w-full xs:text-sm xl:text-xl font-semibold mb-8">
-                for creative developers and designers that code.
-              </p>
-              <a class="w-48 h-10 bg-white flex justify-center items-center">
-                <span class="github-span w-9/12 h-5 text-sm font-bold">
-                  Check it on GitHub
-                </span>
-              </a>
-            </div>
-        </section>
-        <section class="what-you-can-do-section w-full text-left mb-32">
-          <header class="what-can-you-do-top w-full mb-8">
-              <h2 class="what-you-can-do-title text-3xl font-bold mb-4">What you can do (spoiler: everything)</h2>
-              <hr class="w-48 h-3 m-0">
-          </header>
-          <article class="mb-24">
-            <h3 class="what-can-you-do-article-title w-full text-2xl font-semibold mb-2">
-              Simple syntax, attractively easy to use
-            </h3>
-            <p class="what-can-you-do-article-text text-base font-semibold mb-20">
-              The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd Monitors The Skinny on Lcd MonitorThe Skinny On Lcd Monitors The Skinny on Lcd Monitors
-            </p>
-            <section class="milky-way-section w-11/12 flex ml-auto">
-              <aside class="w-1/5 flex items-center mr-6">
-                <nav>
-                  <ul>
-                    <li class="mb-10"><span>Load Library</span><img src="./images/chevron-right-solid.svg" alt="arrow right icon"></li>
-                    <li class="mb-32"><span>Set the parameters</span><img src="./images/chevron-right-solid.svg" alt="arrow right icon"></li>
-                    <li><span>Load the player</span><img src="./images/chevron-right-solid.svg" alt="arrow right icon"></li>
-                  </ul>
-                </nav>
-              </aside>
-              <div class="milky-way-editor-container w-11/12 flex rounded-lg">
-                  <div class="milky-way-img-container w-7/12 flex justify-center items-center xs:order-none md:order-1 rounded-r-lg">
-                      <img class="milky-way-img" src="./images/milky-way.svg" alt="milky way svg">
-                    </div>
-                    <div class="milky-way-editor w-5/2 text-white xs:order-1 md:order-none h-full p-4 pr-0">
-                        <div class="tabs mb-6">
-                            <button class="w-20 h-8 bg-white rounded-lg"><span class="h-4 text-sm text-gray-800 font-semibold text-black">Vanilla JS</span></button>
-                            <button class="w-20 h-8  rounded-lg mr-4"><span class="h-4 text-sm font-semibold text-white">React</span></button>
-                        </div>
-                        <div id="vanillaJS" class="tabcontent w-11/12 overflow-auto ml-8">
-                            <pre class="h-full text-sm text-teal-500 mr-2">
+        <div class="animation-text flex flex-col xl:w-7/12 mb-8 order-first md:order-none">
+          <h1 class="animation-title xl:w-full xs:text-xl xl:text-4xl font-bold mb-4">
+            The animation framework
+          </h1>
+          <p class="animation-headline xl:w-full xs:text-sm xl:text-xl font-semibold mb-8">
+            for creative developers and designers that code.
+          </p>
+          <a class="w-48 h-10 bg-white flex justify-center items-center">
+            <span class="github-span w-9/12 h-5 text-sm font-bold">
+              Check it on GitHub
+            </span>
+          </a>
+        </div>
+      </section>
+      <section class="what-you-can-do-section w-full text-left mb-32">
+        <header class="what-can-you-do-top w-full mb-8">
+          <h2 class="what-you-can-do-title text-3xl font-bold mb-4">What you can do (spoiler: everything)</h2>
+          <hr class="w-48 h-3 m-0">
+        </header>
+        <article class="mb-24">
+          <h3 class="what-can-you-do-article-title w-full text-2xl font-semibold mb-2">
+            Simple syntax, attractively easy to use
+          </h3>
+          <p class="what-can-you-do-article-text text-base font-semibold mb-20">
+            The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd Monitors The Skinny on Lcd MonitorThe
+            Skinny On Lcd Monitors The Skinny on Lcd Monitors
+          </p>
+          <section class="milky-way-section w-11/12 flex ml-auto">
+            <aside class="w-1/5 flex items-center mr-6">
+              <nav>
+                <ul>
+                  <li class="mb-10"><span>Load Library</span><img src="./images/chevron-right-solid.svg"
+                      alt="arrow right icon"></li>
+                  <li class="mb-32"><span>Set the parameters</span><img src="./images/chevron-right-solid.svg"
+                      alt="arrow right icon"></li>
+                  <li><span>Load the player</span><img src="./images/chevron-right-solid.svg" alt="arrow right icon">
+                  </li>
+                </ul>
+              </nav>
+            </aside>
+            <div class="milky-way-editor-container w-11/12 flex rounded-lg">
+              <div
+                class="milky-way-img-container w-7/12 flex justify-center items-center xs:order-none md:order-1 rounded-r-lg">
+                <img class="milky-way-img" src="./images/milky-way.svg" alt="milky way svg">
+              </div>
+              <div class="milky-way-editor w-5/2 text-white xs:order-1 md:order-none h-full p-4 pr-0">
+                <div class="tabs mb-6">
+                  <button class="w-20 h-8 bg-white rounded-lg"><span
+                      class="h-4 text-sm text-gray-800 font-semibold text-black">Vanilla JS</span></button>
+                  <button class="w-20 h-8  rounded-lg mr-4"><span
+                      class="h-4 text-sm font-semibold text-white">React</span></button>
+                </div>
+                <div id="vanillaJS" class="tabcontent w-11/12 overflow-auto ml-8">
+                  <pre class="h-full text-sm text-teal-500 mr-2">
 componentDidMount() { 
   axios.get('https://newsapi.org/v1/sources')
   .then(res => {
@@ -125,36 +131,39 @@ componentDidMount() {
       });
       };                                        
                             </pre>
-                          </div>
-                      <button class="tap-btn flex text-white md:hidden">
-                          <span class="tap-text">
-                            Tap to se how it is coded
-                          </span>
-                          <img src="./images/chevron-left-solid.svg" alt="">
-                      </button>
-                    </div>
+                </div>
+                <button class="tap-btn flex text-white md:hidden">
+                  <span class="tap-text">
+                    Tap to se how it is coded
+                  </span>
+                  <img src="./images/chevron-left-solid.svg" alt="">
+                </button>
               </div>
-            </section>
-          </article>
-          <article class="mb-24">
-              <h3 class="runtime-control-article-title w-full text-2xl font-semibold mb-2">
-                Runtime Constrol, Sequenncing Tools
-              </h3>
-              <p class="runtime-control-article-text text-base font-semibold mb-20">
-                The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd Monitors The Skinny on Lcd MonitorThe Skinny On Lcd Monitors The Skinny on Lcd Monitor 
-              </p>
-              <section class="planet-earth-section w-11/12 flex">
-                  <div class="planet-earth-editor-container w-11/12 flex rounded-lg mr-auto">
-                    <div class="planet-earth-img-container w-7/12 flex justify-center items-center rounded-l-lg">
-                      <img class="planet-earth-img" src="./images/planet-earth.svg" alt="planet earth svg image">
-                    </div>
-                    <div class="planet-earth-editor w-5/2 text-white h-full p-4 pr-0">
-                      <div class="tabs mb-6">
-                          <button class="w-20 h-8 bg-white rounded-lg"><span class="h-4 text-sm text-gray-800 font-semibold text-black">Vanilla JS</span></button>
-                          <button class="w-20 h-8  rounded-lg mr-4"><span class="h-4 text-sm font-semibold text-white">React</span></button>
-                      </div>
-                      <div id="vanillaJS" class="tabcontent w-11/12 overflow-auto ml-8">
-                          <pre class="h-full text-sm text-teal-500 mr-2">
+            </div>
+          </section>
+        </article>
+        <article class="mb-24">
+          <h3 class="runtime-control-article-title w-full text-2xl font-semibold mb-2">
+            Runtime Constrol, Sequenncing Tools
+          </h3>
+          <p class="runtime-control-article-text text-base font-semibold mb-20">
+            The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd Monitors The Skinny on Lcd MonitorThe
+            Skinny On Lcd Monitors The Skinny on Lcd Monitor
+          </p>
+          <section class="planet-earth-section w-11/12 flex">
+            <div class="planet-earth-editor-container w-11/12 flex rounded-lg mr-auto">
+              <div class="planet-earth-img-container w-7/12 flex justify-center items-center rounded-l-lg">
+                <img class="planet-earth-img" src="./images/planet-earth.svg" alt="planet earth svg image">
+              </div>
+              <div class="planet-earth-editor w-5/2 text-white h-full p-4 pr-0">
+                <div class="tabs mb-6">
+                  <button class="w-20 h-8 bg-white rounded-lg"><span
+                      class="h-4 text-sm text-gray-800 font-semibold text-black">Vanilla JS</span></button>
+                  <button class="w-20 h-8  rounded-lg mr-4"><span
+                      class="h-4 text-sm font-semibold text-white">React</span></button>
+                </div>
+                <div id="vanillaJS" class="tabcontent w-11/12 overflow-auto ml-8">
+                  <pre class="h-full text-sm text-teal-500 mr-2">
 componentDidMount() { 
 axios.get('https://newsapi.org/v1/sources')
 .then(res => {
@@ -179,33 +188,37 @@ axios.get('https://newsapi.org/v1/sources')
     });
     };                                        
                           </pre>
-                        </div>
-                      <button class="tap-btn flex text-white md:hidden">
-                          <span class="tap-text">Tap to se how it is coded</span>
-                          <img src="./images/chevron-left-solid.svg" alt="">
-                        </button>
-                    </div> 
-              </section>
-            </article>
-            <article>
-                <h3 class="powerful-api-article-title w-full text-2xl font-semibold mb-2">
-                  Powerfull API, Smooth Animations, Full Compatibility
-                </h3>
-                <p class="powerful-api-article-text text-base font-semibold mb-20">
-                  The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd Monitors The Skinny on Lcd MonitorThe Skinny On Lcd Monitors The Skinny on Lcd Monitor 
-                </p>
-                <section class="space-section  w-11/12 flex ml-auto">
-                  <div class="space-editor-container w-11/12 flex rounded-lg ml-auto">
-                    <div class="space-img-comtainer w-7/12 flex justify-center items-center xs:order-none md:order-1 rounded-r-lg">
-                        <img class="space-img" src="./images/14.png" alt="space svg image">
-                      </div>
-                      <div class="space-editor w-5/2 text-white xs:order-1 md:order-none h-full p-4 pr-0">
-                        <div class="tabs mb-6">
-                            <button class="w-20 h-8 bg-white rounded-lg"><span class="h-4 text-sm text-gray-800 font-semibold text-black">Vanilla JS</span></button>
-                            <button class="w-20 h-8  rounded-lg mr-4"><span class="h-4 text-sm font-semibold text-white">React</span></button>
-                        </div>
-                        <div id="vanillaJS" class="tabcontent w-11/12 overflow-auto ml-8">
-                            <pre class="h-full text-sm text-teal-500 mr-2">
+                </div>
+                <button class="tap-btn flex text-white md:hidden">
+                  <span class="tap-text">Tap to se how it is coded</span>
+                  <img src="./images/chevron-left-solid.svg" alt="">
+                </button>
+              </div>
+          </section>
+        </article>
+        <article>
+          <h3 class="powerful-api-article-title w-full text-2xl font-semibold mb-2">
+            Powerfull API, Smooth Animations, Full Compatibility
+          </h3>
+          <p class="powerful-api-article-text text-base font-semibold mb-20">
+            The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd Monitors The Skinny on Lcd MonitorThe
+            Skinny On Lcd Monitors The Skinny on Lcd Monitor
+          </p>
+          <section class="space-section  w-11/12 flex ml-auto">
+            <div class="space-editor-container w-11/12 flex rounded-lg ml-auto">
+              <div
+                class="space-img-comtainer w-7/12 flex justify-center items-center xs:order-none md:order-1 rounded-r-lg">
+                <img class="space-img" src="./images/14.png" alt="space svg image">
+              </div>
+              <div class="space-editor w-5/2 text-white xs:order-1 md:order-none h-full p-4 pr-0">
+                <div class="tabs mb-6">
+                  <button class="w-20 h-8 bg-white rounded-lg"><span
+                      class="h-4 text-sm text-gray-800 font-semibold text-black">Vanilla JS</span></button>
+                  <button class="w-20 h-8  rounded-lg mr-4"><span
+                      class="h-4 text-sm font-semibold text-white">React</span></button>
+                </div>
+                <div id="vanillaJS" class="tabcontent w-11/12 overflow-auto ml-8">
+                  <pre class="h-full text-sm text-teal-500 mr-2">
   componentDidMount() { 
   axios.get('https://newsapi.org/v1/sources')
   .then(res => {
@@ -230,117 +243,189 @@ axios.get('https://newsapi.org/v1/sources')
       });
       };                                        
                             </pre>
-                          </div>
-                        <button class="tap-btm flex text-white md:hidden">
-                            <span class="tap-text">Tap to se how it is coded</span>
-                            <img src="./images/chevron-left-solid.svg" alt="">
-                          </button>
-                      </div> 
-                </section>
-              </article>
-        </section>
-        <section class="explore-section flex flex-col items-end">
-          <h2 class="explore-section-title w-5/12 text-right font-bold text-3xl leading-snug mb-48">
-            Explore galaxies of 'ready to use' animations and pluginfs
-          </h2>
-          <div class="w-full flex flex-row justify-between items-center bg-blue-800">
-            <div class="w-6/12 flex flex-col items-start">
-                <h3 class="browse-librady-title w-full text-4xl text-white font-bold">Browse the Libaray</h3>
-                <hr class="m-0 mb-6 w-6/12 h-2 bg-white mb-6">
-                <p class="browse-librady-headline w-11/12 font-semibold text-base text-white">Get 'ready to use' animations clips, functional plugins to the MotorCortex core and upload your work to the community</p>
-            </div>
-          <a>
-            <span class="Check-the-animations">
+                </div>
+                <button class="tap-btm flex text-white md:hidden">
+                  <span class="tap-text">Tap to se how it is coded</span>
+                  <img src="./images/chevron-left-solid.svg" alt="">
+                </button>
+              </div>
+          </section>
+        </article>
+      </section>
+      <section class="explore-section flex flex-col items-end mb-24">
+        <h2 class="explore-section-title w-5/12 text-right font-bold text-3xl leading-snug mb-48">
+          Explore galaxies of 'ready to use' animations and pluginfs
+        </h2>
+        <div class="w-full flex flex-row justify-between items-center bg-blue-800">
+          <div class="w-6/12 flex flex-col items-start">
+            <h3 class="browse-librady-title w-full text-4xl text-white font-bold">Browse the Libaray</h3>
+            <hr class="m-0 mb-6 w-6/12 h-2 bg-white mb-6">
+            <p class="browse-librady-headline w-11/12 font-semibold text-base text-white">Get 'ready to use' animations
+              clips, functional plugins to the MotorCortex core and upload your work to the community</p>
+          </div>
+          <a class="flex justify-center items-center rounded-full">
+            <span class="check-the-animations-link text-white text-sm font-bold">
               Check the animations library
             </span>
           </a>
         </div>
-        </section>
-        <section>
-          Slider
-        </section>
-        <section class="Whats-different-section flex justify-center mb-4">
-          <header class="flex flex-wrap justify-start mb-16">
-          <h2 class="Whats-different-wit mb-4">What's the different with MoterCortex?</h2>
-          <hr/>
+      </section>
+      <section class="build-strong-basis-section w-8/12 flex flex-col items-center m-auto">
+        <header class="mb-20">
+          <h2 class="build-strong-basis-title text-4xl font-bold">Built in strong basis</h2>
+          <hr class="w-6/12 h-4 rounded-full bg-gray-500">
         </header>
-          <article class="w-full flex justify-between mb-8">
-            <h4 class="Open-source-Communi">Open Source: Community base, free to use forever</h4>
-            <div>
-              <img src="./images/group.svg" alt="">
-            </div>
-          </article>
-          <article class="w-full flex justify-between mb-8">
-              <h4 class="Plug-in-oriented-des">Plug-in oriented design. The animation framework that collaborates with all librares</h4>
-              <div>
-                <img src="./images/group.svg" alt="">
-              </div>
-            </article>
-            <article class="w-full flex justify-between mb-8">
-                <h4 class="Controls-demonstra">Controls & demonstrates conflicts. Easy inpesctio using a web based viewer.</h4>
-                <div>
-                  <img src="./images/group.svg" alt="">
-                </div>
-              </article>
-              <a class="flex justify-center items-center"><span class="Check-the-Motorcorte">Check the Motorcortex Player</span></a>
+        <section class="build-strong-basis-section-inner w-full flex flex-row justify-between">
+          <div class="self-center">
+            <figure class="flex flex-col justify-center items-center bg-white mb-16 p-6">
+              <img src="./images/unplugged.svg" alt="unplugged svg icon">
+              <figcaption>
+                <h5>Compatibility</h5>
+                <p class="text-center">
+                  Cross Browser & Device CompatibilitySmooth animations on both mobiolea nd desktop
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="flex flex-col justify-center items-center bg-white p-6">
+              <img src="./images/flask-1.svg" alt="flask svg icon">
+              <figcaption>
+                <h5>Tested</h5>
+                <p class="text-center w-5/12">
+                  Error-Free
+                  Bug-Free
+                  Expandable
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="self-start">
+            <figure class="flex flex-col justify-center items-center bg-white mb-16 p-6">
+              <img src="./images//astronaut-1.svg" alt="austronaut helmet svg icon">
+              <figcaption>
+                <h5>Support</h5>
+                <p>A community behind the project, ready to solve all your future questions</p>
+              </figcaption>
+            </figure>
+            <figure class="flex flex-col justify-center items-center bg-white p-6">
+              <img src="./images/game-controller.svg" alt="game controler svg icon">
+              <figcaption>
+                <h5>Run-tim Control</h5>
+                <p>Control the speed of the simulation, change the format of the clock display and many many other
+                  parameters</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="self-end">
+            <figure class="flex flex-col justify-center items-center bg-white mb-16 p-6">
+              <img src="./images/feather.svg" alt="feather svg icon">
+              <figcaption>
+                <h5>Lightweight</h5>
+                <p>Small memory isage, easy syntac and a powerfull Api</p>
+              </figcaption>
+            </figure>
+            <figure class="flex flex-col justify-center items-center bg-white p-6">
+              <img src="./images/performance.svg" alt="stars svg icon">
+              <figcaption>
+                <h5>Perfomance</h5>
+                <p>Create smooth animations get the ideal perfomance for anything you will nedd</p>
+              </figcaption>
+            </figure>
+          </div>
         </section>
-          <section class="Details-section flex flex-wrap mb-32">
-            <div class="flex mb-10">
+      </section>
+      <section class="Whats-different-section flex justify-center mb-4">
+        <header class="flex flex-wrap justify-start mb-16">
+          <h2 class="Whats-different-wit mb-4">What's the different with MoterCortex?</h2>
+          <hr />
+        </header>
+        <article class="w-full flex justify-between mb-8">
+          <h4 class="Open-source-Communi">Open Source: Community base, free to use forever</h4>
+          <div>
+            <img src="./images/group.svg" alt="">
+          </div>
+        </article>
+        <article class="w-full flex justify-between mb-8">
+          <h4 class="Plug-in-oriented-des">Plug-in oriented design. The animation framework that collaborates with all
+            librares</h4>
+          <div>
+            <img src="./images/group.svg" alt="">
+          </div>
+        </article>
+        <article class="w-full flex justify-between mb-8">
+          <h4 class="Controls-demonstra">Controls & demonstrates conflicts. Easy inpesctio using a web based viewer.
+          </h4>
+          <div>
+            <img src="./images/group.svg" alt="">
+          </div>
+        </article>
+        <a class="flex justify-center items-center"><span class="Check-the-Motorcorte">Check the Motorcortex
+            Player</span></a>
+      </section>
+      <section class="Details-section flex flex-wrap mb-32">
+        <div class="flex mb-10">
           <h4 class="Building-a-strong-an mr-2">
             Building a strong and active opensource project
           </h4>
           <div class="text-white ml-2">
             <div class="mb-4">
-              <span class="bg-gray-700 py-1 pl-1 rounded">Open Source <span class="bg-teal-500 p-1 rounded-r">&#9829;</span></span>
+              <span class="bg-gray-700 py-1 pl-1 rounded">Open Source <span
+                  class="bg-teal-500 p-1 rounded-r">&#9829;</span></span>
             </div>
             <div class="mb-4 rounded-sm">
-              <span class="bg-gray-700 py-1 pl-1 rounded">build <span class="bg-green-600 p-1 rounded-r">passing</span></span>
+              <span class="bg-gray-700 py-1 pl-1 rounded">build <span
+                  class="bg-green-600 p-1 rounded-r">passing</span></span>
             </div>
             <div class="mb-4 rounded-sm">
-              <span class="bg-gray-700 py-1 pl-1 rounded">version <span class="bg-blue-600 p-1 rounded-r">1.2.3</span></span>
+              <span class="bg-gray-700 py-1 pl-1 rounded">version <span
+                  class="bg-blue-600 p-1 rounded-r">1.2.3</span></span>
             </div>
             <div class="mb-4 rounded-sm">
-              <span class="bg-gray-700 py-1 pl-1 rounded">licence <span class="bg-blue-600 p-1 rounded-r">MIT</span></span>
+              <span class="bg-gray-700 py-1 pl-1 rounded">licence <span
+                  class="bg-blue-600 p-1 rounded-r">MIT</span></span>
             </div>
             <div class="mb-4 rounded-sm">
-              <span class="bg-gray-700 py-1 pl-1 rounded">codecov <span class="bg-green-600 p-1 rounded-r">99%</span></span>
-              </div>
+              <span class="bg-gray-700 py-1 pl-1 rounded">codecov <span
+                  class="bg-green-600 p-1 rounded-r">99%</span></span>
+            </div>
           </div>
         </div>
-          <a class="flex justify-center items-center"><span class="Be-a-part-of-the-com ">Be part of the community on Github</span></a>
-        </section>
-        <section class="Created-section">
-          <h4 class="flex justify-start items-center mb-10">
-            <span class="Created-with">Created with</span>          <img class="mx-1" src="./images/group-11.jpg" alt="love icon"> 
-            <span class="by">by</span>
-            <img class="mx-1" src="./images/bitmap.png" alt="Kiss Button Logo">
-          </h4>
-          <p class="OpenSource-is-on-our">
-          OpenSource is on our DNA and part of our identity. We believe in OpenSource and we give back to the community by contributing ideas, tools and libraries
-          </p>
-        </section>
-      </main>
-      <footer>
-          <div class="Logo-container mb-6">
-              <div class="Fill-1">
-                <img src="./images/fill-1.svg" alt="logo icon of MotorCortex" />
-              </div>
-              <div class="Fill-2">
-                <img src="./images/fill-2.svg" alt="logo text of MotorCortex" />
-              </div>
-            </div>
-          <nav>
-              <ul class="list-none text-left p-0">
-                  <li class="mb-4"><a>DOCUMENTATION</a></li>
-                  <li class="mb-4"><a>EXAMPLES</a></li>
-                  <li class="mb-4"><a>LIBRARY</a></li>
-                  <li class="mb-8"><a>GITHUB</a></li>
-                  <li ><a>MIT-LICENCE</a></li>
-                </ul>
-              </nav>
-      </footer>
-    </div>
-    <script src="./index.js"></script>
-    </script>
-  </body>
+        <a class="flex justify-center items-center"><span class="Be-a-part-of-the-com ">Be part of the community on
+            Github</span></a>
+      </section>
+      <section class="Created-section">
+        <h4 class="flex justify-start items-center mb-10">
+          <span class="Created-with">Created with</span> <img class="mx-1" src="./images/group-11.jpg" alt="love icon">
+          <span class="by">by</span>
+          <img class="mx-1" src="./images/bitmap.png" alt="Kiss Button Logo">
+        </h4>
+        <p class="OpenSource-is-on-our">
+          OpenSource is on our DNA and part of our identity. We believe in OpenSource and we give back to the community
+          by contributing ideas, tools and libraries
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="Logo-container mb-6">
+        <div class="Fill-1">
+          <img src="./images/fill-1.svg" alt="logo icon of MotorCortex" />
+        </div>
+        <div class="Fill-2">
+          <img src="./images/fill-2.svg" alt="logo text of MotorCortex" />
+        </div>
+      </div>
+      <nav>
+        <ul class="list-none text-left p-0">
+          <li class="mb-4"><a>DOCUMENTATION</a></li>
+          <li class="mb-4"><a>EXAMPLES</a></li>
+          <li class="mb-4"><a>LIBRARY</a></li>
+          <li class="mb-8"><a>GITHUB</a></li>
+          <li><a>MIT-LICENCE</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+  <script src="./index.js"></script>
+  </script>
+</body>
+
 </html>

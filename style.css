@@ -1,12 +1,14 @@
-* {
-  box-sizing: border-box;
-}
-
 :root {
   --purpley-pink: #c445ad;
   --blue-dark: #252056;
   --font-family: 'Montserrat', sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
 
 .side-bar {
   background-color: var(--blue-dark);
@@ -20,13 +22,7 @@
 .side-bar ul li a {
   width: 135px;
   height: 18px;
-  font-family: var(--font-family);
   font-size: 14px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #ffffff;
 }
 
@@ -39,7 +35,6 @@ header nav {
 }
 
 nav ul li a {
-  font-family: var(--font-family);
   font-size: 14px;
   font-weight: bold;
   color: var(--blue-dark);
@@ -72,12 +67,10 @@ nav ul li a {
 }
 
 .animation-title {
-  font-family: var(--font-family);
   color: var(--blue-dark);
 }
 
 .animation-headline {
-  font-family: var(--font-family);
   color: var(--blue-dark);
 }
 
@@ -87,12 +80,10 @@ nav ul li a {
 }
 
 .github-span {
-  font-family: var(--font-family);
   color: var(--purpley-pink);
 }
 
 .what-you-can-do-title {
-  font-family: var(--font-family);
   color: var(--blue-dark);
 }
 
@@ -105,14 +96,12 @@ nav ul li a {
 .what-can-you-do-article-title,
 .runtime-control-article-title,
 .powerful-api-article-title {
-  font-family: var(--font-family);
   color: var(--blue-dark);
 }
 
 .what-can-you-do-article-text,
 .runtime-control-article-text,
 .powerful-api-article-text {
-  font-family: var(--font-family);
   color: var(--blue-dark);
 }
 
@@ -126,7 +115,6 @@ nav ul li a {
   height: 18px;
   display: flex;
   justify-content: flex-end;
-  font-family: var(--font-family);
   font-size: 16px;
   font-weight: bold;
   color: var(--blue-dark);
@@ -170,27 +158,21 @@ nav ul li a {
 }
 
 .milky-way-img-container {
-  background-image: -webkit-linear-gradient(
-    -14deg,
-    transparent 16%,
-    #ffffff 16%
-  );
+  background-image: -webkit-linear-gradient(-14deg,
+      transparent 16%,
+      #ffffff 16%);
 }
 
 .planet-earth-img-container {
-  background-image: -webkit-linear-gradient(
-    -9deg,
-    #ffffff 90%,
-    transparent 90%
-  );
+  background-image: -webkit-linear-gradient(-9deg,
+      #ffffff 90%,
+      transparent 90%);
 }
 
 .space-img-comtainer {
-  background-image: -webkit-linear-gradient(
-    80deg,
-    transparent 12%,
-    #1d1e21 10%
-  );
+  background-image: -webkit-linear-gradient(80deg,
+      transparent 12%,
+      #1d1e21 10%);
 }
 
 .space-img {
@@ -206,75 +188,79 @@ nav ul li a {
   object-fit: contain;
 }
 
-.tap-text {
-  font-family: var(--font-family);
-}
-
 .explore-section-title {
-  font-family: var(--font-family);
   color: var(--blue-dark);
-}
-
-.browse-librady-title {
-  font-family: var(--font-family);
 }
 
 .explore-section hr {
   border-radius: 13.5px;
 }
 
-.t {
-  width: 244px;
-  height: 54px;
-  font-family: var(--font-family);
-  font-size: 14px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #ffffff;
-}
-
 .explore-section a {
   width: 272px;
   height: 52px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 31.5px;
   box-shadow: 0 0 8px -24px rgba(37, 32, 86, 0.2);
   background-color: var(--purpley-pink);
 }
 
-.Check-the-animations {
-  width: 213px;
-  height: 18px;
-  font-family: var(--font-family);
-  font-size: 14px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
+.build-strong-basis-title {
+  color: var(--blue-dark);
+}
+
+.build-strong-basis-section hr {
+  background-color: #d7d7d7;
+}
+
+.build-strong-basis-section figure {
+  height: 314px;
+  border-radius: 26px;
+  box-shadow: 0 1px 53px 5px rgba(37, 32, 85, 0.21);
+}
+
+.build-strong-basis-section-inner {
+  width: 901px;
+  height: 850px;
+}
+
+.build-strong-basis-section-inner>div {
+  width: 257px;
+}
+
+.build-strong-basis-section-inner img {
+  margin-bottom: 24px;
+}
+
+.build-strong-basis-section-inner figcaption {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.build-strong-basis-section-inner figcaption h5 {
+  font-size: 16px;
+  font-weight: 600;
   text-align: center;
-  color: #ffffff;
+  color: var(--blue-dark);
+  margin-bottom: 16px;
+}
+
+.build-strong-basis-section-inner figcaption p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #656565;
 }
 
 .Whats-different-section {
-  background: #252055;
+  background: var(--blue-dark);
 }
 
 .Whats-different-wit {
   width: 272px;
   height: 58px;
-  font-family: var(--font-family);
   font-size: 24px;
   font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #ffffff;
 }
 
@@ -290,13 +276,7 @@ nav ul li a {
 .Plug-in-oriented-des,
 .Controls-demonstra {
   width: 177px;
-  font-family: var(--font-family);
   font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #ffffff;
 }
 
@@ -311,13 +291,8 @@ nav ul li a {
 .Check-the-Motorcorte {
   width: 239px;
   height: 18px;
-  font-family: var(--font-family);
   font-size: 14px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: center;
   color: var(--purpley-pink);
 }
@@ -325,13 +300,8 @@ nav ul li a {
 .Building-a-strong-an {
   width: 150px;
   height: 162px;
-  font-family: var(--font-family);
   font-size: 24px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: right;
   color: var(--blue-dark);
 }
@@ -347,13 +317,8 @@ nav ul li a {
 .Be-a-part-of-the-com {
   width: 251px;
   height: 36px;
-  font-family: var(--font-family);
   font-size: 14px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: center;
   color: #225fb1;
 }
@@ -473,6 +438,7 @@ nav ul li a {
   .what-can-you-do-article-text {
     width: 640px;
   }
+
   .runtime-control-article-text,
   .powerful-api-article-text {
     width: 590px;
