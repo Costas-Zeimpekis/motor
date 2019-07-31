@@ -372,7 +372,7 @@ footer nav ul li {
 
 #waveDiffernt {
   position: relative;
-  height: 1000px;
+  height: 924px;
   width: 131vw;
   background: #322e6f;
   bottom: -50%;
@@ -387,7 +387,7 @@ footer nav ul li {
   position: absolute;
   border-radius: 37% 63% 26% 74% / 65% 66% 34% 35%;
   width: 131vw;
-  height: 1000px;
+  height: 924px;
   background-color: #2d2965;
   z-index: 1;
   bottom: -31px;
@@ -400,7 +400,7 @@ footer nav ul li {
   position: absolute;
   border-radius: 37% 63% 26% 74% / 65% 66% 34% 35%;
   width: 131vw;
-  height: 1000px;
+  height: 924px;
   background-color: #252254;
   bottom: -63px;
   left: 29px;
