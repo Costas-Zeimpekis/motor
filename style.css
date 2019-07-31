@@ -280,7 +280,7 @@ nav ul li a {
   box-shadow: 0 0 27px 0 rgba(37, 32, 86, 0.2);
 }
 
-.Check-the-Motorcorte {
+.check-the-motorcorte-link-text {
   width: 239px;
   height: 18px;
   font-size: 14px;
@@ -297,7 +297,7 @@ nav ul li a {
   box-shadow: 0 0 27px 0 rgba(37, 32, 86, 0.2);
 }
 
-.comunity-github-link-text {
+.community-github-link-text {
   color: #225fb1;
 }
 
@@ -364,13 +364,13 @@ footer nav ul li {
   background-color: #f7f7f9;
 }
 
-.wave-differnt-container {
+.wave-different-container {
   position: absolute;
   top: 500vh;
   left: 0;
 }
 
-#waveDiffernt {
+#waveDifferent {
   position: relative;
   height: 924px;
   width: 131vw;
@@ -381,7 +381,7 @@ footer nav ul li {
   border-radius: 37% 63% 26% 74% / 65% 66% 34% 35%;
 }
 
-#waveDiffernt:before {
+#waveDifferent:before {
   content: '';
   display: block;
   position: absolute;
@@ -394,7 +394,7 @@ footer nav ul li {
   left: 20px;
 }
 
-#waveDiffernt:after {
+#waveDifferent:after {
   content: '';
   display: block;
   position: absolute;
