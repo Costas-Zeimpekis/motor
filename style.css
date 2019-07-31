@@ -330,12 +330,12 @@ footer nav ul li {
   display: block;
   position: absolute;
   border-radius: 100% 0% 26% 74% / 18% 15% 85% 82%;
-  width: 2075px;
-  height: 719px;
+  width: 2074px;
+  height: 726px;
   background-color: white;
   top: -2735px;
   z-index: 2;
-  right: 0;
+  right: -53px;
 }
 
 
@@ -343,11 +343,11 @@ footer nav ul li {
   content: '';
   display: block;
   position: absolute;
-  border-radius: 100% 0% 31% 69% / 74% 83% 17% 26%;
-  width: 2219px;
-  height: 2672px;
+  border-radius: 100% 0% 25% 75% / 65% 61% 39% 35%;
+  width: 2490px;
+  height: 2686px;
   top: -2339px;
-  right: 0;
+  right: -95px;
   z-index: 1;
   background-color: #f7f7f9;
 }
