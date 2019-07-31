@@ -5,13 +5,13 @@
   --font-family: 'Montserrat', sans-serif;
 }
 
+.dark-blue {
+  color: var(--blue-dark);
+}
+
 * {
   box-sizing: border-box;
   font-family: var(--font-family);
-}
-
-body {
-  position: relative;
 }
 
 .side-bar {
@@ -69,16 +69,8 @@ nav ul li a {
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
 }
 
-.animation-slider > img {
+.animation-slider>img {
   height: 380px;
-}
-
-.animation-title {
-  color: var(--blue-dark);
-}
-
-.animation-headline {
-  color: var(--blue-dark);
 }
 
 .animation-text a {
@@ -90,30 +82,12 @@ nav ul li a {
   color: var(--purpley-pink);
 }
 
-.what-you-can-do-title {
-  color: var(--blue-dark);
-}
-
 .what-can-you-do-top hr {
   border-radius: 13.5px;
   background-color: #d7d7d7;
   margin: 0;
 }
 
-.what-can-you-do-article-title,
-.runtime-control-article-title,
-.powerful-api-article-title {
-  color: var(--blue-dark);
-}
-
-.what-can-you-do-article-text,
-.runtime-control-article-text,
-.powerful-api-article-text {
-  color: var(--blue-dark);
-}
-
-.milky-way-section,
-.planet-earth-section,
 .space-section {
   height: 367px;
 }
@@ -131,9 +105,7 @@ nav ul li a {
   margin-right: 24px;
 }
 
-.milky-way-editor-container,
-.planet-earth-editor-container,
-.space-editor-container {
+.editor-color-shadow {
   background-color: #1d1e21;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
@@ -165,27 +137,21 @@ nav ul li a {
 }
 
 .milky-way-img-container {
-  background-image: -webkit-linear-gradient(
-    -14deg,
-    transparent 16%,
-    #ffffff 16%
-  );
+  background-image: -webkit-linear-gradient(-14deg,
+      transparent 16%,
+      #ffffff 16%);
 }
 
 .planet-earth-img-container {
-  background-image: -webkit-linear-gradient(
-    -9deg,
-    #ffffff 90%,
-    transparent 90%
-  );
+  background-image: -webkit-linear-gradient(-9deg,
+      #ffffff 90%,
+      transparent 90%);
 }
 
 .space-img-comtainer {
-  background-image: -webkit-linear-gradient(
-    80deg,
-    transparent 12%,
-    #1d1e21 10%
-  );
+  background-image: -webkit-linear-gradient(80deg,
+      transparent 12%,
+      #1d1e21 10%);
 }
 
 .space-img {
@@ -194,8 +160,7 @@ nav ul li a {
   transform: rotate(90deg);
 }
 
-.milky-way-img,
-.planet-earth-img {
+.editor-img-sizes .planet-earth-img {
   width: 241px;
   height: 235px;
   object-fit: contain;
@@ -240,7 +205,7 @@ nav ul li a {
   height: 850px;
 }
 
-.build-strong-basis-section-inner > div {
+.build-strong-basis-section-inner>div {
   width: 257px;
 }
 
@@ -301,7 +266,7 @@ nav ul li a {
   color: #225fb1;
 }
 
-.detail-items > div > span:first-of-type {
+.detail-items>div>span:first-of-type {
   background-color: #2e3033;
 }
 
@@ -326,6 +291,7 @@ footer nav ul li {
   top: 2736px;
   left: 0;
 }
+
 /* top: 321vh; */
 
 #waveAnimation {
