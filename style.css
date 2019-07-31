@@ -270,10 +270,6 @@ nav ul li a {
   color: var(--brownish-grey);
 }
 
-.whats-different-section {
-  background: var(--blue-dark);
-}
-
 .whats-different-section hr {
   width: 161px;
 }
@@ -370,43 +366,44 @@ footer nav ul li {
 
 .wave-differnt-container {
   position: absolute;
-  top: 452vh;
+  top: 500vh;
   left: 0;
 }
 
 #waveDiffernt {
   position: relative;
   height: 1000px;
-  width: 100vw;
-  background: var(--blue-dark);
+  width: 131vw;
+  background: #322e6f;
   bottom: -50%;
-  left: 0;
+  left: -366px;
   z-index: 0;
+  border-radius: 37% 63% 26% 74% / 65% 66% 34% 35%;
 }
 
 #waveDiffernt:before {
   content: '';
   display: block;
   position: absolute;
-  border-radius: 79% 44% 0 0;
-  width: 130vw;
-  height: 599px;
-  background-color: rgba(50, 46, 111, 0.06);
-  left: -198px;
-  top: -446px;
+  border-radius: 37% 63% 26% 74% / 65% 66% 34% 35%;
+  width: 131vw;
+  height: 1000px;
+  background-color: #2d2965;
   z-index: 1;
+  bottom: -31px;
+  left: 20px;
 }
 
 #waveDiffernt:after {
   content: '';
   display: block;
   position: absolute;
-  border-radius: 92% 15% 0 0;
-  width: 125vw;
-  height: 320px;
-  background-color: rgba(131, 129, 161, 0.32);
-  right: -5px;
-  top: -155px;
+  border-radius: 37% 63% 26% 74% / 65% 66% 34% 35%;
+  width: 131vw;
+  height: 1000px;
+  background-color: #252254;
+  bottom: -63px;
+  left: 29px;
   z-index: 2;
 }
 
