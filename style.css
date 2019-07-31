@@ -79,6 +79,7 @@ nav ul li a {
 }
 
 .github-span {
+  line-height: 56px;
   color: var(--purpley-pink);
 }
 
@@ -171,19 +172,17 @@ nav ul li a {
 }
 
 .explore-section-title {
-  color: var(--blue-dark);
   margin-bottom: 260px;
 }
 
-.explore-section hr {
-  border-radius: 13.5px;
-}
-
 .explore-section a {
-  width: 272px;
-  height: 52px;
+  width: 314px;
   box-shadow: 0 0 8px -24px rgba(37, 32, 86, 0.2);
   background-color: var(--purpley-pink);
+}
+
+.explore-section a span {
+  line-height: 56px;
 }
 
 .build-strong-basis-title {
@@ -240,17 +239,12 @@ nav ul li a {
 }
 
 .whats-different-section a {
-  width: 272px;
-  height: 52px;
+  width: 341px;
   box-shadow: 0 0 27px 0 rgba(37, 32, 86, 0.2);
 }
 
-.check-the-motorcorte-link-text {
-  width: 239px;
-  height: 18px;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
+.whats-different-section a span {
+  line-height: 56px;
   color: var(--purpley-pink);
 }
 
@@ -259,10 +253,12 @@ nav ul li a {
 }
 
 .details-section a {
+  width: 385px;
   box-shadow: 0 0 27px 0 rgba(37, 32, 86, 0.2);
 }
 
-.community-github-link-text {
+.details-section a span {
+  line-height: 56px;
   color: #225fb1;
 }
 
