@@ -432,7 +432,7 @@ footer nav ul li {
   height: 599px;
   background-color: rgba(50, 46, 111, 0.06);
   left: -313px;
-  top: -474px;
+  top: -511px;
   z-index: 1;
 }
 
@@ -442,9 +442,9 @@ footer nav ul li {
   position: absolute;
   border-radius: 68% 32% 91% 9% / 100% 100% 0% 0%;
   width: 125vw;
-  height: 320px;
+  height: 259px;
   background-color: rgba(131, 129, 161, 0.32);
   right: -5px;
-  top: -155px;
+  top: -170px;
   z-index: 2;
 }
