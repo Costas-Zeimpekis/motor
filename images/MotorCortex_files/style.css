@@ -69,10 +69,6 @@ nav ul li a {
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
 }
 
-.animation-slider > img {
-  height: 380px;
-}
-
 .animation-title {
   color: var(--blue-dark);
 }
@@ -207,7 +203,6 @@ nav ul li a {
 
 .explore-section-title {
   color: var(--blue-dark);
-  margin-bottom: 260px;
 }
 
 .explore-section hr {
@@ -327,14 +322,13 @@ footer nav ul li {
 
 .wave-animation-container {
   position: absolute;
-  top: 2736px;
+  top: 321vh;
   left: 0;
 }
-/* top: 321vh; */
 
 #waveAnimation {
   position: relative;
-  height: 880px;
+  height: 100px;
   width: 100vw;
   background: var(--blue-dark);
   bottom: -50%;
@@ -346,26 +340,26 @@ footer nav ul li {
   content: '';
   display: block;
   position: absolute;
-  border-radius: 12% 88% 22% 78% / 0% 0% 100% 100%;
-  width: 158vw;
-  height: 746px;
-  background-color: white;
-  top: -2735px;
-  z-index: 2;
-  right: -252px;
+  border-radius: 79% 44% 0 0;
+  width: 130vw;
+  height: 599px;
+  background-color: rgba(50, 46, 111, 0.06);
+  left: -198px;
+  top: -446px;
+  z-index: 1;
 }
 
 #waveAnimation:after {
   content: '';
   display: block;
   position: absolute;
-  border-radius: 12% 88% 39% 61% / 74% 0% 100% 26%;
-  width: 151vw;
-  height: 2512px;
-  top: -227vh;
-  right: -660px;
-  z-index: 1;
-  background-color: #f7f7f9;
+  border-radius: 92% 15% 0 0;
+  width: 125vw;
+  height: 320px;
+  background-color: rgba(131, 129, 161, 0.32);
+  right: -5px;
+  top: -155px;
+  z-index: 2;
 }
 
 .wave-differnt-container {
