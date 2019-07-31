@@ -177,7 +177,6 @@ nav ul li a {
 
 .explore-section a {
   width: 314px;
-  box-shadow: 0 0 8px -24px rgba(37, 32, 86, 0.2);
   background-color: var(--purpley-pink);
 }
 
@@ -185,15 +184,11 @@ nav ul li a {
   line-height: 56px;
 }
 
-.build-strong-basis-title {
-  color: var(--blue-dark);
-}
-
 .build-strong-basis-section hr {
   background-color: #d7d7d7;
 }
 
-.build-strong-basis-section figure {
+.build-strong-basis-section-inner figure {
   height: 314px;
   border-radius: 26px;
   box-shadow: 0 1px 53px 5px rgba(37, 32, 85, 0.21);
@@ -222,7 +217,6 @@ nav ul li a {
   font-size: 16px;
   font-weight: 600;
   text-align: center;
-  color: var(--blue-dark);
   margin-bottom: 16px;
 }
 
@@ -240,16 +234,11 @@ nav ul li a {
 
 .whats-different-section a {
   width: 341px;
-  box-shadow: 0 0 27px 0 rgba(37, 32, 86, 0.2);
 }
 
 .whats-different-section a span {
   line-height: 56px;
   color: var(--purpley-pink);
-}
-
-.details-title {
-  color: var(--blue-dark);
 }
 
 .details-section a {
