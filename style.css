@@ -271,6 +271,10 @@ nav ul li a {
   height: 75px;
 }
 
+.details-section {
+  margin-bottom: 210px;
+}
+
 .details-section h4 {
   font-size: 40px;
 }
@@ -293,6 +297,10 @@ nav ul li a {
   background-color: #2e3033;
 }
 
+.created-section p {
+  width: 858px;
+}
+
 .created-title-text,
 .by {
   color: var(--blue-dark);
@@ -300,6 +308,10 @@ nav ul li a {
 
 .created-text {
   color: var(--brownish-grey);
+}
+
+footer {
+  margin-bottom: 56px;
 }
 
 footer nav ul li {
@@ -366,8 +378,6 @@ footer nav ul li {
   left: 0;
   z-index: 0;
 }
-
-#waveAnimation-small::before {}
 
 #waveAnimation-small::after {
   content: '';
@@ -436,23 +446,22 @@ footer nav ul li {
   position: relative;
   height: 70px;
   width: 100vw;
-  background: white;
   bottom: 0;
   left: 0;
-  z-index: 0;
+  z-index: 1;
 }
 
 #waveFooter:before {
   content: '';
   display: block;
   position: absolute;
-  border-radius: 68% 32% 91% 9% / 100% 100% 0% 0%;
-  width: 130vw;
-  height: 599px;
-  background-color: rgba(50, 46, 111, 0.06);
-  left: -313px;
-  top: -511px;
+  border-radius: 73% 27% 62% 38% / 100% 100% 0% 0%;
+  width: 2200px;
+  height: 593px;
+  background-color: #f7f7f9;
+  bottom: 0;
   z-index: 1;
+  right: -150px;
 }
 
 #waveFooter:after {
@@ -460,10 +469,10 @@ footer nav ul li {
   display: block;
   position: absolute;
   border-radius: 68% 32% 91% 9% / 100% 100% 0% 0%;
-  width: 125vw;
-  height: 259px;
-  background-color: rgba(131, 129, 161, 0.32);
-  right: -5px;
-  top: -170px;
+  width: 2318px;
+  height: 287px;
+  right: -171px;
   z-index: 2;
+  bottom: 0;
+  background-color: #e4e3f0;
 }
