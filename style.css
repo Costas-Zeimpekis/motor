@@ -330,7 +330,7 @@ footer nav ul li {
 
 #waveAnimation {
   position: relative;
-  height: 880px;
+  height: 810px;
   width: 100vw;
   background: var(--blue-dark);
   bottom: -50%;
