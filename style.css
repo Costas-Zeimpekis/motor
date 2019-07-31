@@ -88,11 +88,11 @@ nav ul li a {
   margin: 0;
 }
 
-.space-section {
+.height-367px {
   height: 367px;
 }
 
-.milky-way-section nav li {
+.what-you-can-do-section nav li {
   height: 18px;
   display: flex;
   justify-content: flex-end;
@@ -101,7 +101,7 @@ nav ul li a {
   color: var(--blue-dark);
 }
 
-.milky-way-section nav li span {
+.what-you-can-do-section nav li span {
   margin-right: 24px;
 }
 
@@ -322,9 +322,9 @@ footer nav ul li {
   display: block;
   position: absolute;
   border-radius: 12% 88% 39% 61% / 74% 0% 100% 26%;
-  width: 151vw;
-  height: 2512px;
-  top: -227vh;
+  width: 3500px;
+  height: 3250px;
+  top: -2946px;
   right: -660px;
   z-index: 1;
   background-color: #f7f7f9;
@@ -332,7 +332,7 @@ footer nav ul li {
 
 .wave-different-container {
   position: absolute;
-  top: 500vh;
+  top: 4600px;
   left: 0;
 }
 
