@@ -17,6 +17,9 @@
   <div class="wave-animation-container">
     <div id="waveAnimation"></div>
   </div>
+  <div class="wave-animation-container-small">
+    <div id="waveAnimation-small"></div>
+  </div>
   <div class="wave-different-container">
     <div id="waveDifferent"></div>
   </div>
@@ -34,9 +37,9 @@
       </ul>
     </nav>
   </aside>
-  <div class="container relative z-10 m-auto pt-40 pb-4 px-6">
-    <header class="main-header w-screen fixed top-0 left-0 bg-white py-5 mb-20">
-      <div class="container flex justify-between items-center m-auto px-6">
+  <div class="container relative z-10 m-auto pt-32 pb-4">
+    <header class="main-header w-screen fixed top-0 left-0 bg-white py-5">
+      <div class="container flex justify-between items-center m-auto">
         <div class="logo-container h-8 flex items-center">
           <div class="logo-icon mr-4">
             <img src="./images/fill-1.svg" alt="logo icon of MotorCortex" />
@@ -66,15 +69,15 @@
             <input type="range" min="1" max="100" value="50" class="slider">
           </div>
         </div>
-        <div class="animation-text flex flex-col xl:w-7/12 mb-8 order-first md:order-none">
-          <h1 class="dark-blue xs:text-xl xl:text-4xl font-bold mb-4">
+        <div class="flex flex-col xl:w-7/12 mb-8 order-first md:order-none">
+          <h1 class="dark-blue font-bold mb-4">
             The animation framework
           </h1>
-          <p class="dark-blue xs:text-sm xl:text-xl font-semibold mb-8">
+          <p class="w-5/12 dark-blue xs:text-sm xl:text-xl font-semibold mb-12">
             for creative developers and designers that code.
           </p>
-          <a class="w-64 text-center bg-white">
-            <span class="github-span text-base font-bold">
+          <a class="w-64 text-center rounded-full bg-white">
+            <span class="text-base font-bold">
               Check it on GitHub
             </span>
           </a>
@@ -83,13 +86,13 @@
       <section class="what-you-can-do-section text-left mb-32">
         <header class="what-can-you-do-top mb-8">
           <h2 class="dark-blue  text-3xl font-bold mb-4">What you can do (spoiler: everything)</h2>
-          <hr class="w-48 h-3 m-0">
+          <hr class="w-48 h-3 line-grey m-0">
         </header>
         <article class="mb-24">
           <h3 class="dark-blue text-2xl font-semibold mb-2">
             Simple syntax, attractively easy to use
           </h3>
-          <p class="dark-blue text-base font-semibold mb-20">
+          <p class="w-6/12 dark-blue text-base font-semibold mb-20">
             The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd Monitors The Skinny on Lcd MonitorThe
             Skinny On Lcd Monitors The Skinny on Lcd Monitors
           </p>
@@ -159,7 +162,7 @@ componentDidMount() {
           <h3 class="dark-blue text-2xl font-semibold mb-2">
             Runtime Control, Sequencing Tools
           </h3>
-          <p class="dark-blue text-base font-semibold mb-20">
+          <p class="w-6/12 dark-blue text-base font-semibold mb-20">
             The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd Monitors The Skinny on Lcd Monitor
             The
             Skinny On Lcd Monitors The Skinny on Lcd Monitor
@@ -214,7 +217,7 @@ axios.get('https://newsapi.org/v1/sources')
           <h3 class="dark-blue text-2xl font-semibold mb-2">
             Powerful API, Smooth Animations, Full Compatibility
           </h3>
-          <p class="dark-blue text-base font-semibold mb-20">
+          <p class="w-6/12 dark-blue text-base font-semibold mb-20">
             The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd Monitors The Skinny on Lcd MonitorThe
             Skinny On Lcd Monitors The Skinny on Lcd Monitor
           </p>
@@ -272,8 +275,8 @@ axios.get('https://newsapi.org/v1/sources')
         </h2>
         <div class="flex flex-row justify-between items-center">
           <div class="w-6/12 flex flex-col items-start">
-            <h3 class="browse-librady-title text-4xl text-white font-bold">Browse the Libaray</h3>
-            <hr class="m-0 mb-6 w-6/12 h-2 bg-white rounded-full mb-6">
+            <h3 class="browse-librady-title text-4xl text-white font-bold">Browse the Libarary</h3>
+            <hr class="m-0 mb-6 w-7/12 h-2 bg-white rounded-full mb-6">
             <p class="browse-librady-headline w-11/12 font-semibold text-base text-white">Get 'ready to use' animations
               clips, functional plugins to the MotorCortex core and upload your work to the community</p>
           </div>
@@ -287,7 +290,7 @@ axios.get('https://newsapi.org/v1/sources')
       <section class="w-8/12 flex flex-col items-center dark-blue m-auto mb-64">
         <header class="mb-20">
           <h2 class="dark-blue text-4xl font-bold">Built in strong basis</h2>
-          <hr class="w-6/12 h-4 rounded-full bg-gray-500">
+          <hr class="w-6/12 h-2 rounded-full line-grey">
         </header>
         <section class="build-strong-basis-section-inner flex flex-row justify-between">
           <div class="self-center">
@@ -347,31 +350,31 @@ axios.get('https://newsapi.org/v1/sources')
           </div>
         </section>
       </section>
-      <section class="whats-different-section w-7/12 flex flex-col justify-center m-auto mb-56">
+      <section class="whats-different-section w-7/12 flex flex-col justify-center m-auto">
         <header class="flex flex-col items-start mb-16">
-          <h2 class="whats-different-title w-9/12 text-4xl text-white font-semibold leading-tight mb-4">What's the
-            difference with
-            MoterCortex?</h2>
-          <hr class="h-4 bg-white rounded-full m-0" />
+          <h2 class="whats-different-title w-9/12 text-4xl text-white font-semibold leading-tight mb-4">
+            What's the difference with MoterCortex?
+          </h2>
+          <hr class="h-3 bg-white rounded-full m-0" />
         </header>
-        <section class="mb-32">
-          <article class="h-24 flex justify-between items-center">
+        <section>
+          <article class="flex justify-between mb-1">
             <h4 class="text-xl text-white"><strong>Open Source</strong>: Community base, free to use forever</h4>
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col">
               <img src="./images/group.svg" alt="lego svg icon">
               <img src="./images/lines.svg" alt="line svg icon">
             </div>
           </article>
-          <article class="h-24 flex justify-between">
+          <article class="flex justify-between mb-1">
             <h4 class="w-8/12 text-xl text-white">Plug-in oriented design. The animation framework that
               <strong>collaborates
                 with all librares</strong></h4>
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col">
               <img src="./images/group.svg" alt="lego svg icon">
               <img src="./images/lines.svg" alt="line svg icon">
             </div>
           </article>
-          <article class="h-10 flex justify-between mb-8">
+          <article class="flex justify-between">
             <h4 class="w-8/12 text-xl text-white">Controls & demonstrates conflicts. Use free the <strong>Donckey Clip
                 Viewer</strong> to inspect the animation
             </h4>
@@ -389,7 +392,7 @@ axios.get('https://newsapi.org/v1/sources')
       <section class="details-section flex flex-wrap mb-32">
         <div class="w-6/12 flex flex-row justify-between m-auto">
           <div class="w-8/12 flex flex-col items-center">
-            <h4 class="text-4xl font-bold dark-blue text-right leading-snug mb-10">
+            <h4 class="font-bold dark-blue text-right .leading-tight mb-10">
               Building a <br /> strong and active <br />opensource project
             </h4>
             <a class="text-center rounded-full bg-white">
@@ -398,22 +401,22 @@ axios.get('https://newsapi.org/v1/sources')
               </span>
             </a>
           </div>
-          <div class="detail-items text-white mt-2">
-            <div class="mb-5">
+          <div class="detail-items text-white mt-5">
+            <div class="mb-8">
               <span class="py-1 pl-1 rounded">Open Source <span
                   class="bg-teal-600 py-1 px-3 rounded-r">&#9829;</span></span>
             </div>
-            <div class="mb-5 rounded-sm">
-              <span class="py-1 pl-1 rounded">build <span class="bg-green-600 p-1 rounded-r">passing</span></span>
+            <div class="mb-8 rounded-sm">
+              <span class="py-1 pl-1 rounded">build <span class="bg-green py-1 px-2 rounded-r">passing</span></span>
             </div>
-            <div class="mb-5 rounded-sm">
-              <span class="py-1 pl-1 rounded">version <span class="bg-blue-600 p-1 rounded-r">1.2.3</span></span>
+            <div class="mb-8 rounded-sm">
+              <span class="py-1 pl-1 rounded">version <span class="bg-blue-600 py-1 px-2 rounded-r">1.2.3</span></span>
             </div>
-            <div class="mb-5 rounded-sm">
-              <span class="py-1 pl-1 rounded">licence <span class="bg-blue-600 p-1 rounded-r">MIT</span></span>
+            <div class="mb-8 rounded-sm">
+              <span class="py-1 pl-1 rounded">licence <span class="bg-blue-600 py-1 px-2 rounded-r">MIT</span></span>
             </div>
             <div class="rounded-sm">
-              <span class="py-1 pl-1 rounded">codecov <span class="bg-green-600 p-1 rounded-r">99%</span></span>
+              <span class="py-1 pl-1 rounded">codecov <span class="bg-green py-1 px-2 rounded-r">99%</span></span>
             </div>
           </div>
         </div>
