@@ -76,15 +76,12 @@ nav ul li a {
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
 }
 
-.animation-slider>img {
-  height: 380px;
-}
-
 .animation-section h1 {
   font-size: 24px;
 }
 
 .animation-section a {
+
   box-shadow: 0 0 30px 0 rgba(39, 60, 74, 0.31);
 }
 
@@ -99,8 +96,8 @@ nav ul li a {
   margin: 0;
 }
 
-.height-367px {
-  height: 367px;
+.editor-height {
+  height: auto;
 }
 
 .what-you-can-do-section nav li {
@@ -148,15 +145,15 @@ nav ul li a {
 }
 
 .milky-way-img-container {
-  background-image: -webkit-linear-gradient(-14deg,
+  background-image: linear-gradient(12deg,
       transparent 16%,
       #ffffff 16%);
 }
 
 .planet-earth-img-container {
-  background-image: -webkit-linear-gradient(-9deg,
-      #ffffff 90%,
-      transparent 90%);
+  background-image: linear-gradient(12deg,
+      transparent 16%,
+      #ffffff 16%);
 }
 
 .space-img-comtainer {
@@ -171,9 +168,8 @@ nav ul li a {
   transform: rotate(90deg);
 }
 
-.editor-img-sizes .planet-earth-img {
+.editor-img-sizes {
   width: 241px;
-  height: 235px;
   object-fit: contain;
 }
 
