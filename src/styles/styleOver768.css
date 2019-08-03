@@ -31,15 +31,21 @@
   }
 
   .milky-way-img-container {
-    background-image: linear-gradient(-14deg,
+    background-image: linear-gradient(103deg,
         transparent 16%,
         #ffffff 16%);
   }
 
   .planet-earth-img-container {
-    background-image: linear-gradient(12deg,
+    background-image: linear-gradient(99deg,
         #ffffff 90%,
         transparent 90%);
+  }
+
+  .space-img {
+    width: 55%;
+    height: 156%;
+    transform: rotate(90deg);
   }
 
   .what-can-you-do-top {

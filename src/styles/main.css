@@ -163,9 +163,9 @@ nav ul li a {
 }
 
 .space-img {
-  width: 55%;
+  width: 241px;
   height: 156%;
-  transform: rotate(90deg);
+  transform: rotate(0deg);
 }
 
 .editor-img-sizes {
@@ -174,7 +174,7 @@ nav ul li a {
 }
 
 .explore-section {
-  margin-bottom: 280px;
+  margin-bottom: 96px;
 }
 
 .explore-section-title {
@@ -186,12 +186,11 @@ nav ul li a {
 }
 
 .explore-section a {
-  width: 314px;
   background-color: var(--purpley-pink);
 }
 
 .explore-section a span {
-  line-height: 56px;
+  line-height: 52px;
 }
 
 .build-strong-basis-section-inner figure {
@@ -240,10 +239,6 @@ nav ul li a {
 
 .whats-different-section section {
   margin-bottom: 120px;
-}
-
-.whats-different-section h2 {
-  font-size: 40px;
 }
 
 .whats-different-section hr {
@@ -319,7 +314,7 @@ footer nav ul li {
 
 .wave-animation-container {
   position: absolute;
-  top: 2736px;
+  top: 2970px;
   left: 0;
 }
 
@@ -328,7 +323,7 @@ footer nav ul li {
   height: 760px;
   width: 1920px;
   background: var(--blue-dark);
-  bottom: -50%;
+  top: 0;
   left: 0;
   z-index: 0;
 }
@@ -390,8 +385,8 @@ footer nav ul li {
 
 .wave-different-container {
   position: absolute;
-  top: 4600px;
-  left: 0;
+  top: 4926px;
+  left: -300px;
 }
 
 #waveDifferent {

@@ -24,6 +24,14 @@
     color: var(--purpley-pink);
   }
 
+  .explore-section h3 {
+    font-size: 40px;
+  }
+
+  .explore-section a {
+    width: 314px;
+  }
+
   .what-can-you-do-article-text {
     width: 640px;
   }
@@ -31,5 +39,161 @@
   .runtime-control-article-text,
   .powerful-api-article-text {
     width: 590px;
+  }
+
+  .wave-animation-container {
+    position: absolute;
+    top: 2736px;
+    left: 0;
+  }
+
+  #waveAnimation {
+    position: relative;
+    height: 760px;
+    width: 1920px;
+    background: var(--blue-dark);
+    bottom: -50%;
+    left: 0;
+    z-index: 0;
+  }
+
+  #waveAnimation:before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 0% 26% 74% / 18% 15% 85% 82%;
+    width: 2074px;
+    height: 726px;
+    background-color: white;
+    top: -2735px;
+    z-index: 2;
+    right: -53px;
+  }
+
+
+  #waveAnimation:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 0% 25% 75% / 65% 61% 39% 35%;
+    width: 2490px;
+    height: 2686px;
+    top: -2339px;
+    right: -95px;
+    z-index: 1;
+    background-color: #f7f7f9;
+  }
+
+  .wave-animation-container-small {
+    position: absolute;
+    top: 582px;
+    left: 0;
+  }
+
+  #waveAnimation-small {
+    position: relative;
+    height: 810px;
+    width: 1920px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  #waveAnimation-small::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 14% 86% 100% 0% / 10% 49% 51% 90%;
+    width: 1920px;
+    height: 1500px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #f7f7f9;
+  }
+
+  .wave-different-container {
+    position: absolute;
+    top: 4600px;
+    left: 0;
+  }
+
+  #waveDifferent {
+    position: relative;
+    height: 924px;
+    width: 2227px;
+    background: #26207e;
+    bottom: 0;
+    left: -159px;
+    z-index: 0;
+    border-radius: 28% 72% 62% 38% / 100% 86% 14% 0%;
+  }
+
+  #waveDifferent:before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 28% 72% 28% 72% / 81% 80% 20% 19%;
+    width: 2227px;
+    height: 924px;
+    background-color: #2d2965;
+    z-index: 1;
+    bottom: -31px;
+    left: 20px;
+
+  }
+
+  #waveDifferent:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 28% 72% 28% 72% / 81% 80% 20% 19%;
+    width: 2419px;
+    height: 1031px;
+    background-color: #252254;
+    bottom: -169px;
+    left: -22px;
+    z-index: 2;
+  }
+
+  .wave-footer-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  #waveFooter {
+    position: relative;
+    height: 70px;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  #waveFooter:before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 73% 27% 62% 38% / 100% 100% 0% 0%;
+    width: 2200px;
+    height: 593px;
+    background-color: #f7f7f9;
+    bottom: 0;
+    z-index: 1;
+    right: -150px;
+  }
+
+  #waveFooter:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 68% 32% 91% 9% / 100% 100% 0% 0%;
+    width: 2318px;
+    height: 287px;
+    right: -171px;
+    z-index: 2;
+    bottom: 0;
+    background-color: #e4e3f0;
   }
 }

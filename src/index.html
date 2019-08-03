@@ -97,8 +97,8 @@
             The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd Monitors The Skinny on Lcd MonitorThe
             Skinny On Lcd Monitors The Skinny on Lcd Monitors
           </p>
-          <section class="md:w-11/12 editor-height flex ml-auto">
-            <aside class="hidden sm:block w-1/5 flex items-center mr-6">
+          <section class="md:w-11/12 flex ml-auto">
+            <aside class="w-1/5 hidden sm:flex flex-col justify-center mr-6">
               <nav>
                 <ul>
                   <li class="mb-10"><span>Load Library</span><img src="./assets/images/chevron-right-solid.svg"
@@ -111,12 +111,13 @@
                 </ul>
               </nav>
             </aside>
-            <div class="editor-color-shadow md:w-11/12 flex flex-col md:flex-row rounded-lg m-auto pb-1 md:px-0">
+            <div
+              class="editor-color-shadow editor-height md:w-11/12 flex flex-col md:flex-row rounded-lg m-auto pb-1 md:px-0 md:pb-0">
               <div
-                class="milky-way-img-container md:w-7/12 flex justify-center md:items-center order-1 md:order-2 rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-20 md:px-0">
+                class="milky-way-img-container md:w-7/12 flex flex-col justify-center md:items-center order-1 md:order-2 rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-0 md:pb-0 md:px-0">
                 <img class="editor-img-sizes" src="./assets/images/milky-way.svg" alt="milky way svg">
               </div>
-              <div class="milky-way-editor w-5/2 flex justify-center text-white order-2 md:order-1 h-full p-4 md:pr-0">
+              <div class="w-5/2 flex flex-col justify-center text-white order-2 md:order-1 h-full p-4 md:pr-0">
                 <div class="tabs hidden md:block mb-6">
                   <button class="w-20 h-8 bg-white rounded-lg"><span
                       class="h-4 text-sm text-gray-800 font-semibold text-black">Vanilla JS</span></button>
@@ -170,13 +171,13 @@ componentDidMount() {
             Skinny On Lcd Monitors The Skinny on Lcd Monitor
           </p>
           <section class="md:w-11/12 editor-height flex ml-auto">
-            <div class="editor-color-shadow md:w-11/12 flex flex-col md:flex-row rounded-lg m-auto pb-1">
+            <div
+              class="editor-color-shadow editor-height md:w-11/12 flex flex-col md:flex-row rounded-lg m-auto pb-1 md:px-0 md:pb-0">
               <div
-                class="planet-earth-img-container md:w-7/12 flex justify-center md:items-center order-1 md:order-2 rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-20 md:px-0">
+                class="planet-earth-img-container md:w-7/12 flex flex-col justify-center md:items-center order-1 rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-0 md:px-0">
                 <img class="editor-img-sizes" src="./assets/images/planet-earth.svg" alt="planet earth svg image">
               </div>
-              <div
-                class="planet-earth-editor w-5/2 flex justify-center text-white order-2 md:order-1 h-full p-4 md:pr-0">
+              <div class="w-5/2 h-full flex flex-col justify-center text-white order-2  p-4 md:pr-0">
                 <div class="tabs hidden md:block mb-6">
                   <button class="w-20 h-8 bg-white rounded-lg"><span
                       class="h-4 text-sm text-gray-800 font-semibold text-black">Vanilla JS</span></button>
@@ -225,13 +226,14 @@ axios.get('https://newsapi.org/v1/sources')
             The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd Monitors The Skinny on Lcd MonitorThe
             Skinny On Lcd Monitors The Skinny on Lcd Monitor
           </p>
-          <section class="md:w-11/12 editor-height flex ml-auto">
-            <div class="editor-color-shadow md:w-11/12 flex flex-col md:flex-row rounded-lg m-auto pb-1 md:px-0">
+          <section class="md:w-11/12 flex ml-auto">
+            <div
+              class="editor-color-shadow editor-height md:w-11/12 flex flex-col md:flex-row rounded-lg m-auto pb-1 md:px-0 md:pb-0">
               <div
-                class="space-img-comtainer md:w-7/12 md:w-7/12 flex justify-center md:items-center order-1 md:order-2 rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-20 md:px-0">
+                class="space-img-comtainer md:w-7/12 flex flex-col justify-center md:items-center order-1 md:order-2 rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-0 md:px-0">
                 <img class="space-img" src="./assets/images/14.png" alt="space svg image">
               </div>
-              <div class="space-editor w-5/2 flex justify-center text-white order-2 md:order-1 h-full p-4 md:pr-0">
+              <div class="w-5/2 h-full flex flex-col justify-center text-white order-2  md:order-1 p-4 md:pr-0">
                 <div class="tabs hidden md:block mb-6">
                   <button class="w-20 h-8 bg-white rounded-lg"><span
                       class="h-4 text-sm text-gray-800 font-semibold text-black">Vanilla JS</span></button>
@@ -265,7 +267,7 @@ axios.get('https://newsapi.org/v1/sources')
       };                                        
                             </pre>
                 </div>
-                <button class="tap-btm flex text-white md:hidden">
+                <button class="tap-btn flex flex-col items-center text-white md:hidden">
                   <span class="tap-text">Tap to se how it is coded</span>
                   <img src="./assets/images/chevron-left-solid.svg" alt="">
                 </button>
@@ -273,27 +275,30 @@ axios.get('https://newsapi.org/v1/sources')
           </section>
         </article>
       </section>
-      <section class="explore-section flex flex-col items-end dark-blue">
-        <h2 class="explore-section-title w-5/12 text-right font-bold text-3xl leading-snug">
-          Explore galaxies of 'ready to use' animations and plugins
+      <section class="explore-section flex flex-col items-center md:items-end dark-blue">
+        <h2
+          class="explore-section-title w-11/12 md:w-5/12 text-center  md:text-right font-bold text-2xl md:text-3xl leading-snug">
+          Explore galaxies of<br class="md:hidden" />'ready to use'<br class="md:hidden" /> animations and plugins
         </h2>
-        <div class="flex flex-row justify-between items-center">
-          <div class="w-6/12 flex flex-col items-start">
-            <h3 class="browse-librady-title text-4xl text-white font-bold">Browse the Libarary</h3>
-            <hr class="m-0 mb-6 w-7/12 h-2 bg-white rounded-full mb-6">
-            <p class="browse-librady-headline w-11/12 font-semibold text-base text-white">Get 'ready to use' animations
+        <div class="flex flex-col md:flex-row  md:justify-between items-center">
+          <div class="w-full md:w-6/12 flex flex-col items-start mb-10 md:mb-0">
+            <h3 class="browse-librady-title text-white font-bold mb-2">Browse the Libarary</h3>
+            <hr class="m-0 mb-6 w-full md:w-7/12 h-2 bg-white rounded-full mb-6">
+            <p class="browse-librady-headline md:w-11/12 font-semibold text-base text-white">Get 'ready to
+              use'
+              animations
               clips, functional plugins to the MotorCortex core and upload your work to the community</p>
           </div>
-          <a class="text-center rounded-full">
-            <span class="text-white text-base font-bold">
+          <a class="text-center w-full rounded-full">
+            <span class="text-white text-sm md:text-base font-bold">
               Check the animations library
             </span>
           </a>
         </div>
       </section>
-      <section class="w-8/12 flex flex-col items-center dark-blue m-auto mb-64">
+      <section class="md:w-8/12 flex flex-col items-center dark-blue m-auto mb-64">
         <header class="mb-20">
-          <h2 class="dark-blue text-4xl font-bold">Built in strong basis</h2>
+          <h2 class="dark-blue text-2xl md:text-4xl font-bold">Built in strong basis</h2>
           <hr class="w-6/12 h-2 rounded-full line-grey">
         </header>
         <section class="build-strong-basis-section-inner flex flex-row justify-between">
@@ -354,16 +359,20 @@ axios.get('https://newsapi.org/v1/sources')
           </div>
         </section>
       </section>
-      <section class="whats-different-section w-7/12 flex flex-col justify-center m-auto">
+      <section class="whats-different-section md:w-7/12 flex flex-col justify-center m-auto">
         <header class="flex flex-col items-start mb-16">
-          <h2 class="whats-different-title w-9/12 text-4xl text-white font-semibold leading-tight mb-4">
-            What's the difference with MoterCortex?
+          <h2 class="whats-different-title  md:w-9/12 text-2xl text-white font-semibold leading-tight mb-4">
+            What's different with MoterCortex?
           </h2>
           <hr class="h-3 bg-white rounded-full m-0" />
         </header>
         <section>
           <article class="flex justify-between mb-1">
-            <h4 class="text-xl text-white"><strong>Open Source</strong>: Community base, free to use forever</h4>
+            <h4 class="text-xl w-7/12 md:w-full text-white">
+              <spann class="md:hidden">Open Source</spann>
+              <strong class="hidden md:inline">Open Source</strong>:
+              Community base, free to use forever
+            </h4>
             <div class="flex flex-col">
               <img src="./assets/images/group.svg" alt="lego svg icon">
               <img src="./assets/images/lines.svg" alt="line svg icon">
