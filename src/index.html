@@ -367,29 +367,36 @@ axios.get('https://newsapi.org/v1/sources')
           <hr class="h-3 bg-white rounded-full m-0" />
         </header>
         <section>
-          <article class="flex justify-between mb-1">
-            <h4 class="text-xl w-7/12 md:w-full text-white">
+          <article class="flex justify-between mb-3 md:mb-1">
+            <h4 class="w-7/12 md:w-full text-base md:text-xl text-white">
               <spann class="md:hidden">Open Source</spann>
               <strong class="hidden md:inline">Open Source</strong>:
               Community base, free to use forever
             </h4>
             <div class="flex flex-col">
-              <img src="./assets/images/group.svg" alt="lego svg icon">
+              <img class="mb-3 md:mb-0" src="./assets/images/group.svg" alt="lego svg icon">
               <img src="./assets/images/lines.svg" alt="line svg icon">
             </div>
           </article>
-          <article class="flex justify-between mb-1">
-            <h4 class="w-8/12 text-xl text-white">Plug-in oriented design. The animation framework that
-              <strong>collaborates
-                with all librares</strong></h4>
+          <article class="flex justify-between items-center mb-3 md:mb-1">
+            <h4 class="w-8/12 text=base md:text-xl text-white">
+              Plug-in oriented design. The animation framework that
+              <spann class="md:hidden">
+                collaborates with all librares
+              </spann>
+              <strong class="hidden md:inline">collaborates with all librares</strong>
+            </h4>
             <div class="flex flex-col">
-              <img src="./assets/images/group.svg" alt="lego svg icon">
+              <img class="mb-3 md:mb-0" src="./assets/images/group.svg" alt="lego svg icon">
               <img src="./assets/images/lines.svg" alt="line svg icon">
             </div>
           </article>
-          <article class="flex justify-between">
-            <h4 class="w-8/12 text-xl text-white">Controls & demonstrates conflicts. Use free the <strong>Donckey Clip
-                Viewer</strong> to inspect the animation
+          <article class="h-auto flex justify-between">
+            <h4 class="w-8/12 text=base md:text-xl text-white">
+              Controls & demonstrates conflicts. Use free the
+              <spann class="md:hidden">Donckey Clip Viewer</spann>
+              <strong class="hidden md:inline">Donckey Clip Viewer</strong>
+              to inspect the animation
             </h4>
             <div>
               <img src="./assets/images/group.svg" alt="lefo svg icon">
@@ -403,16 +410,11 @@ axios.get('https://newsapi.org/v1/sources')
         </a>
       </section>
       <section class="details-section flex flex-wrap">
-        <div class="w-6/12 flex flex-row justify-between m-auto">
-          <div class="w-8/12 flex flex-col items-center">
-            <h4 class="font-bold dark-blue text-right .leading-tight mb-10">
+        <div class="md:w-6/12 flex flex-row justify-between m-auto">
+          <div class="w-6/12 md:w-8/12 flex flex-col items-center">
+            <h4 class="text-2xl font-bold dark-blue text-right leading-tight mb-10">
               Building a <br /> strong and active <br />opensource project
             </h4>
-            <a class="text-center rounded-full bg-white">
-              <span class="text-base font-bold">
-                Be part of the community on Github
-              </span>
-            </a>
           </div>
           <div class="detail-items text-white mt-5">
             <div class="mb-8">
@@ -433,6 +435,11 @@ axios.get('https://newsapi.org/v1/sources')
             </div>
           </div>
         </div>
+        <a class="text-center rounded-full bg-white">
+          <span class="text-base font-bold">
+            Be part of the community on Github
+          </span>
+        </a>
       </section>
       <section class="created-section flex flex-col items-end">
         <h4 class="flex justify-start items-center mb-10">

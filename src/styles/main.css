@@ -15,7 +15,7 @@
 }
 
 .bg-green {
-  background-color: #1aad26
+  background-color: #1aad26;
 }
 
 * {
@@ -81,7 +81,6 @@ nav ul li a {
 }
 
 .animation-section a {
-
   box-shadow: 0 0 30px 0 rgba(39, 60, 74, 0.31);
 }
 
@@ -145,21 +144,19 @@ nav ul li a {
 }
 
 .milky-way-img-container {
-  background-image: linear-gradient(12deg,
-      transparent 16%,
-      #ffffff 16%);
+  background-image: linear-gradient(12deg, transparent 16%, #ffffff 16%);
 }
 
 .planet-earth-img-container {
-  background-image: linear-gradient(12deg,
-      transparent 16%,
-      #ffffff 16%);
+  background-image: linear-gradient(12deg, transparent 16%, #ffffff 16%);
 }
 
 .space-img-comtainer {
-  background-image: -webkit-linear-gradient(80deg,
-      transparent 12%,
-      #1d1e21 10%);
+  background-image: -webkit-linear-gradient(
+    80deg,
+    transparent 12%,
+    #1d1e21 10%
+  );
 }
 
 .space-img {
@@ -204,7 +201,7 @@ nav ul li a {
   height: 850px;
 }
 
-.build-strong-basis-section-inner>div {
+.build-strong-basis-section-inner > div {
   width: 257px;
 }
 
@@ -254,20 +251,12 @@ nav ul li a {
   color: var(--purpley-pink);
 }
 
-.whats-different-section article {
-  height: 107px;
-}
-
-.whats-different-section article>div img:first-of-type {
+.whats-different-section article > div img:first-of-type {
   height: 75px;
 }
 
 .details-section {
   margin-bottom: 210px;
-}
-
-.details-section h4 {
-  font-size: 40px;
 }
 
 .details-section a {
@@ -280,11 +269,11 @@ nav ul li a {
   color: #225fb1;
 }
 
-.details-items>div {
+.details-items > div {
   height: 32px;
 }
 
-.detail-items>div>span:first-of-type {
+.detail-items > div > span:first-of-type {
   background-color: #2e3033;
 }
 
@@ -341,7 +330,6 @@ footer nav ul li {
   right: -53px;
 }
 
-
 #waveAnimation:after {
   content: '';
   display: block;
@@ -385,7 +373,7 @@ footer nav ul li {
 
 .wave-different-container {
   position: absolute;
-  top: 4926px;
+  top: 4790px;
   left: -300px;
 }
 
@@ -411,7 +399,6 @@ footer nav ul li {
   z-index: 1;
   bottom: -31px;
   left: 20px;
-
 }
 
 #waveDifferent:after {

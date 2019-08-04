@@ -32,19 +32,26 @@
     width: 314px;
   }
 
-  .what-can-you-do-article-text {
-    width: 640px;
+  .explore-section a span {
+    line-height: 56px;
   }
 
-  .runtime-control-article-text,
-  .powerful-api-article-text {
-    width: 590px;
+  .explore-section {
+    margin-bottom: 280px;
+  }
+
+  .whats-different-section h2 {
+    font-size: 40px;
   }
 
   .wave-animation-container {
     position: absolute;
     top: 2736px;
     left: 0;
+  }
+
+  .details-section h4 {
+    font-size: 40px;
   }
 
   #waveAnimation {
@@ -69,7 +76,6 @@
     z-index: 2;
     right: -53px;
   }
-
 
   #waveAnimation:after {
     content: '';
@@ -140,7 +146,6 @@
     z-index: 1;
     bottom: -31px;
     left: 20px;
-
   }
 
   #waveDifferent:after {
