@@ -46,6 +46,10 @@
   max-width: 1280px;
 }
 
+.logo-container {
+  width: 240px;
+}
+
 header nav {
   min-width: 24px;
 }
@@ -281,14 +285,15 @@ nav ul li a {
 }
 
 footer {
-  margin-bottom: 56px;
+  margin-bottom: 50px;
 }
 
 footer nav ul li {
-  display: inline-block;
+  display: block;
   font-size: 16px;
   font-weight: bold;
   color: var(--blue-dark);
+  margin-bottom: 12px;
 }
 
 .wave-animation-container {

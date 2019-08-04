@@ -41,10 +41,10 @@
     <header class="main-header w-screen fixed top-0 left-0 bg-white py-5">
       <div class="container flex justify-between items-center m-auto px-6">
         <div class="logo-container h-8 flex items-center">
-          <div class="logo-icon mr-4">
+          <div class="mr-4">
             <img src="./assets/images/fill-1.svg" alt="logo icon of MotorCortex" />
           </div>
-          <div class="logo-text h-4">
+          <div class="h4 md:h-5">
             <img src="./assets/images/fill-2.svg" alt="logo text of MotorCortex" />
           </div>
         </div>
@@ -441,7 +441,7 @@ axios.get('https://newsapi.org/v1/sources')
           </span>
         </a>
       </section>
-      <section class="created-section flex flex-col items-end">
+      <section class="created-section flex flex-col items-start md:items-end">
         <h4 class="flex justify-start items-center mb-10">
           <span class="text-base md:text-4xl font-semibold text-right dark-blue mr-4">Created with</span> <img
             class="mr-4" src="./assets/images/group-11.png" alt="love icon">
@@ -449,23 +449,24 @@ axios.get('https://newsapi.org/v1/sources')
           <img src="./assets/images/bitmap.png" alt="Kiss Button Logo">
         </h4>
         <p class="text-base md:text-2xl brownish-grey">
-          Open Source is on our DNA and part of our identity. We believe in Open Source and we give back to the
-          community
-          by contributing ideas, tools and libraries
+          Open Source is on our DNA and part of <br class="md:hidden" />our identity. We believe in Open
+          <br class="md:hidden" />Source and we
+          giveback to the <br class="md:hidden" />community by contributing ideas,
+          <br class="md:hidden" /> tools and libraries
         </p>
       </section>
     </main>
-    <footer>
+    <footer class="px-6">
       <div class="logo-container flex flex-row items-center justify-between mb-6">
-        <div class="logo-icon">
+        <div class="mr-4">
           <img src="./assets/images/fill-1.svg" alt="logo icon of MotorCortex" />
         </div>
-        <div class="logo-text">
+        <div class="h4 md:h-5">
           <img src="./assets/images/fill-2.svg" alt="logo text of MotorCortex" />
         </div>
       </div>
-      <nav class="flex flex-row justify-between">
-        <ul class="list-none text-left p-0">
+      <nav class="flex flex-col md:flex-row justify-between">
+        <ul class="mb-8 md:mb-0">
           <li class="mr-4"><a>DOCUMENTATION</a></li>
           <li class="mr-4"><a>EXAMPLES</a></li>
           <li class="mr-4"><a>LIBRARY</a></li>

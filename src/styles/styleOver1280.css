@@ -3,14 +3,6 @@
     width: 1280px;
   }
 
-  .logo-container {
-    width: 240px;
-  }
-
-  .logo-text {
-    height: 21px;
-  }
-
   .main-header nav li a {
     font-size: 16px;
   }
@@ -58,6 +50,15 @@
 
   .created-section p {
     width: 858px;
+  }
+
+  footer {
+    margin-bottom: 56px;
+  }
+
+  footer nav ul li {
+    display: inline-block;
+    margin-bottom: 0;
   }
 
   .wave-animation-container {
