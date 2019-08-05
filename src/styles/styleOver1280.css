@@ -32,7 +32,11 @@
     margin-bottom: 280px;
   }
 
-  .whats-different-section h2 {
+  .explore-section-title {
+    margin-bottom: 260px;
+  }
+
+  .whats-different-section h3 {
     font-size: 40px;
   }
 

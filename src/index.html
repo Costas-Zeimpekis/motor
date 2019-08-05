@@ -41,10 +41,10 @@
     <header class="main-header w-screen fixed top-0 left-0 bg-white py-5">
       <div class="container flex justify-between items-center m-auto px-6">
         <div class="logo-container h-8 flex items-center">
-          <div class="mr-4">
+          <div class="h-6 mr-4">
             <img src="./assets/images/fill-1.svg" alt="logo icon of MotorCortex" />
           </div>
-          <div class="h4 md:h-5">
+          <div class="log-icon h-4 md:h-5">
             <img src="./assets/images/fill-2.svg" alt="logo text of MotorCortex" />
           </div>
         </div>
@@ -61,19 +61,19 @@
         </nav>
       </div>
     </header>
-    <main class="mb-40 px-6">
-      <section class="animation-section flex flex-wrap justify-center md:justify-between items-center mb-10 md:mb-40">
-        <div class="animation-slider flex flex-col items-center mb-10 md:mb-0 order-1 md:order-2 xl:w-4/12">
+    <main class="mb-40">
+      <section class="animation-section flex flex-wrap justify-center md:justify-between items-center mb-10 md:mb-40 px-10">
+        <div class="animation-slider flex flex-col items-center mb-8 md:mb-0 order-1 md:order-2 xl:w-4/12">
           <img class="mb-6" src="./assets/images/space.jpg" alt="image of space">
-          <div class="slider-container">
-            <input type="range" min="1" max="100" value="50" class="slider">
+          <div class="slide-input-container">
+            <input type="range" min="1" max="100" value="50" class="slide-input w-full rounded-full">
           </div>
         </div>
         <div class="flex flex-col items-center md:items-start xl:w-7/12  md:mb-8 order-2 md:order-1">
           <h1 class="dark-blue font-bold text-center md:text-left mb-4">
             The animation framework
           </h1>
-          <p class="w-10/12 md:w-5/12 dark-blue text-sm xl:text-xl text-center md:text-left font-semibold mb-12">
+          <p class="w-10/12 md:w-5/12 dark-blue text-sm xl:text-xl text-center md:text-left font-semibold mb-8 md:mb-12">
             for creative developers and designers that code.
           </p>
           <a class="w-48 md:w-64 text-center rounded-full bg-white">
@@ -83,7 +83,7 @@
           </a>
         </div>
       </section>
-      <section class="what-you-can-do-section text-left mb-32">
+      <section class="what-you-can-do-section text-left mb-32 px-10">
         <header class="what-can-you-do-top mb-8">
           <h2 class="w-4/5 md:w-full dark-blue text-xl md:text-3xl font-bold mb-4">What you can do (spoiler: everything)
           </h2>
@@ -152,7 +152,7 @@ componentDidMount() {
                             </pre>
                 </div>
                 <button class="tap-btn flex flex-col items-center text-white md:hidden">
-                  <span class="tap-text">
+                  <span class="text-xs">
                     Tap to se how it is coded
                   </span>
                   <img src="./assets/images/chevron-left-solid.svg" alt="">
@@ -275,14 +275,14 @@ axios.get('https://newsapi.org/v1/sources')
           </section>
         </article>
       </section>
-      <section class="explore-section flex flex-col items-center md:items-end dark-blue">
+      <section class="explore-section flex flex-col items-center md:items-end dark-blue px-10">
         <h2
-          class="explore-section-title w-11/12 md:w-5/12 text-center  md:text-right font-bold text-2xl md:text-3xl leading-snug">
+          class="explore-section-title w-11/12 md:w-5/12 text-center md:text-right font-bold text-xl md:text-3xl leading-snug md-26">
           Explore galaxies of<br class="md:hidden" />'ready to use'<br class="md:hidden" /> animations and plugins
         </h2>
         <div class="flex flex-col md:flex-row  md:justify-between items-center">
           <div class="w-full md:w-6/12 flex flex-col items-start mb-10 md:mb-0">
-            <h3 class="browse-librady-title text-white font-bold mb-2">Browse the Libarary</h3>
+            <h3 class="browse-librady-title text-2xl text-white font-bold mb-2">Browse the Libarary</h3>
             <hr class="m-0 mb-6 w-full md:w-7/12 h-2 bg-white rounded-full mb-6">
             <p class="browse-librady-headline md:w-11/12 font-semibold text-base text-white">Get 'ready to
               use'
@@ -296,14 +296,14 @@ axios.get('https://newsapi.org/v1/sources')
           </a>
         </div>
       </section>
-      <section class="md:w-8/12  flex flex-col items-center dark-blue m-auto mb-64">
-        <header class="mb-20">
-          <h2 class="dark-blue text-2xl md:text-4xl font-bold">Built in strong basis</h2>
+      <section class="md:w-8/12 flex flex-col items-center m-auto md:mb-64 px-10">
+        <header class="md:mb-20">
+          <h2 class="dark-blue text-lg md:text-4xl font-bold">Built in strong basis</h2>
           <hr class="w-6/12 h-2 rounded-full bg-grey">
         </header>
-        <section class="build-strong-basis-section-inner hidden md:block flex flex-row justify-between">
+        <section class="build-strong-basis-section-inner hidden md:flex flex-row justify-between">
           <div class="self-center">
-            <figure class="flex flex-col justify-center items-center bg-white mb-16 p-6">
+            <figure class="mb-16">
               <img src="./assets/images/unplugged.svg" alt="unplugged svg icon">
               <figcaption>
                 <h5>Compatibility</h5>
@@ -312,7 +312,7 @@ axios.get('https://newsapi.org/v1/sources')
                 </p>
               </figcaption>
             </figure>
-            <figure class="flex flex-col justify-center items-center bg-white p-6">
+            <figure >
               <img src="./assets/images/flask-1.svg" alt="flask svg icon">
               <figcaption>
                 <h5>Tested</h5>
@@ -325,14 +325,14 @@ axios.get('https://newsapi.org/v1/sources')
             </figure>
           </div>
           <div class="self-start">
-            <figure class="flex flex-col justify-center items-center bg-white mb-16 p-6">
+            <figure class="mb-16">
               <img src="./assets/images/astronaut-1.svg" alt="austronaut helmet svg icon">
               <figcaption>
                 <h5>Support</h5>
                 <p>A community behind the project, ready to solve all your future questions</p>
               </figcaption>
             </figure>
-            <figure class="flex flex-col justify-center items-center bg-white p-6">
+            <figure>
               <img src="./assets/images/game-controller.svg" alt="game controler svg icon">
               <figcaption>
                 <h5>Run-tim Control</h5>
@@ -342,14 +342,14 @@ axios.get('https://newsapi.org/v1/sources')
             </figure>
           </div>
           <div class="self-end">
-            <figure class="flex flex-col justify-center items-center bg-white mb-16 p-6">
+            <figure class="mb-16">
               <img src="./assets/images/feather.svg" alt="feather svg icon">
               <figcaption>
                 <h5>Lightweight</h5>
                 <p>Small memory usage, easy syntax and a powerfull Api</p>
               </figcaption>
             </figure>
-            <figure class="flex flex-col justify-center items-center bg-white p-6">
+            <figure >
               <img src="./assets/images/performance.svg" alt="stars svg icon">
               <figcaption>
                 <h5>Perfomance</h5>
@@ -359,11 +359,11 @@ axios.get('https://newsapi.org/v1/sources')
           </div>
         </section>
       </section>
-      
-      <section class="slider-section">
+
+      <section class="slider-section mb-48">
         <div class="slider">
           <div class="slides">
-          <figure class="flex flex-col justify-center items-center bg-white mb-16 p-6">
+          <figure >
             <img src="./assets/images/unplugged.svg" alt="unplugged svg icon">
             <figcaption>
               <h5>Compatibility</h5>
@@ -372,25 +372,25 @@ axios.get('https://newsapi.org/v1/sources')
               </p>
             </figcaption>
           </figure>
-          <figure class="flex flex-col justify-center items-center bg-white p-6">
+          <figure >
             <img src="./assets/images/flask-1.svg" alt="flask svg icon">
             <figcaption>
               <h5>Tested</h5>
-              <p class="text-center w-5/12">
-                Error-Free
-                Bug-Free
+              <p class="text-center">
+                Error-Free<br class="md:hidden"/>
+                Bug-Free<br class="md:hidden"/>
                 Expandable
               </p>
             </figcaption>
           </figure>
-          <figure class="flex flex-col justify-center items-center bg-white mb-16 p-6">
+          <figure >
             <img src="./assets/images/astronaut-1.svg" alt="austronaut helmet svg icon">
             <figcaption>
               <h5>Support</h5>
               <p>A community behind the project, ready to solve all your future questions</p>
             </figcaption>
           </figure>
-          <figure class="flex flex-col justify-center items-center bg-white p-6">
+          <figure>
             <img src="./assets/images/game-controller.svg" alt="game controler svg icon">
             <figcaption>
               <h5>Run-tim Control</h5>
@@ -398,14 +398,14 @@ axios.get('https://newsapi.org/v1/sources')
                 parameters</p>
             </figcaption>
           </figure>
-          <figure class="flex flex-col justify-center items-center bg-white mb-16 p-6">
+          <figure >
             <img src="./assets/images/feather.svg" alt="feather svg icon">
             <figcaption>
               <h5>Lightweight</h5>
               <p>Small memory usage, easy syntax and a powerfull Api</p>
             </figcaption>
           </figure>
-          <figure class="flex flex-col justify-center items-center bg-white p-6">
+          <figure >
             <img src="./assets/images/performance.svg" alt="stars svg icon">
             <figcaption>
               <h5>Perfomance</h5>
@@ -425,7 +425,7 @@ axios.get('https://newsapi.org/v1/sources')
 
 
 
-      <section class="whats-different-section md:w-7/12 flex flex-col justify-center m-auto">
+      <section class="whats-different-section md:w-7/12 flex flex-col justify-center m-auto px-10">
         <header class="flex flex-col items-start mb-16">
           <h2 class="whats-different-title  md:w-9/12 text-2xl text-white font-semibold leading-tight mb-4">
             What's different with MoterCortex?
@@ -475,7 +475,7 @@ axios.get('https://newsapi.org/v1/sources')
           </span>
         </a>
       </section>
-      <section class="details-section flex flex-wrap">
+      <section class="details-section flex flex-wrap px-10">
         <div class="md:w-6/12 flex flex-row justify-between m-auto mb-10">
           <div class="w-6/12 md:w-8/12 flex flex-col items-center">
             <h4 class="text-2xl font-bold dark-blue text-right leading-relaxed md:leading-tight md:mb-10">
@@ -507,7 +507,7 @@ axios.get('https://newsapi.org/v1/sources')
           </span>
         </a>
       </section>
-      <section class="created-section flex flex-col items-start md:items-end">
+      <section class="created-section flex flex-col items-start md:items-end px-10">
         <h4 class="flex justify-start items-center mb-10">
           <span class="text-base md:text-4xl font-semibold text-right dark-blue mr-4">Created with</span> <img
             class="mr-4" src="./assets/images/group-11.png" alt="love icon">

@@ -42,7 +42,7 @@
   color: #ffffff;
 }
 
-.container {
+section {
   max-width: 1280px;
 }
 
@@ -59,20 +59,18 @@ nav ul li a {
   color: var(--blue-dark);
 }
 
-.slider-container {
+.slide-input-container {
   width: 247px;
 }
 
-.slider {
+.slide-input {
   -webkit-appearance: none;
   outline: none;
-  width: 247px;
   height: 9px;
-  border-radius: 10.5px;
-  background-color: var(--line-grey);
+  background-color: var(--line-grey)
 }
 
-.slider::-webkit-slider-thumb {
+.slide-input::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   background-color: var(--purpley-pink);
@@ -159,11 +157,9 @@ nav ul li a {
 }
 
 .space-img-comtainer {
-  background-image: -webkit-linear-gradient(
-    80deg,
-    transparent 12%,
-    #1d1e21 10%
-  );
+  background-image: -webkit-linear-gradient(80deg,
+      transparent 12%,
+      #1d1e21 10%);
 }
 
 .space-img {
@@ -182,11 +178,7 @@ nav ul li a {
 }
 
 .explore-section-title {
-  margin-bottom: 260px;
-}
-
-.explore-section h3 {
-  font-size: 40px;
+  margin-bottom: 90px;
 }
 
 .explore-section a {
@@ -197,9 +189,15 @@ nav ul li a {
   line-height: 52px;
 }
 
-.build-strong-basis-section-inner figure {
+figure {
   height: 314px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 26px;
+  padding: 24px;
+  background-color: white;
   box-shadow: 0 1px 53px 5px rgba(37, 32, 85, 0.21);
 }
 
@@ -208,28 +206,29 @@ nav ul li a {
   height: 850px;
 }
 
-.build-strong-basis-section-inner > div {
+.build-strong-basis-section-inner>div {
   width: 257px;
 }
 
-.build-strong-basis-section-inner img {
+.build-strong-basis-section-inner>figure>img {
   margin-bottom: 24px;
 }
 
-.build-strong-basis-section-inner figcaption {
+figcaption {
   display: flex;
   flex-flow: column;
   align-items: center;
 }
 
-.build-strong-basis-section-inner figcaption h5 {
+figcaption h5 {
   font-size: 16px;
   font-weight: 600;
   text-align: center;
   margin-bottom: 16px;
+  color: var(--blue-dark);
 }
 
-.build-strong-basis-section-inner figcaption p {
+figcaption p {
   text-align: center;
   font-size: 14px;
   font-weight: 500;
@@ -237,19 +236,22 @@ nav ul li a {
   color: var(--brownish-grey);
 }
 
-.slider-section {
-  width: 100%;
+section.slider-section {
+  width: 100vw;
+  padding: 0;
 }
 
 .slider-section .slider {
   width: 100%;
   text-align: center;
   overflow: hidden;
-  height: auto;
 }
 
 .slides {
+  height: 360px;
   display: flex;
+  flex-flow: row;
+  align-items: center;
   overflow-x: auto;
   scroll-snap-type: both proximity;
   scroll-behavior: smooth;
@@ -260,22 +262,28 @@ nav ul li a {
   /* display: none; */
 }
 
-.slides > div:first-of-type {
+
+.slides>figure {
+  height: 251px;
+  scroll-snap-align: center;
+  margin: 0 8px;
+  box-shadow: 0 1px 53px 5px rgba(37, 32, 85, 0.21);
+}
+
+.slides>figure:first-of-type {
   margin: 0 8px 0 0;
 }
 
-.slides > figure {
-  scroll-snap-align: center;
-  flex-shrink: 0;
-  width: 205px;
-  height: 300px;
-  margin: 0 8px;
-  border-radius: 10px;
-  background: #eee;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 10px;
+.slides>figure>figcaption {
+  width: 158px;
+}
+
+.slides>figure>figcaption h5 {
+  margin-bottom: 8.5px;
+}
+
+.slides>figure>figcaption>p {
+  font-size: 14px;
 }
 
 .slider-section a {
@@ -306,7 +314,7 @@ nav ul li a {
   color: var(--purpley-pink);
 }
 
-.whats-different-section article > div img:first-of-type {
+.whats-different-section article>div img:first-of-type {
   height: 75px;
 }
 
@@ -324,11 +332,11 @@ nav ul li a {
   color: #225fb1;
 }
 
-.details-items > div {
+.details-items>div {
   height: 32px;
 }
 
-.detail-items > div > span:first-of-type {
+.detail-items>div>span:first-of-type {
   background-color: #2e3033;
 }
 
@@ -346,7 +354,7 @@ footer nav ul li {
 
 .wave-animation-container {
   position: absolute;
-  top: 2970px;
+  top: 2695px;
   left: 0;
 }
 
@@ -416,7 +424,7 @@ footer nav ul li {
 
 .wave-different-container {
   position: absolute;
-  top: 4790px;
+  top: 3985px;
   left: -300px;
 }
 
