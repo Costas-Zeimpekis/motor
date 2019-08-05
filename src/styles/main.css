@@ -288,9 +288,10 @@ section.slider-section {
 
 .slider-section a {
   width: 20px;
-  height: auto;
+  height: 20px;
+  display: inline-block;
   border-radius: 50%;
-  background: red;
+  background-color: #d8d8d8;
 }
 
 .whats-different-section {
@@ -305,9 +306,6 @@ section.slider-section {
   width: 161px;
 }
 
-.whats-different-section a {
-  width: 341px;
-}
 
 .whats-different-section a span {
   line-height: 56px;

@@ -363,7 +363,7 @@ axios.get('https://newsapi.org/v1/sources')
       <section class="slider-section mb-48">
         <div class="slider">
           <div class="slides">
-          <figure >
+          <figure id="slide-1">
             <img src="./assets/images/unplugged.svg" alt="unplugged svg icon">
             <figcaption>
               <h5>Compatibility</h5>
@@ -372,7 +372,7 @@ axios.get('https://newsapi.org/v1/sources')
               </p>
             </figcaption>
           </figure>
-          <figure >
+          <figure id="slide-2">
             <img src="./assets/images/flask-1.svg" alt="flask svg icon">
             <figcaption>
               <h5>Tested</h5>
@@ -383,14 +383,14 @@ axios.get('https://newsapi.org/v1/sources')
               </p>
             </figcaption>
           </figure>
-          <figure >
+          <figure id="slide-3">
             <img src="./assets/images/astronaut-1.svg" alt="austronaut helmet svg icon">
             <figcaption>
               <h5>Support</h5>
               <p>A community behind the project, ready to solve all your future questions</p>
             </figcaption>
           </figure>
-          <figure>
+          <figure id="slide-4">
             <img src="./assets/images/game-controller.svg" alt="game controler svg icon">
             <figcaption>
               <h5>Run-tim Control</h5>
@@ -398,14 +398,14 @@ axios.get('https://newsapi.org/v1/sources')
                 parameters</p>
             </figcaption>
           </figure>
-          <figure >
+          <figure id="slide-5">
             <img src="./assets/images/feather.svg" alt="feather svg icon">
             <figcaption>
               <h5>Lightweight</h5>
               <p>Small memory usage, easy syntax and a powerfull Api</p>
             </figcaption>
           </figure>
-          <figure >
+          <figure id="slide-6">
             <img src="./assets/images/performance.svg" alt="stars svg icon">
             <figcaption>
               <h5>Perfomance</h5>
@@ -414,11 +414,12 @@ axios.get('https://newsapi.org/v1/sources')
           </figure>
         </div>
         <div>
-            <a href="#slide-1">1</a>
-            <a href="#slide-2">2</a>
-            <a href="#slide-3">3</a>
-            <a href="#slide-4">4</a>
-            <a href="#slide-5">5</a>
+            <a href="#slide-1" class="mr-3"></a>
+            <a href="#slide-2" class="mr-3"></a>
+            <a href="#slide-3" class="mr-3"></a>
+            <a href="#slide-4" class="mr-3"></a>
+            <a href="#slide-5" class="mr-3"></a>
+            <a href="#slide-6"></a>
           </div>
         </div>
       </section>
@@ -469,8 +470,8 @@ axios.get('https://newsapi.org/v1/sources')
             </div>
           </article>
         </section>
-        <a class="text-center rounded-full text-center bg-white m-auto">
-          <span class="text-base font-bold rounded-full">
+        <a class="text-center rounded-full text-center bg-white md:m-auto">
+          <span class="text-sm font-bold rounded-full">
             Check the Motorcortex Player
           </span>
         </a>
@@ -478,7 +479,7 @@ axios.get('https://newsapi.org/v1/sources')
       <section class="details-section flex flex-wrap px-10">
         <div class="md:w-6/12 flex flex-row justify-between m-auto mb-10">
           <div class="w-6/12 md:w-8/12 flex flex-col items-center">
-            <h4 class="text-2xl font-bold dark-blue text-right leading-relaxed md:leading-tight md:mb-10">
+            <h4 class="text-2xl font-bold dark-blue text-right leading-relaxed md:leading-tight mr-4 md:mb-10">
               Building a <br /> strong and active <br />opensource project
             </h4>
           </div>
@@ -514,7 +515,7 @@ axios.get('https://newsapi.org/v1/sources')
           <span class="by text-base md:text-4xl font-semibold text-right dark-blue mr-4">by</span>
           <img src="./assets/images/bitmap.png" alt="Kiss Button Logo">
         </h4>
-        <p class="text-base md:text-2xl brownish-grey">
+        <p class="text-sm md:text-2xl font-medium brownish-grey">
           Open Source is on our DNA and part of <br class="md:hidden" />our identity. We believe in Open
           <br class="md:hidden" />Source and we
           giveback to the <br class="md:hidden" />community by contributing ideas,

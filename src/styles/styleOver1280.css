@@ -40,6 +40,10 @@
     font-size: 40px;
   }
 
+  .whats-different-section a {
+    width: 341px;
+  }
+
   .details-section {
     margin-bottom: 210px;
   }
