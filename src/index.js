@@ -12,6 +12,10 @@ function sideMenuShowHandler() {
   showSideBar = !showSideBar;
 }
 
+function handleOpenEditor(id) {
+  document.getElementById(id).style.display = 'block';
+}
+
 const slides = Array.from(document.querySelector('.slides').getElementsByTagName('figure'));
 const dots = Array.from(document.querySelector('.dots').getElementsByTagName('a'));
 

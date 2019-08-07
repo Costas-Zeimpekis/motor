@@ -116,10 +116,6 @@ main {
   margin: 0;
 }
 
-.editor-height {
-  height: auto;
-}
-
 .what-you-can-do-section nav li {
   height: 18px;
   display: flex;
@@ -133,7 +129,9 @@ main {
   margin-right: 24px;
 }
 
-.editor-color-shadow {
+.editor {
+  width: 272px;
+  height: auto;
   background-color: #1d1e21;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
@@ -166,7 +164,7 @@ main {
 
 .milky-way-img-container,
 .planet-earth-img-container {
-  background-image: linear-gradient(12deg, transparent 15%, #ffffff 15%);
+  background-image: linear-gradient(10deg, transparent 15%, #ffffff 15%);
 }
 
 .space-img {

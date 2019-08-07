@@ -113,8 +113,7 @@
                 </ul>
               </nav>
             </aside>
-            <div
-              class="editor-color-shadow editor-height md:w-11/12 flex flex-col md:flex-row rounded-lg m-auto pb-1 md:px-0 md:pb-0">
+            <div class="editor md:w-11/12 flex flex-col md:flex-row rounded-lg m-auto pb-1 md:px-0 md:pb-0">
               <div
                 class="milky-way-img-container md:w-7/12 flex flex-col justify-center md:items-center order-1 md:order-2 rounded-t-lg md:rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-0 md:pb-0 md:px-0">
                 <img class="editor-img-sizes" src="./assets/images/milky-way.svg" alt="milky way svg">
@@ -126,34 +125,31 @@
                   <button class="w-20 h-8 rounded-lg mr-4"><span
                       class="h-4 text-sm font-semibold text-white">React</span></button>
                 </div>
-                <div id="vanillaJS" class="tabcontent w-11/12 hidden md:block overflow-auto ml-8">
-                  <pre class="h-full text-sm text-teal-500 mr-2">
-componentDidMount() { 
-  axios.get('https://newsapi.org/v1/sources')
-  .then(res => {
-   console.log(res.data.sources);
-    this.props.fetchPosts(res.data.sources);
-        })                            
-      .catch(err => 
-       {this.setState({ resError: true
-          });
-            });
-          }                         
-          searchHadler = event => {
-        event.preventDefault();
-              this.setState({
-          searchTxt: event.target.value
-        });
-      };                          
-        setCategoryHandler = event => {
-          event.preventDefault();
-          this.setState({
-              selectCategory: event.target.value
-      });
-      };                                        
-                            </pre>
+                <div id="vanillaJS-milky"
+                  class="tabcontent md:w-11/12 hidden  md:block overflow-auto ml-8 mb-12 md:mb-0">
+                  <p class="h-full text-sm text-teal-500 break-all md:mr-2">
+                    componentDidMount() {
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    .catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
+
+                  </p>
                 </div>
-                <button class="tap-btn flex flex-col items-center text-white md:hidden">
+                <button onclick="handleOpenEditor('vanillaJS-milky')"
+                  class="tap-btn flex flex-col items-center text-white md:hidden">
                   <span class="text-xs mb-2">
                     Tap to se how it is coded
                   </span>
@@ -172,9 +168,8 @@ componentDidMount() {
             The
             Skinny On Lcd Monitors The Skinny on Lcd Monitor
           </p>
-          <section class="md:w-11/12 editor-height flex ml-auto">
-            <div
-              class="editor-color-shadow editor-height md:w-11/12 flex flex-col md:flex-row rounded-lg m-auto pb-1 md:px-0 md:pb-0">
+          <section class="md:w-11/12 flex ml-auto">
+            <div class="editor md:w-11/12 flex flex-col md:flex-row rounded-lg m-auto pb-1 md:px-0 md:pb-0">
               <div
                 class="planet-earth-img-container md:w-7/12 flex flex-col justify-center md:items-center order-1 rounded-t-lg md:rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-0 md:px-0">
                 <img class="planet-img-sizes" src="./assets/images/planet-earth.svg" alt="planet earth svg image">
@@ -186,34 +181,36 @@ componentDidMount() {
                   <button class="w-20 h-8  rounded-lg mr-4"><span
                       class="h-4 text-sm font-semibold text-white">React</span></button>
                 </div>
-                <div id="vanillaJS" class="tabcontent w-11/12 hidden md:block overflow-auto ml-8">
-                  <pre class="h-full text-sm text-teal-500 mr-2">
-componentDidMount() { 
-axios.get('https://newsapi.org/v1/sources')
-.then(res => {
- console.log(res.data.sources);
-  this.props.fetchPosts(res.data.sources);
-      })                            
-    .catch(err => 
-     {this.setState({ resError: true
-        });
-          });
-        }                         
-        searchHadler = event => {
-      event.preventDefault();
-            this.setState({
-        searchTxt: event.target.value
-      });
-    };                          
-      setCategoryHandler = event => {
-        event.preventDefault();
-        this.setState({
-            selectCategory: event.target.value
-    });
-    };                                        
-                          </pre>
+                <div id="vanillaJS-planet"
+                  class="tabcontent md:w-11/12 hidden break-all md:block overflow-auto ml-8 mb-12 md:mb-0">
+                  <p class="h-full text-sm text-teal-500 break-all mr-2">
+                    componentDidMount() {
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    .catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
+                    setCategoryHandler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    selectCategory: event.target.value
+                    });
+                    };
+                  </p>
                 </div>
-                <button class="tap-btn flex flex-col items-center text-white md:hidden">
+                <button onclick="handleOpenEditor('vanillaJS-planet')"
+                  class="tap-btn flex flex-col items-center text-white md:hidden">
                   <span class="tap-text mb-2">Tap to se how it is coded</span>
                   <img src="./assets/images/chevron-left-solid.svg" alt="">
                 </button>
@@ -229,8 +226,7 @@ axios.get('https://newsapi.org/v1/sources')
             Skinny On Lcd Monitors The Skinny on Lcd Monitor
           </p>
           <section class="md:w-11/12 flex ml-auto">
-            <div
-              class="editor-color-shadow editor-height md:w-11/12 flex flex-col md:flex-row rounded-lg m-auto pb-1 md:px-0 md:pb-0">
+            <div class="editor md:w-11/12 flex flex-col md:flex-row rounded-lg m-auto pb-1 md:px-0 md:pb-0">
               <div
                 class="space-img-comtainer md:w-7/12 flex flex-col justify-center md:items-center order-1 md:order-2 rounded-t-lg md:rounded-r-lg">
                 <img class="space-img" src="./assets/images/14.png" alt="space svg image">
@@ -242,34 +238,36 @@ axios.get('https://newsapi.org/v1/sources')
                   <button class="w-20 h-8  rounded-lg mr-4"><span
                       class="h-4 text-sm font-semibold text-white">React</span></button>
                 </div>
-                <div id="vanillaJS" class="tabcontent w-11/12 hidden md:block overflow-auto ml-8">
-                  <pre class="h-full text-sm text-teal-500 mr-2">
-  componentDidMount() { 
-  axios.get('https://newsapi.org/v1/sources')
-  .then(res => {
-   console.log(res.data.sources);
-    this.props.fetchPosts(res.data.sources);
-        })                            
-      .catch(err => 
-       {this.setState({ resError: true
-          });
-            });
-          }                         
-          searchHadler = event => {
-        event.preventDefault();
-              this.setState({
-          searchTxt: event.target.value
-        });
-      };                          
-        setCategoryHandler = event => {
-          event.preventDefault();
-          this.setState({
-              selectCategory: event.target.value
-      });
-      };                                        
-                            </pre>
+                <div id="vanillaJS-space"
+                  class="tabcontent md:w-11/12 hidden  md:block overflow-auto ml-8 mb-12 md:mb-0">
+                  <p class="h-full text-sm text-teal-500 break-all md:mr-2">
+                    componentDidMount() {
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    .catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
+                    setCategoryHandler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    selectCategory: event.target.value
+                    });
+                    };
+                  </p>
                 </div>
-                <button class="tap-btn flex flex-col items-center text-white md:hidden">
+                <button onclick="handleOpenEditor('vanillaJS-space')"
+                  class="tap-btn flex flex-col items-center text-white md:hidden">
                   <span class="tap-text mb-2">Tap to se how it is coded</span>
                   <img src="./assets/images/chevron-left-solid.svg" alt="">
                 </button>
