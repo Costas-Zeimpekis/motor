@@ -36,6 +36,19 @@
     margin-bottom: 260px;
   }
 
+  .build-strong-section header h2 {
+    font-size: 36px;
+  }
+
+  .whats-different-section {
+    margin-bottom: 275px;
+  }
+
+
+  .whats-different-section section {
+    margin-bottom: 120px;
+  }
+
   .whats-different-section h3 {
     font-size: 40px;
   }

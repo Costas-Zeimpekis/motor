@@ -50,6 +50,15 @@ section {
   width: 240px;
 }
 
+.logo-icon {
+  width: 25px;
+  height: 23px;
+}
+
+.log-text {
+  width: 151px;
+}
+
 header nav {
   min-width: 24px;
 }
@@ -86,6 +95,7 @@ nav ul li a {
 }
 
 .animation-section a {
+  width: 200px;
   box-shadow: 0 0 30px 0 rgba(39, 60, 74, 0.31);
 }
 
@@ -148,24 +158,14 @@ nav ul li a {
   height: 80%;
 }
 
-.milky-way-img-container {
-  background-image: linear-gradient(12deg, transparent 16%, #ffffff 16%);
-}
-
+.milky-way-img-container,
 .planet-earth-img-container {
-  background-image: linear-gradient(12deg, transparent 16%, #ffffff 16%);
-}
-
-.space-img-comtainer {
-  background-image: -webkit-linear-gradient(80deg,
-      transparent 12%,
-      #1d1e21 10%);
+  background-image: linear-gradient(12deg, transparent 15%, #ffffff 15%);
 }
 
 .space-img {
-  width: 241px;
-  height: 156%;
-  transform: rotate(0deg);
+  width: 272px;
+  height: 363px;
 }
 
 .editor-img-sizes {
@@ -173,8 +173,17 @@ nav ul li a {
   object-fit: contain;
 }
 
+.planet-img-sizes {
+  width: 219px;
+  height: 228px;
+}
+
 .explore-section {
   margin-bottom: 96px;
+}
+
+.explore-section>div {
+  width: 244px;
 }
 
 .explore-section-title {
@@ -187,6 +196,14 @@ nav ul li a {
 
 .explore-section a span {
   line-height: 52px;
+}
+
+.build-strong-section header h2 {
+  font-size: 20px;
+}
+
+.build-strong-section header hr {
+  width: 154px;
 }
 
 figure {
@@ -247,8 +264,10 @@ section.slider-section {
   overflow: hidden;
 }
 
+
+
 .slides {
-  height: 360px;
+  height: 400px;
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -259,14 +278,13 @@ section.slider-section {
 }
 
 .slides::-webkit-scrollbar {
-  /* display: none; */
+  display: none;
 }
 
-
 .slides>figure {
-  height: 251px;
   scroll-snap-align: center;
   margin: 0 8px;
+  padding: 33.5px 24px 37px;
   box-shadow: 0 1px 53px 5px rgba(37, 32, 85, 0.21);
 }
 
@@ -278,6 +296,12 @@ section.slider-section {
   width: 158px;
 }
 
+.slides>figure>img {
+  width: 64px;
+  height: 62px;
+  margin-bottom: 17px;
+}
+
 .slides>figure>figcaption h5 {
   margin-bottom: 8.5px;
 }
@@ -287,19 +311,19 @@ section.slider-section {
 }
 
 .slider-section a {
-  width: 20px;
-  height: 20px;
+  width: 11px;
+  height: 11px;
   display: inline-block;
   border-radius: 50%;
   background-color: #d8d8d8;
 }
 
 .whats-different-section {
-  margin-bottom: 275px;
+  margin-bottom: 161px;
 }
 
 .whats-different-section section {
-  margin-bottom: 120px;
+  margin-bottom: 48px;
 }
 
 .whats-different-section hr {

@@ -38,13 +38,13 @@
     </nav>
   </aside>
   <div class="container relative z-10 m-auto pt-32 pb-4">
-    <header class="main-header w-screen fixed top-0 left-0 bg-white py-5">
-      <div class="container flex justify-between items-center m-auto px-5">
+    <header class="main-header w-screen fixed top-0 left-0 bg-white py-4 md:py-5">
+      <div class="container flex justify-between items-center m-auto px-6">
         <div class="logo-container h-8 flex items-center">
-          <div class="h-6 mr-4">
+          <div class="logo-icon mr-4">
             <img src="./assets/images/fill-1.svg" alt="logo icon of MotorCortex" />
           </div>
-          <div class="log-icon h-4 md:h-5">
+          <div class="log-text h-4 md:h-5">
             <img src="./assets/images/fill-2.svg" alt="logo text of MotorCortex" />
           </div>
         </div>
@@ -62,7 +62,8 @@
       </div>
     </header>
     <main class="mb-40">
-      <section class="animation-section flex flex-wrap justify-center md:justify-between items-center mb-10 md:mb-40 px-5">
+      <section
+        class="animation-section flex flex-wrap justify-center md:justify-between items-center mb-10 md:mb-40 px-5">
         <div class="animation-slider flex flex-col items-center mb-8 md:mb-0 order-1 md:order-2 xl:w-4/12">
           <img class="mb-6" src="./assets/images/space.jpg" alt="image of space">
           <div class="slide-input-container">
@@ -70,13 +71,13 @@
           </div>
         </div>
         <div class="flex flex-col items-center md:items-start xl:w-7/12  md:mb-8 order-2 md:order-1">
-          <h1 class="dark-blue font-bold text-center md:text-left mb-4">
-            The animation framework
+          <h1 class="dark-blue font-bold text-center md:text-left mb-3 md:mb-4">
+            The animation<br class="md:hidden" /> framework
           </h1>
-          <p class="w-10/12 md:w-5/12 dark-blue text-sm xl:text-xl text-center md:text-left font-semibold mb-8 md:mb-12">
-            for creative developers and designers that code.
+          <p class="dark-blue text-sm xl:text-xl text-center md:text-left font-semibold mb-8 md:mb-12">
+            for creative developers and<br class="md:hidden" /> designers that code.
           </p>
-          <a class="w-48 md:w-64 text-center rounded-full bg-white">
+          <a class="md:w-64 text-center rounded-full bg-white">
             <span class="text-sm md:text-base font-bold">
               Check it on GitHub
             </span>
@@ -85,13 +86,14 @@
       </section>
       <section class="what-you-can-do-section text-left mb-32 px-5">
         <header class="what-can-you-do-top mb-8">
-          <h2 class="w-4/5 md:w-full dark-blue text-xl md:text-3xl font-bold mb-4">What you can do (spoiler: everything)
+          <h2 class="dark-blue text-xl md:text-3xl font-bold mb-4">What you can do<br class="md:hidden" /> (spoiler:
+            everything)
           </h2>
           <hr class="w-48 h-3 bg-grey m-0">
         </header>
         <article class="mb-8 md:mb-24">
-          <h3 class="w-8/12 md:w-full text-base md:text-2xl font-semibold dark-blue mb-4 md:mb-2">
-            Simple syntax, attractively easy to use
+          <h3 class="text-base md:text-2xl font-semibold dark-blue mb-4 md:mb-2">
+            Simple syntax,<br class="md:hidden" /> attractively easy to use
           </h3>
           <p class="md:w-6/12 text-sm md:text-base text-normal md:font-semibold dark-blue mb-8 md:mb-20">
             The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd Monitors The Skinny on Lcd MonitorThe
@@ -114,7 +116,7 @@
             <div
               class="editor-color-shadow editor-height md:w-11/12 flex flex-col md:flex-row rounded-lg m-auto pb-1 md:px-0 md:pb-0">
               <div
-                class="milky-way-img-container md:w-7/12 flex flex-col justify-center md:items-center order-1 md:order-2 rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-0 md:pb-0 md:px-0">
+                class="milky-way-img-container md:w-7/12 flex flex-col justify-center md:items-center order-1 md:order-2 rounded-t-lg md:rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-0 md:pb-0 md:px-0">
                 <img class="editor-img-sizes" src="./assets/images/milky-way.svg" alt="milky way svg">
               </div>
               <div class="w-5/2 flex flex-col justify-center text-white order-2 md:order-1 h-full p-4 md:pr-0">
@@ -152,7 +154,7 @@ componentDidMount() {
                             </pre>
                 </div>
                 <button class="tap-btn flex flex-col items-center text-white md:hidden">
-                  <span class="text-xs">
+                  <span class="text-xs mb-2">
                     Tap to se how it is coded
                   </span>
                   <img src="./assets/images/chevron-left-solid.svg" alt="">
@@ -174,8 +176,8 @@ componentDidMount() {
             <div
               class="editor-color-shadow editor-height md:w-11/12 flex flex-col md:flex-row rounded-lg m-auto pb-1 md:px-0 md:pb-0">
               <div
-                class="planet-earth-img-container md:w-7/12 flex flex-col justify-center md:items-center order-1 rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-0 md:px-0">
-                <img class="editor-img-sizes" src="./assets/images/planet-earth.svg" alt="planet earth svg image">
+                class="planet-earth-img-container md:w-7/12 flex flex-col justify-center md:items-center order-1 rounded-t-lg md:rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-0 md:px-0">
+                <img class="planet-img-sizes" src="./assets/images/planet-earth.svg" alt="planet earth svg image">
               </div>
               <div class="w-5/2 h-full flex flex-col justify-center text-white order-2  p-4 md:pr-0">
                 <div class="tabs hidden md:block mb-6">
@@ -212,7 +214,7 @@ axios.get('https://newsapi.org/v1/sources')
                           </pre>
                 </div>
                 <button class="tap-btn flex flex-col items-center text-white md:hidden">
-                  <span class="tap-text">Tap to se how it is coded</span>
+                  <span class="tap-text mb-2">Tap to se how it is coded</span>
                   <img src="./assets/images/chevron-left-solid.svg" alt="">
                 </button>
               </div>
@@ -220,7 +222,7 @@ axios.get('https://newsapi.org/v1/sources')
         </article>
         <article>
           <h3 class="text-base md:text-2xl font-semibold dark-blue mb-4 md:mb-2">
-            Powerful API, Smooth Animations, Full Compatibility
+            Powerful API, Smooth<br class="md:hidden" /> Animations, Full Compatibility
           </h3>
           <p class="md:w-6/12 text-sm md:text-base text-normal md:font-semibold dark-blue mb-8 md:mb-20">
             The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd Monitors The Skinny on Lcd MonitorThe
@@ -230,7 +232,7 @@ axios.get('https://newsapi.org/v1/sources')
             <div
               class="editor-color-shadow editor-height md:w-11/12 flex flex-col md:flex-row rounded-lg m-auto pb-1 md:px-0 md:pb-0">
               <div
-                class="space-img-comtainer md:w-7/12 flex flex-col justify-center md:items-center order-1 md:order-2 rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-0 md:px-0">
+                class="space-img-comtainer md:w-7/12 flex flex-col justify-center md:items-center order-1 md:order-2 rounded-t-lg md:rounded-r-lg">
                 <img class="space-img" src="./assets/images/14.png" alt="space svg image">
               </div>
               <div class="w-5/2 h-full flex flex-col justify-center text-white order-2  md:order-1 p-4 md:pr-0">
@@ -268,7 +270,7 @@ axios.get('https://newsapi.org/v1/sources')
                             </pre>
                 </div>
                 <button class="tap-btn flex flex-col items-center text-white md:hidden">
-                  <span class="tap-text">Tap to se how it is coded</span>
+                  <span class="tap-text mb-2">Tap to se how it is coded</span>
                   <img src="./assets/images/chevron-left-solid.svg" alt="">
                 </button>
               </div>
@@ -276,30 +278,32 @@ axios.get('https://newsapi.org/v1/sources')
         </article>
       </section>
       <section class="explore-section flex flex-col items-center md:items-end dark-blue px-5">
-        <h2
-          class="explore-section-title w-11/12 md:w-5/12 text-center md:text-right font-bold text-xl md:text-3xl leading-snug md-26">
-          Explore galaxies of<br class="md:hidden" />'ready to use'<br class="md:hidden" /> animations and plugins
-        </h2>
-        <div class="flex flex-col md:flex-row  md:justify-between items-center">
-          <div class="w-full md:w-6/12 flex flex-col items-start mb-10 md:mb-0">
-            <h3 class="browse-librady-title text-2xl text-white font-bold mb-2">Browse the Libarary</h3>
-            <hr class="m-0 mb-6 w-full md:w-7/12 h-2 bg-white rounded-full mb-6">
-            <p class="browse-librady-headline md:w-11/12 font-semibold text-base text-white">Get 'ready to
-              use'
-              animations
-              clips, functional plugins to the MotorCortex core and upload your work to the community</p>
+        <div>
+          <h2
+            class="explore-section-title md:w-5/12 text-center md:text-right font-bold text-xl md:text-3xl leading-snug md-26">
+            Explore galaxies of<br class="md:hidden" />'ready to use'<br class="md:hidden" /> animations and plugins
+          </h2>
+          <div class="flex flex-col md:flex-row  md:justify-between items-center">
+            <div class="md:w-6/12 flex flex-col items-center md:items-start mb-10 md:mb-0">
+              <h3 class="block text-center text-2xl text-white font-bold mb-2">Browse the Library
+              </h3>
+              <hr class="w-full md:w-7/12 h-2 bg-white rounded-full m-0 mb-6">
+              <p class="browse-librady-headline md:w-11/12 font-semibold text-base text-white">Get 'ready to
+                use' animations <span class="hidden md:inline">and lips, functional plugins to the MotorCortex
+                  core</span> and upload your work to the community</p>
+            </div>
           </div>
-          <a class="text-center w-full rounded-full">
-            <span class="text-white text-sm md:text-base font-bold">
-              Check the animations library
-            </span>
-          </a>
         </div>
+        <a class="text-center w-full rounded-full">
+          <span class="text-white text-sm md:text-base font-bold">
+            Check the animations library
+          </span>
+        </a>
       </section>
-      <section class="md:w-8/12 flex flex-col items-center m-auto md:mb-64 px-5">
+      <section class="build-strong-section md:w-8/12 flex flex-col items-center m-auto md:mb-64 px-5">
         <header class="md:mb-20">
-          <h2 class="dark-blue text-lg md:text-4xl font-bold">Built in strong basis</h2>
-          <hr class="w-6/12 h-2 rounded-full bg-grey">
+          <h2 class="font-bold dark-blue">Built in strong basis</h2>
+          <hr class="h-2 rounded-full bg-grey">
         </header>
         <section class="build-strong-basis-section-inner hidden md:flex flex-row justify-between">
           <div class="self-center">
@@ -312,7 +316,7 @@ axios.get('https://newsapi.org/v1/sources')
                 </p>
               </figcaption>
             </figure>
-            <figure >
+            <figure>
               <img src="./assets/images/flask-1.svg" alt="flask svg icon">
               <figcaption>
                 <h5>Tested</h5>
@@ -349,7 +353,7 @@ axios.get('https://newsapi.org/v1/sources')
                 <p>Small memory usage, easy syntax and a powerfull Api</p>
               </figcaption>
             </figure>
-            <figure >
+            <figure>
               <img src="./assets/images/performance.svg" alt="stars svg icon">
               <figcaption>
                 <h5>Perfomance</h5>
@@ -363,57 +367,57 @@ axios.get('https://newsapi.org/v1/sources')
       <section class="slider-section mb-48">
         <div class="slider">
           <div class="slides">
-          <figure id="slide-1">
-            <img src="./assets/images/unplugged.svg" alt="unplugged svg icon">
-            <figcaption>
-              <h5>Compatibility</h5>
-              <p class="text-center">
-                Cross Browser & Device Compatibility Smooth animations on both mobile nd desktop
-              </p>
-            </figcaption>
-          </figure>
-          <figure id="slide-2">
-            <img src="./assets/images/flask-1.svg" alt="flask svg icon">
-            <figcaption>
-              <h5>Tested</h5>
-              <p class="text-center">
-                Error-Free<br class="md:hidden"/>
-                Bug-Free<br class="md:hidden"/>
-                Expandable
-              </p>
-            </figcaption>
-          </figure>
-          <figure id="slide-3">
-            <img src="./assets/images/astronaut-1.svg" alt="austronaut helmet svg icon">
-            <figcaption>
-              <h5>Support</h5>
-              <p>A community behind the project, ready to solve all your future questions</p>
-            </figcaption>
-          </figure>
-          <figure id="slide-4">
-            <img src="./assets/images/game-controller.svg" alt="game controler svg icon">
-            <figcaption>
-              <h5>Run-tim Control</h5>
-              <p>Control the speed of the simulation, change the format of the clock display and many many other
-                parameters</p>
-            </figcaption>
-          </figure>
-          <figure id="slide-5">
-            <img src="./assets/images/feather.svg" alt="feather svg icon">
-            <figcaption>
-              <h5>Lightweight</h5>
-              <p>Small memory usage, easy syntax and a powerfull Api</p>
-            </figcaption>
-          </figure>
-          <figure id="slide-6">
-            <img src="./assets/images/performance.svg" alt="stars svg icon">
-            <figcaption>
-              <h5>Perfomance</h5>
-              <p>Create smooth animations get the ideal perfomance for anything you will need</p>
-            </figcaption>
-          </figure>
-        </div>
-        <div>
+            <figure id="slide-1">
+              <img src="./assets/images/unplugged.svg" alt="unplugged svg icon">
+              <figcaption>
+                <h5>Compatibility</h5>
+                <p class="text-center">
+                  Cross Browser & Device Compatibility Smooth animations on both mobile nd desktop
+                </p>
+              </figcaption>
+            </figure>
+            <figure id="slide-2">
+              <img src="./assets/images/flask-1.svg" alt="flask svg icon">
+              <figcaption>
+                <h5>Tested</h5>
+                <p class="text-center">
+                  Error-Free<br class="md:hidden" />
+                  Bug-Free<br class="md:hidden" />
+                  Expandable
+                </p>
+              </figcaption>
+            </figure>
+            <figure id="slide-3">
+              <img src="./assets/images/astronaut-1.svg" alt="austronaut helmet svg icon">
+              <figcaption>
+                <h5>Support</h5>
+                <p>A community behind the project, ready to solve all your future questions</p>
+              </figcaption>
+            </figure>
+            <figure id="slide-4">
+              <img src="./assets/images/game-controller.svg" alt="game controler svg icon">
+              <figcaption>
+                <h5>Run-tim Control</h5>
+                <p>Control the speed of the simulation, change the format of the clock display and many many other
+                  parameters</p>
+              </figcaption>
+            </figure>
+            <figure id="slide-5">
+              <img src="./assets/images/feather.svg" alt="feather svg icon">
+              <figcaption>
+                <h5>Lightweight</h5>
+                <p>Small memory usage, easy syntax and a powerfull Api</p>
+              </figcaption>
+            </figure>
+            <figure id="slide-6">
+              <img src="./assets/images/performance.svg" alt="stars svg icon">
+              <figcaption>
+                <h5>Perfomance</h5>
+                <p>Create smooth animations get the ideal perfomance for anything you will need</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div>
             <a href="#slide-1" class="mr-3"></a>
             <a href="#slide-2" class="mr-3"></a>
             <a href="#slide-3" class="mr-3"></a>
@@ -428,8 +432,8 @@ axios.get('https://newsapi.org/v1/sources')
 
       <section class="whats-different-section md:w-7/12 flex flex-col justify-center m-auto px-5">
         <header class="flex flex-col items-start mb-16">
-          <h2 class="whats-different-title  md:w-9/12 text-2xl text-white font-semibold leading-tight mb-4">
-            What's different with MoterCortex?
+          <h2 class="text-2xl text-white font-semibold leading-tight mb-4">
+            What's different with<br class="md:hidden" /> MoterCortex?
           </h2>
           <hr class="h-3 bg-white rounded-full m-0" />
         </header>
@@ -510,10 +514,18 @@ axios.get('https://newsapi.org/v1/sources')
       </section>
       <section class="created-section flex flex-col items-start md:items-end px-5">
         <h4 class="flex justify-start items-center mb-10">
-          <span class="text-base md:text-4xl font-semibold text-right dark-blue mr-4">Created with</span> <img
-            class="mr-4" src="./assets/images/group-11.png" alt="love icon">
+          <span class="text-base md:text-4xl font-semibold text-right dark-blue mr-4">Created with</span>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/images/heart@2x.png">
+            <source media="(min-width: 1920px)" srcset="./assets/images/heart@3x.png">
+            <img src="./assets/images/heart.png" alt="Kiss Button Logo">
+          </picture>
           <span class="by text-base md:text-4xl font-semibold text-right dark-blue mr-4">by</span>
-          <img src="./assets/images/bitmap.png" alt="Kiss Button Logo">
+          <picture>
+            <source media="(min-width: 650px)" srcset="./assets/images/heart.png">
+            <source media="(min-width: 465px)" srcset="./assets/images/heart.png">
+            <img src="./assets/images/heart.png" alt="Kiss Button Logo">
+          </picture>
         </h4>
         <p class="text-sm md:text-2xl font-medium brownish-grey">
           Open Source is on our DNA and part of <br class="md:hidden" />our identity. We believe in Open
