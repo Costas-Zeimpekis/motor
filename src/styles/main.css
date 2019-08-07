@@ -21,6 +21,7 @@
   background-color: #1aad26;
 }
 
+
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
@@ -41,6 +42,7 @@
   font-size: 14px;
   color: #ffffff;
 }
+
 
 section {
   max-width: 1280px;
@@ -88,6 +90,10 @@ nav ul li a {
   height: 22px;
   border-radius: 50%;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+main {
+  margin-bottom: 118px;
 }
 
 .animation-section h1 {
@@ -315,7 +321,6 @@ section.slider-section {
   height: 11px;
   display: inline-block;
   border-radius: 50%;
-  background-color: #d8d8d8;
 }
 
 .whats-different-section {
@@ -337,8 +342,11 @@ section.slider-section {
 }
 
 .whats-different-section article>div img:first-of-type {
-  height: 75px;
+  width: 73px;
+  height: 63px;
 }
+
+
 
 .details-section {
   margin-bottom: 118px;
@@ -366,13 +374,24 @@ footer {
   margin-bottom: 50px;
 }
 
+.footer-logo-icon {
+  width: 23px;
+  height: 21px;
+}
+
+.footer-logo-text {
+  width: 138px;
+  height: 15px;
+}
+
+
 footer nav ul li {
   display: block;
   font-size: 16px;
   font-weight: bold;
   color: var(--blue-dark);
-  margin-bottom: 12px;
 }
+
 
 .wave-animation-container {
   position: absolute;

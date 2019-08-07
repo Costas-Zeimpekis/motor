@@ -14,7 +14,7 @@
 </head>
 
 <body class="relative">
-  <div class="wave-animation-container">
+  <!-- <div class="wave-animation-container">
     <div id="waveAnimation"></div>
   </div>
   <div class="wave-animation-container-small">
@@ -25,7 +25,7 @@
   </div>
   <div class="wave-footer-container">
     <div id="waveFooter"></div>
-  </div>
+  </div> -->
   <aside id="sideBar" class="side-bar w-screen h-screen absolute justify-center items-center z-10 hidden">
     <nav>
       <ul class="list-none text-center p-0">
@@ -37,7 +37,7 @@
       </ul>
     </nav>
   </aside>
-  <div class="container relative z-10 m-auto pt-32 pb-4">
+  <div class="container relative z-10 m-auto pt-32">
     <header class="main-header w-screen fixed top-0 left-0 bg-white py-4 md:py-5">
       <div class="container flex justify-between items-center m-auto px-6">
         <div class="logo-container h-8 flex items-center">
@@ -61,7 +61,7 @@
         </nav>
       </div>
     </header>
-    <main class="mb-40">
+    <main>
       <section
         class="animation-section flex flex-wrap justify-center md:justify-between items-center mb-10 md:mb-40 px-5">
         <div class="animation-slider flex flex-col items-center mb-8 md:mb-0 order-1 md:order-2 xl:w-4/12">
@@ -417,13 +417,13 @@ axios.get('https://newsapi.org/v1/sources')
               </figcaption>
             </figure>
           </div>
-          <div>
-            <a href="#slide-1" class="mr-3"></a>
-            <a href="#slide-2" class="mr-3"></a>
-            <a href="#slide-3" class="mr-3"></a>
-            <a href="#slide-4" class="mr-3"></a>
-            <a href="#slide-5" class="mr-3"></a>
-            <a href="#slide-6"></a>
+          <div class="dots">
+            <a href="#slide-1" id="slide-1-dot" class="mr-3"></a>
+            <a href="#slide-2" id="slide-2-dot" class="mr-3"></a>
+            <a href="#slide-3" id="slide-3-dot" class="mr-3"></a>
+            <a href="#slide-4" id="slide-4-dot" class="mr-3"></a>
+            <a href="#slide-5" id="slide-5-dot" class="mr-3"></a>
+            <a href="#slide-6" id="slide-6-dot"></a>
           </div>
         </div>
       </section>
@@ -506,25 +506,25 @@ axios.get('https://newsapi.org/v1/sources')
             </div>
           </div>
         </div>
-        <a class="text-center rounded-full bg-white py-4 md:py-0">
-          <span class="text-base font-bold">
+        <a class="text-center rounded-full bg-white py-3 md:py-0">
+          <span class="text-sm md:text-base font-bold">
             Be part of the community<br class="md:hidden" /> on Github
           </span>
         </a>
       </section>
       <section class="created-section flex flex-col items-start md:items-end px-5">
         <h4 class="flex justify-start items-center mb-10">
-          <span class="text-base md:text-4xl font-semibold text-right dark-blue mr-4">Created with</span>
+          <span class="text-base md:text-4xl font-semibold text-right dark-blue mr-2">Created with</span>
           <picture>
             <source media="(min-width: 768px)" srcset="./assets/images/heart@2x.png">
             <source media="(min-width: 1920px)" srcset="./assets/images/heart@3x.png">
             <img src="./assets/images/heart.png" alt="Kiss Button Logo">
           </picture>
-          <span class="by text-base md:text-4xl font-semibold text-right dark-blue mr-4">by</span>
+          <span class="by text-base md:text-4xl font-semibold text-right dark-blue ml-2">by</span>
           <picture>
-            <source media="(min-width: 650px)" srcset="./assets/images/heart.png">
-            <source media="(min-width: 465px)" srcset="./assets/images/heart.png">
-            <img src="./assets/images/heart.png" alt="Kiss Button Logo">
+            <source media="(min-width: 768px)" srcset="./assets/images/kiss-logo@2x.png">
+            <source media="(min-width: 1920px)" srcset="./assets/images/kiss-logo@3x.png">
+            <img src="./assets/images/kiss-logo.png" alt="Kiss Button Logo">
           </picture>
         </h4>
         <p class="text-sm md:text-2xl font-medium brownish-grey">
@@ -536,19 +536,19 @@ axios.get('https://newsapi.org/v1/sources')
       </section>
     </main>
     <footer class="px-6">
-      <div class="logo-container flex flex-row items-center justify-between mb-6">
-        <div class="mr-4">
+      <div class="logo-container flex flex-row items-center justify-start mb-6">
+        <div class="footer-logo-icon mr-4">
           <img src="./assets/images/fill-1.svg" alt="logo icon of MotorCortex" />
         </div>
-        <div class="h4 md:h-5">
+        <div class="footer-logo-text">
           <img src="./assets/images/fill-2.svg" alt="logo text of MotorCortex" />
         </div>
       </div>
       <nav class="flex flex-col md:flex-row justify-between">
         <ul class="mb-8 md:mb-0">
-          <li class="mr-4"><a>DOCUMENTATION</a></li>
-          <li class="mr-4"><a>EXAMPLES</a></li>
-          <li class="mr-4"><a>LIBRARY</a></li>
+          <li class="mb-3 md:mr-4"><a>DOCUMENTATION</a></li>
+          <li class="mb-3 md:mr-4"><a>EXAMPLES</a></li>
+          <li class="mb-3 md:mr-4"><a>LIBRARY</a></li>
           <li><a>GITHUB</a></li>
         </ul>
         <ul>

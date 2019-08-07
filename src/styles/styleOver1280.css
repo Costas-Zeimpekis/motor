@@ -7,6 +7,10 @@
     font-size: 16px;
   }
 
+  main {
+    margin-bottom: 160px;
+  }
+
   .animation-section h1 {
     font-size: 40px;
   }
@@ -55,6 +59,10 @@
 
   .whats-different-section a {
     width: 341px;
+  }
+
+  .whats-different-section article>div img:first-of-type {
+    height: 75px;
   }
 
   .details-section {
