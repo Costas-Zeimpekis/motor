@@ -15,37 +15,40 @@
     margin-right: 12px;
   }
 
-  .The-animation {
-    flex-flow: row;
-    justify-content: space-between;
+  .logo-icon {
+    width: 23px;
+    height: 21px;
   }
 
-  .animation-headline {
-    width: 238px;
-    font-size: 16px;
-    text-align: left;
+  .log-text {
+    width: 138px;
+    height: 15px;
   }
 
-  .editor-height {
-    height: 367px;
+  main {
+    margin-bottom: 96px;
+  }
+
+  .editor {
+    width: 100%;
+    height: 373px;
   }
 
   .milky-way-img-container {
-    background-image: linear-gradient(103deg,
-        transparent 16%,
-        #ffffff 16%);
+    background-image: linear-gradient(103deg, transparent 25%, #ffffff 23%);
   }
 
   .planet-earth-img-container {
-    background-image: linear-gradient(99deg,
-        #ffffff 90%,
-        transparent 90%);
+    background-image: linear-gradient(103deg, #ffffff 80%, transparent 77%);
+  }
+
+  .milky-way-img {
+    width: 222px;
+    height: 217px;
   }
 
   .space-img {
-    width: 55%;
-    height: 156%;
-    transform: rotate(90deg);
+    width: 100%;
   }
 
   .what-can-you-do-top {
@@ -60,8 +63,65 @@
     width: 200px;
   }
 
-  .Simple-syntax-attra {
-    width: 510px;
-    margin-bottom: 8px;
+  .explore-section>div {
+    width: 100%;
+  }
+
+  .explore-section a {
+    width: 261px;
+  }
+
+  .explore-section hr {
+    width: 300px;
+  }
+
+  .build-strong-basis-section-inner {
+    width: 100%;
+  }
+
+  figure {
+    height: 251px;
+    padding: 25px 14px 20px;
+  }
+
+  figure img {
+    width: 71px;
+    height: 71px;
+    margin-bottom: 16px;
+  }
+
+  .whats-different-section article>div img:first-of-type {
+    width: 86px;
+    height: 74px;
+  }
+
+  .whats-different-section a {
+    width: 341px;
+  }
+
+  .details-section a {
+    width: 318px;
+    line-height: 56px;
+  }
+
+  footer {
+    margin-bottom: 30px;
+  }
+
+  .footer-log-icon {
+    width: 23px;
+    height: 21px;
+  }
+
+  .wave-animation-container {
+    position: absolute;
+    top: 2130px;
+    left: 0;
+  }
+
+  .wave-different-container {
+    position: absolute;
+    top: 3606px;
+    left: -300px;
   }
 }

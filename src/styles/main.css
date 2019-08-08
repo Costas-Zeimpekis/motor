@@ -66,6 +66,7 @@ header nav {
 }
 
 nav ul li a {
+  font-size: 14px;
   font-weight: bold;
   color: var(--blue-dark);
 }
@@ -96,6 +97,10 @@ main {
   margin-bottom: 118px;
 }
 
+.animation-slider {
+  width: 260px;
+}
+
 .animation-section h1 {
   font-size: 24px;
 }
@@ -111,9 +116,9 @@ main {
 }
 
 .what-can-you-do-top hr {
-  border-radius: 13.5px;
-  background-color: var(--line-grey);
+  height: 10px;
   margin: 0;
+  background-color: var(--line-grey);
 }
 
 .what-you-can-do-section nav li {
@@ -167,19 +172,19 @@ main {
   background-image: linear-gradient(10deg, transparent 15%, #ffffff 15%);
 }
 
+.milky-way-img {
+  width: 241px;
+  height: 235px;
+}
+
+.planet-img {
+  width: 219px;
+  height: 228px;
+}
+
 .space-img {
   width: 272px;
   height: 363px;
-}
-
-.editor-img-sizes {
-  width: 241px;
-  object-fit: contain;
-}
-
-.planet-img-sizes {
-  width: 219px;
-  height: 228px;
 }
 
 .explore-section {
@@ -198,12 +203,12 @@ main {
   background-color: var(--purpley-pink);
 }
 
-.explore-section a span {
-  line-height: 52px;
+.explore-section hr {
+  width: 100%;
 }
 
-.build-strong-section header h2 {
-  font-size: 20px;
+.explore-section a span {
+  line-height: 52px;
 }
 
 .build-strong-section header hr {
@@ -211,7 +216,7 @@ main {
 }
 
 figure {
-  height: 314px;
+  width: 205px;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -228,7 +233,7 @@ figure {
 }
 
 .build-strong-basis-section-inner>div {
-  width: 257px;
+  width: 208px;
 }
 
 .build-strong-basis-section-inner>figure>img {
@@ -245,7 +250,7 @@ figcaption h5 {
   font-size: 16px;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   color: var(--blue-dark);
 }
 
@@ -286,6 +291,7 @@ section.slider-section {
 }
 
 .slides>figure {
+  height: 314px;
   scroll-snap-align: center;
   margin: 0 8px;
   padding: 33.5px 24px 37px;

@@ -44,6 +44,14 @@
     font-size: 36px;
   }
 
+  .build-strong-basis-section-inner>div {
+    width: 257px;
+  }
+
+  figcaption h5 {
+    margin-bottom: 16px;
+  }
+
   .whats-different-section {
     margin-bottom: 275px;
   }

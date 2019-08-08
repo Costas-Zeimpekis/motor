@@ -5,8 +5,8 @@ const imgShowSideBar = document.getElementById('imgShowSideBar');
 function sideMenuShowHandler() {
   showSideBar
     ?
-    (imgShowSideBar.src = './images/burger-open.svg') :
-    (imgShowSideBar.src = './images/burger-close.svg');
+    (imgShowSideBar.src = './assets/images/burger-open.svg') :
+    (imgShowSideBar.src = './assets/images/burger-close.svg');
   sideBar.classList.toggle('flex', showSideBar);
   sideBar.classList.toggle('hidden', !showSideBar);
   showSideBar = !showSideBar;
