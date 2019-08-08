@@ -14,18 +14,29 @@
 </head>
 
 <body class="relative">
-  <!-- <div class="wave-animation-container">
-    <div id="waveAnimation"></div>
+  <div class="wave-1 z-0 absolute w-full">
+    <picture>
+      <source media="(min-width: 768px)" srcset="./assets/images/bg-wave-1@2x.svg">
+      <source media="(min-width: 1920px)" srcset="./assets/images/bg-wave-1@2x.svg">
+    <img src="./assets/images/bg-wave-1.svg" alt="background">
+  </picture>
   </div>
-  <div class="wave-animation-container-small">
-    <div id="waveAnimation-small"></div>
-  </div>
-  <div class="wave-different-container">
-    <div id="waveDifferent"></div>
-  </div>
-  <div class="wave-footer-container">
-    <div id="waveFooter"></div>
-  </div> -->
+  <div class="wave-2 z-0 absolute w-full">
+    <picture>
+        <source media="(min-width: 768px)" srcset="./assets/images/bg-wave-2@2x.svg">
+          <source media="(min-width: 1920px)" srcset="./assets/images/bg-wave-2@3x.svg">
+        <img src="./assets/images/bg-wave-2.svg" alt="background">
+    </picture>
+    </div>
+
+    <div class="wave-3 z-0 absolute w-full">
+        <picture>
+            <source media="(min-width: 768px)" srcset="./assets/images/bg-wave-3@2x.svg">
+              <source media="(min-width: 1920px)" srcset="./assets/images/bg-wave-3@3x.svg">
+            <img src="./assets/images/bg-wave-3.svg" alt="background">
+        </picture>
+      </div>
+
   <div class="container relative z-10 m-auto pt-20 md:pt-24">
     <aside id="sideBar" class="side-bar w-screen h-screen top-0 left-0 fixed justify-center items-center z-20 hidden">
       <nav>
@@ -282,11 +293,11 @@
         <div>
           <h2
             class="explore-section-title text-center md:text-right font-bold text-xl xl:text-3xl leading-snug md-26 md:mr-24">
-            Explore galaxies of<br class="md:hidden" /> 'ready to use'<br  /> animations and plugins
+            Explore galaxies<br class="md:hidden" /> of 'ready to use'<br claas="hidden md:block" /> animations and plugins
           </h2>
           <div class="flex flex-col md:flex-row  md:justify-between items-center">
-            <div class="md:w-6/12 flex flex-col items-center md:items-start mb-10 md:mb-0">
-              <h3 class="block text-center text-2xl text-white font-bold mb-2">Browse the Library
+            <div class="w-11/12 md:w-6/12 flex flex-col items-center md:items-start mb-10 md:mb-0">
+              <h3 class="text-center text-2xl text-white font-bold mb-2">Browse the Library
               </h3>
               <hr class="h-2 bg-white rounded-full m-0 mb-6">
               <p class="font-semibold md:text-sm xl:text-base text-white">Get 'ready to

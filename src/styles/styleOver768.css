@@ -113,15 +113,15 @@
     height: 21px;
   }
 
-  .wave-animation-container {
-    position: absolute;
-    top: 2130px;
-    left: 0;
+  .wave-1 {
+    top: 0;
   }
 
-  .wave-different-container {
-    position: absolute;
-    top: 3606px;
-    left: -300px;
+  .wave-2 {
+    top: 3590px;
+  }
+
+  .wave-3 {
+    bottom: -30px;
   }
 }
