@@ -1,0 +1,13 @@
+.bg-wave-1 {
+  background-image: url("../assets/images/bg-wave-1@mLandscape.svg");
+}
+
+.bg-wave-2 {
+  height: 850px;
+  background-image: url("../assets/images/bg-wave-2@mLanscape.svg");
+}
+
+.bg-wave-3 {
+  height: 700px;
+  background-image: url("../assets/images/bg-wave-3@mLandscape.svg");
+}

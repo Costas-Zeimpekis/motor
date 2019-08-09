@@ -1,4 +1,3 @@
-@media (min-width: 768px) {
   .side-bar {
     display: none;
   }
@@ -114,15 +113,17 @@
   }
 
   .bg-wave-1 {
-    height: 3450px;
+    height: 2750px;
     background-image: url("../assets/images/bg-wave-1@2x.svg");
   }
 
-  .wave-2 {
-    top: 3590px;
+  .bg-wave-2 {
+    top: 3773px;
+    background-image: url("../assets/images/bg-wave-2@2x.svg");
   }
 
-  .wave-3 {
+  .bg-wave-3 {
     bottom: -30px;
+    height: 600px;
+    background-image: url("../assets/images/bg-wave-3@2x.svg");
   }
-}
