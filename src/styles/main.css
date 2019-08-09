@@ -21,6 +21,9 @@
   background-color: #1aad26;
 }
 
+.fit-content {
+  width: fit-content;
+}
 
 * {
   box-sizing: border-box;
@@ -41,11 +44,6 @@
   height: 18px;
   font-size: 14px;
   color: #ffffff;
-}
-
-
-section {
-  max-width: 1280px;
 }
 
 .logo-container {
@@ -95,6 +93,11 @@ nav ul li a {
 
 main {
   margin-bottom: 118px;
+}
+
+section {
+  max-width: 1280px;
+  padding: 0 24px;
 }
 
 .animation-slider {

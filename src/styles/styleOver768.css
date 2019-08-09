@@ -28,6 +28,14 @@
     margin-bottom: 96px;
   }
 
+  section {
+    padding: 0 32px;
+  }
+
+  .article-description {
+    width: 588px;
+  }
+
   .editor {
     width: 100%;
     height: 373px;
@@ -60,6 +68,10 @@
 
   .what-can-you-do-top hr {
     width: 200px;
+  }
+
+  .explore-section {
+    margin-bottom: 146px;
   }
 
   .explore-section>div {
@@ -113,12 +125,12 @@
   }
 
   .bg-wave-1 {
-    height: 2750px;
+    height: 2525px;
     background-image: url("../assets/images/bg-wave-1@2x.svg");
   }
 
   .bg-wave-2 {
-    top: 3773px;
+    top: 3583px;
     background-image: url("../assets/images/bg-wave-2@2x.svg");
   }
 
