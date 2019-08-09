@@ -113,8 +113,9 @@
     height: 21px;
   }
 
-  .wave-1 {
-    top: 0;
+  .bg-wave-1 {
+    height: 3450px;
+    background-image: url("../assets/images/bg-wave-1@2x.svg");
   }
 
   .wave-2 {

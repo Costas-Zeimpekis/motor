@@ -115,6 +115,10 @@ main {
   color: var(--purpley-pink);
 }
 
+.article-description {
+  width: 272px;
+}
+
 .what-can-you-do-top hr {
   height: 10px;
   margin: 0;
@@ -396,11 +400,33 @@ footer nav ul li {
   color: var(--blue-dark);
 }
 
-.wave-2 {
+.bg-wave-1 {
+  width: 100vw;
+  height: 3177px;
+  background-image: url("../assets/images/bg-wave-1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-wave-2 {
   top: 3730px;
+  width: 100vw;
+  height: 900px;
+  background-image: url("../assets/images/bg-wave-2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
-.wave-3 {
+
+.bg-wave-3 {
   bottom: -50px;
+  width: 100vw;
+  height: 700px;
+  background-image: url("../assets/images/bg-wave-3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

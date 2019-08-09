@@ -1,12 +1,12 @@
-<svg width="1920" height="4000" viewBox="0 0 1920 4000" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1920" height="3450" viewBox="0 0 1920 3450" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
-<path d="M1920 0H0V4000H1920V0Z" fill="#F7F7F9"/>
-<path d="M0 2.90491H1920V859.925C1442 1191.36 1149.5 742.731 594.5 675.009C222 675.009 245 675.009 0 878.65V2.90491Z" fill="white"/>
-<path d="M0 3299C1059.5 3609.5 1607.5 3777.5 1920 3299V4000H0V3299Z" fill="#252055"/>
+<path d="M1920 2.35229H0V3452.35H1920V2.35229Z" fill="#F7F7F9"/>
+<path d="M0 2.50549H1920V741.685C1442 1027.55 1149.5 640.605 594.5 582.196C222 582.196 245 582.196 0 757.835V2.50549Z" fill="white"/>
+<path d="M0 2705C1059.5 3034.99 1607.5 3213.53 1920 2705V3450H0V2705Z" fill="#252055"/>
 </g>
 <defs>
 <clipPath id="clip0">
-<rect width="1920" height="4000" fill="white"/>
+<rect width="1920" height="3450" fill="white"/>
 </clipPath>
 </defs>
 </svg>

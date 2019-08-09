@@ -110,6 +110,13 @@
     margin-bottom: 0;
   }
 
+  .bg-wave-1 {
+    height: 3450px;
+    background-image: url("../assets/images/bg-wave-1@3x.svg");
+  }
+
+  .wave-1 img {}
+
   .wave-2 {
     top: 4601px;
   }
