@@ -21,19 +21,7 @@
   </div>
   <div class="bg-wave-3 z-0 absolute w-full">
   </div>
-
   <div class="container relative z-10 m-auto pt-20 md:pt-24">
-    <aside id="sideBar" class="side-bar w-screen h-screen top-0 left-0 fixed justify-center items-center z-20 hidden">
-      <nav>
-        <ul class="list-none text-center p-0">
-          <li class="mb-8"><a>DOCUMENTATION</a></li>
-          <li class="mb-8"><a>EXAMPLES</a></li>
-          <li class="mb-8"><a>LIBRARY</a></li>
-          <li class="mb-24"><a>GITHUB</a></li>
-          <li><a>MIT-LICENCE</a></li>
-        </ul>
-      </nav>
-    </aside>
     <header class="main-header w-screen fixed top-0 left-0 bg-white py-4 md:py-5">
       <div class="container flex justify-between items-center m-auto px-6">
         <div class="logo-container h-8 flex items-center">
@@ -45,9 +33,20 @@
           </div>
         </div>
         <nav class="h-4">
-          <button class="burger z-30 relative md:hidden" onclick="sideMenuShowHandler()">
-            <img id="imgShowSideBar" src="./assets/images/burger-close.svg" />
-          </button>
+            <button class="burger z-30 relative md:hidden" onclick="sideMenuShowHandler()">
+                <img id="imgShowSideBar" src="./assets/images/burger-close.svg" />
+            </button>
+            <aside id="sideBar" class="side-bar w-screen h-screen top-0 left-0 fixed justify-center items-center z-20 hidden">
+                <nav>
+                  <ul class="list-none text-center p-0">
+                    <li class="mb-8"><a>DOCUMENTATION</a></li>
+                    <li class="mb-8"><a>EXAMPLES</a></li>
+                    <li class="mb-8"><a>LIBRARY</a></li>
+                    <li class="mb-24"><a>GITHUB</a></li>
+                    <li><a>MIT-LICENCE</a></li>
+                  </ul>
+                </nav>
+              </aside>
           <ul class="list-none text-center hidden md:block list-none p-0">
             <li class="inline-block"><a>DOCUMENTATION</a></li>
             <li class="inline-block"><a>EXAMPLES</a></li>
@@ -57,6 +56,8 @@
         </nav>
       </div>
     </header>
+  
+   
     <main >
       <section
         class="animation-section flex flex-col md:flex-row justify-center md:justify-between items-center mb-10 md:mb-24 xl:mb-40">
