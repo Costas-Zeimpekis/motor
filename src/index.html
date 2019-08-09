@@ -52,7 +52,7 @@
             <li class="inline-block"><a>DOCUMENTATION</a></li>
             <li class="inline-block"><a>EXAMPLES</a></li>
             <li class="inline-block"><a>LIBRARY</a></li>
-            <li class="inline-block"><a>GITHUB</a></li>
+            <li class="inline-block mr-0"><a>GITHUB</a></li>
           </ul>
         </nav>
       </div>
@@ -111,7 +111,7 @@
             </aside>
             <div class="editor flex flex-col md:flex-row rounded-lg m-auto pb-1 md:px-0 md:pb-0">
               <div
-                class="milky-way-img-container md:w-6/12 flex justify-center md:justify-end md:items-center order-1 md:order-2 rounded-t-lg md:rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-0 md:pb-0 md:px-8">
+                class="milky-way-img-container md:w-6/12 flex justify-center md:justify-end xl:justify-center md:items-center order-1 md:order-2 rounded-t-lg md:rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-0 md:pb-0 md:px-8">
                 <img class="milky-way-img" src="./assets/images/milky-way.svg" alt="milky way svg">
               </div>
               <div class="md:w-6/12 flex flex-col justify-center text-white order-2 md:order-1 h-full p-2 md:pr-0 xl:p-4">
@@ -125,6 +125,38 @@
                   class="tabcontent md:w-11/12 hidden  md:block overflow-auto ml-8 mb-12 md:mb-0">
                   <p class="h-full text-sm text-teal-500 break-all md:mr-2">
                     componentDidMount() {
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    .catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    .catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
                     axios.get('https://newsapi.org/v1/sources')
                     .then(res => {
                     console.log(res.data.sources);
@@ -166,7 +198,7 @@
           <section class="fit-content flex xl:mr-auto px-0">
             <div class="editor flex flex-col md:flex-row rounded-lg m-auto pb-1 md:px-0 md:pb-0">
               <div
-                class="planet-earth-img-container md:w-6/12 flex justify-center md:justify-start md:items-center order-1 rounded-t-lg md:rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-0 md:px-8">
+                class="planet-earth-img-container md:w-6/12 flex justify-center md:justify-start xl:justify-center md:items-center order-1 rounded-t-lg md:rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-0 md:px-8">
                 <img class="planet-img" src="./assets/images/planet-earth.svg" alt="planet earth svg image">
               </div>
               <div class="md:w-6/12 h-full flex flex-col justify-center text-white order-2 p-4 md:p-2">
