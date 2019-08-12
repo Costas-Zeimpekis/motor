@@ -1,6 +1,9 @@
 // Sidebar //
 import imgOpen from '/assets/images/burger-open.svg';
 import imgClose from '/assets/images/burger-close.svg';
+import imgUp from './assets/images/chevron-top-solid.svg';
+import imgDown from './assets/images/chevron-bottom-solid.svg';
+
 
 let showSideBar = true;
 const sideBar = document.getElementById('sideBar');
@@ -34,13 +37,13 @@ window.handleOpenEditor = (item, id) => {
     editors[id]['element'].setAttribute("style", "height: 300px; margin-bottom: 55px;");
     editors[id]['button'].classList.replace('order-1', 'order-2');
     editors[id]['icon'].classList.replace('order-2', 'order-1');
-    editors[id]['icon'].style.transform = "rotate(180deg)";
+    editors[id]['icon'].src = imgUp;
     editors[id]['open'] = true;
   } else {
     editors[id]['element'].setAttribute("style", "height: 0; margin-bottom: 0;");
     editors[id]['button'].classList.replace('order-2', 'order-1');
     editors[id]['icon'].classList.replace('order-1', 'order-2');
-    editors[id]['icon'].style.transform = "rotate(0deg)";
+    editors[id]['icon'].src = imgDown;
     editors[id]['open'] = false;
   }
 }
