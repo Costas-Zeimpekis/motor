@@ -1,14 +1,23 @@
+import fs from 'fs';
+
 // Sidebar //
+const imgOpen = fs.readFileSync(__dirname + '/assets/images/burger-open.svg');
+const imgClose = fs.readFileSync(__dirname + '/assets/images/burger-close.svg');
+
+const xOpen = `data:image/svg;base64,${imgOpen.toString('base64')}`;
+const xClose = `data:image/svg;base64,${imgClose.toString('base64')}`;
 
 let showSideBar = true;
 const sideBar = document.getElementById('sideBar');
 const imgShowSideBar = document.getElementById('imgShowSideBar');
 
-function sideMenuShowHandler() {
+window.sideMenuShowHandler = () => {
   showSideBar
     ?
-    (imgShowSideBar.src = './assets/images/burger-open.svg') :
-    (imgShowSideBar.src = './assets/images/burger-close.svg');
+    (imgShowSideBar.src = xOpen) :
+    (imgShowSideBar.src = xClose);
+
+
   sideBar.classList.toggle('flex', showSideBar);
   sideBar.classList.toggle('hidden', !showSideBar);
   showSideBar = !showSideBar;
@@ -16,9 +25,9 @@ function sideMenuShowHandler() {
 
 
 //Tap to open//
-editors = {};
+const editors = {};
 
-function handleOpenEditor(item, id) {
+window.handleOpenEditor = (item, id) => {
   if (!editors[id]) {
     editors[id] = {};
     editors[id]['element'] = document.getElementById(id);
@@ -52,14 +61,14 @@ let slide;
 let startPoint;
 let endPoint;
 
-function changeDotsColor(nextIndex) {
+window.changeDotsColor = (nextIndex) => {
   dots.forEach(dot => dot.className = "bg-gray-400")
   dots[nextIndex].className = "bg-gray-800";
 }
 
 changeDotsColor(0);
 
-function setActiveDot(step) {
+window.setActiveDot = (step) => {
   nextIndex = index + step;
   changeDotsColor(nextIndex)
 }
