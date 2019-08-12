@@ -124,32 +124,33 @@
                 </div>
                 <div id="vanillaJS-milky"
                   class="tabcontent md:w-11/12 hidden  md:block overflow-auto ml-8 mb-12 md:mb-0">
-                  <p class="h-full text-sm text-teal-500 break-all md:mr-2">
-                    componentDidMount() {
-                    axios.get('https://newsapi.org/v1/sources')
-                    .then(res => {
-                    console.log(res.data.sources);
-                    this.props.fetchPosts(res.data.sources);
-                    })
-                    .catch(err =>
-                    {this.setState({ resError: true
-                    });
-                    });
-                    }
-                    searchHadler = event => {
-                    event.preventDefault();
-                    this.setState({
-                    searchTxt: event.target.value
-                    });
-                    };
-                    axios.get('https://newsapi.org/v1/sources')
-                    .then(res => {
-                    console.log(res.data.sources);
-                    this.props.fetchPosts(res.data.sources);
-                    })
-                    .catch(err =>
-                    {this.setState({ resError: true
-                    });
+                
+                  <code class="md:h-full text-sm text-teal-500 break-all md:mr-2">
+componentDidMount() {
+ axios.get('https://newsapi.org/v1/sources')
+.then(res => {
+console.log(res.data.sources);
+this.props.fetchPosts(res.data.sources);
+})
+.catch(err =>
+{this.setState({ resError: true
+});
+});
+    }
+ searchHadler = event => {
+  event.preventDefault();
+ this.setState({
+ searchTxt: event.target.value
+ });
+};
+axios.get('https://newsapi.org/v1/sources')
+  .then(res => {
+   console.log(res.data.sources);
+   this.props.fetchPosts(res.data.sources);
+    })
+catch(err =>
+ {this.setState({ resError: true
+  });
                     });
                     }
                     searchHadler = event => {
@@ -175,14 +176,15 @@
                     });
                     };
 
-                  </p>
+                  </code>
+                 
                 </div>
-                <button onclick="handleOpenEditor('vanillaJS-milky')"
+                <button onclick="handleOpenEditor(this,'vanillaJS-milky')"
                   class="flex flex-col items-center text-white md:hidden">
-                  <span class="text-xs mb-2">
+                  <span class="text-xs mb-2 order-1">
                     Tap to se how it is coded
                   </span>
-                  <img src="./assets/images/chevron-left-solid.svg" alt="">
+                  <img class="order-2 mb-2" src="./assets/images/chevron-left-solid.svg" alt="arrow icon">
                 </button>
               </div>
             </div>
@@ -211,36 +213,36 @@
                 </div>
                 <div id="vanillaJS-planet"
                   class="tabcontent md:w-11/12 hidden break-all md:block overflow-auto ml-8 mb-12 md:mb-0">
-                  <p class="h-full text-sm text-teal-500 break-all mr-2 md:mr-6">
-                    componentDidMount() {
-                    axios.get('https://newsapi.org/v1/sources')
-                    .then(res => {
-                    console.log(res.data.sources);
-                    this.props.fetchPosts(res.data.sources);
-                    })
-                    .catch(err =>
-                    {this.setState({ resError: true
-                    });
-                    });
-                    }
-                    searchHadler = event => {
-                    event.preventDefault();
-                    this.setState({
-                    searchTxt: event.target.value
-                    });
-                    };
-                    setCategoryHandler = event => {
-                    event.preventDefault();
-                    this.setState({
-                    selectCategory: event.target.value
-                    });
-                    };
-                  </p>
+                  <code class="h-full text-sm text-teal-500 break-all mr-2 md:mr-6">
+ componentDidMount() {
+    axios.get('https://newsapi.org/v1/sources')
+    .then(res => {
+       console.log(res.data.sources);
+  this.props.fetchPosts(res.data.sources);
+  })
+  .catch(err =>
+  {this.setState({ resError: true
+ });
+});
+}
+ searchHadler = event => {
+   event.preventDefault();
+this.setState({
+searchTxt: event.target.value
+});
+};
+ setCategoryHandler = event => {
+ event.preventDefault();
+this.setState({
+ selectCategory: event.target.value
+});
+ };
+                  </code>
                 </div>
-                <button onclick="handleOpenEditor('vanillaJS-planet')"
+                <button onclick="handleOpenEditor(this,'vanillaJS-planet')"
                   class="flex flex-col items-center text-white md:hidden">
-                  <span class="tap-text mb-2">Tap to se how it is coded</span>
-                  <img src="./assets/images/chevron-left-solid.svg" alt="">
+                  <span class="mb-2 order-1">Tap to se how it is coded</span>
+                  <img class="order-2 mb-2" src="./assets/images/chevron-left-solid.svg" alt="arrow icon">
                 </button>
               </div>
           </section>
@@ -271,8 +273,8 @@
                       class="h-4 text-sm font-semibold text-white">React</span></button>
                 </div>
                 <div id="vanillaJS-space"
-                  class="tabcontent md:w-11/12 hidden  md:block overflow-auto ml-8 mb-12 md:mb-0">
-                  <p class="h-full text-sm text-teal-500 break-all md:mr-2">
+                  class="tabcontent md:w-11/12 hidden md:block overflow-auto ml-8 mb-12 md:mb-0">
+                  <code class="h-full text-sm text-teal-500 break-all md:mr-2">
                     componentDidMount() {
                     axios.get('https://newsapi.org/v1/sources')
                     .then(res => {
@@ -296,12 +298,12 @@
                     selectCategory: event.target.value
                     });
                     };
-                  </p>
+                  </code>
                 </div>
-                <button onclick="handleOpenEditor('vanillaJS-space')"
+                <button onclick="handleOpenEditor(this,'vanillaJS-space')"
                   class="flex flex-col items-center text-white md:hidden">
-                  <span class="tap-text mb-2">Tap to se how it is coded</span>
-                  <img src="./assets/images/chevron-left-solid.svg" alt="">
+                  <span class="mb-2 order-1">Tap to se how it is coded</span>
+                  <img class="order-2 mb-2" src="./assets/images/chevron-left-solid.svg" alt="arrow icon">
                 </button>
               </div>
           </section>

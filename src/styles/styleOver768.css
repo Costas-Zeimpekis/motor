@@ -41,6 +41,10 @@
     height: 373px;
   }
 
+  .tabcontent {
+    height: 80%;
+  }
+
   .milky-way-img-container {
     background-image: linear-gradient(103deg, transparent 25%, #ffffff 23%);
   }

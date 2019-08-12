@@ -1,3 +1,5 @@
+// Sidebar //
+
 let showSideBar = true;
 const sideBar = document.getElementById('sideBar');
 const imgShowSideBar = document.getElementById('imgShowSideBar');
@@ -12,10 +14,35 @@ function sideMenuShowHandler() {
   showSideBar = !showSideBar;
 }
 
-function handleOpenEditor(id) {
-  document.getElementById(id).style.display = 'block';
+
+//Tap to open//
+editors = {};
+
+function handleOpenEditor(item, id) {
+  if (!editors[id]) {
+    editors[id] = {};
+    editors[id]['element'] = document.getElementById(id);
+    editors[id]['button'] = item.firstElementChild;
+    editors[id]['icon'] = item.lastElementChild;
+  }
+
+  if (!editors[id]['open']) {
+    editors[id]['element'].style.display = 'block';
+    editors[id]['button'].classList.replace('order-1', 'order-2');
+    editors[id]['icon'].classList.replace('order-2', 'order-1');
+    editors[id]['icon'].style.transform = "rotate(180deg)";
+    editors[id]['open'] = true;
+  } else {
+    editors[id]['element'].style.display = 'none';
+    editors[id]['button'].classList.replace('order-2', 'order-1');
+    editors[id]['icon'].classList.replace('order-1', 'order-2');
+    editors[id]['icon'].style.transform = "rotate(0deg)";
+    editors[id]['open'] = false;
+  }
 }
 
+
+//Slider//
 const slides = Array.from(document.querySelector('.slides').getElementsByTagName('figure'));
 const dots = Array.from(document.querySelector('.dots').getElementsByTagName('a'));
 

@@ -152,6 +152,10 @@ section {
   color: #1d1e21;
 } */
 
+.tabcontent {
+  height: 300px;
+}
+
 .tabcontent::-webkit-scrollbar {
   width: 5px;
   height: 125px;
@@ -170,8 +174,10 @@ section {
   background: #555;
 }
 
-.tabcontent {
-  height: 80%;
+code {
+  height: 220px;
+  white-space: pre-wrap;
+  overflow: auto;
 }
 
 .milky-way-img-container,
