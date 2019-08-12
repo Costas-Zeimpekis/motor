@@ -96,7 +96,7 @@
             The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd <br class="hidden md:block"/>Monitors The Skinny on Lcd Monitor The
             Skinny On Lcd Monitors The Skinny on<br class="hidden md:block"/> Lcd Monitors
           </p>
-          <section class="fit-content flex md:ml-auto px-0">
+          <section class="fit-content flex m-auto xl:m-0 xl:ml-auto px-0">
             <aside class="w-1/5 hidden xl:flex flex-col justify-center mr-6">
               <nav>
                 <ul>
@@ -116,17 +116,16 @@
                 <img class="milky-way-img" src="./assets/images/milky-way.svg" alt="milky way svg">
               </div>
               <div class="md:w-6/12 flex flex-col justify-center text-white order-2 md:order-1 h-full p-2 md:pr-0 xl:p-4">
-                <div class="tabs hidden md:block mb-6 md:mb-10">
-                  <button class="w-20 h-8 bg-white rounded-lg"><span
-                      class="h-4 text-sm text-gray-800 font-semibold text-black">Vanilla JS</span></button>
-                  <button class="w-20 h-8 rounded-lg mr-4"><span
-                      class="h-4 text-sm font-semibold text-white">React</span></button>
+                <div class="tabs hidden text-white md:block mb-6 md:mb-10">
+                  <button class="w-20 h-8 rounded-lg active" onclick="chooseEditorTabs(this)"><span
+                      class="h-4 text-sm font-semibold">Vanilla JS</span></button>
+                  <button class="w-20 h-8 rounded-lg ml-4" onclick="chooseEditorTabs(this)"><span
+                      class="h-4 text-sm font-semibold ">React</span></button>
                 </div>
                 <div id="vanillaJS-milky"
-                  class="tabcontent md:w-11/12 h-0 md:block overflow-auto ml-8 md:mb-0">
+                  class="tabcontent md:w-11/12 h-0 md:h-full md:block overflow-auto ml-8 md:mb-8">
                 
-                  <code class="md:h-full text-sm text-teal-500 break-all md:mr-2">
-componentDidMount() {
+                  <code class="md:h-full text-sm text-teal-500 break-all md:mr-2">componentDidMount() {
  axios.get('https://newsapi.org/v1/sources')
 .then(res => {
 console.log(res.data.sources);
@@ -198,23 +197,26 @@ catch(err =>
             The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd <br class="hidden md:block"/>Monitors The Skinny on Lcd Monitor The
             Skinny On Lcd Monitors The Skinny on<br class="hidden md:block"/> Lcd Monitors
           </p>
-          <section class="fit-content flex xl:mr-auto px-0">
+          <section class="fit-content flex m-auto xl:m-0 xl:mr-auto px-0">
             <div class="editor flex flex-col md:flex-row rounded-lg m-auto pb-1 md:px-0 md:pb-0">
               <div
                 class="planet-earth-img-container md:w-6/12 flex justify-center md:justify-start xl:justify-center md:items-center order-1 rounded-t-lg md:rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-0 md:px-8">
                 <img class="planet-img" src="./assets/images/planet-earth.svg" alt="planet earth svg image">
               </div>
               <div class="md:w-6/12 h-full flex flex-col justify-center text-white order-2 p-4 md:p-2">
-                <div class="tabs hidden md:block mb-6 md:mb-10">
-                  <button class="w-20 h-8 bg-white rounded-lg"><span
-                      class="h-4 text-sm text-gray-800 font-semibold text-black">Vanilla JS</span></button>
-                  <button class="w-20 h-8  rounded-lg mr-4"><span
-                      class="h-4 text-sm font-semibold text-white">React</span></button>
+                <div class="tabs hidden text-white md:block mb-6 md:mb-10">
+                  <button class="w-20 h-8 active rounded-lg"  onclick="chooseEditorTabs(this)">
+                    <span class="h-4 text-sm font-semibold">
+                      Vanilla JS
+                    </span>
+                  </button>
+                  <button class="w-20 h-8 rounded-lg mr-4" onclick="chooseEditorTabs(this)"><span
+                      class="h-4 text-sm font-semibold">React</span>
+                  </button>
                 </div>
                 <div id="vanillaJS-planet"
-                  class="tabcontent md:w-11/12 h-0 break-all md:block overflow-auto ml-8 md:mb-0">
-                  <code class="h-full text-sm text-teal-500 break-all mr-2 md:mr-6">
- componentDidMount() {
+                  class="tabcontent md:w-11/12 h-0 md:h-full break-all md:block overflow-auto ml-8 md:mb-8">
+                  <code class="h-full text-sm text-teal-500 break-all mr-2 md:mr-6">componentDidMount() {
     axios.get('https://newsapi.org/v1/sources')
     .then(res => {
        console.log(res.data.sources);
@@ -255,27 +257,30 @@ this.setState({
             The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd <br class="hidden md:block"/>Monitors The Skinny on Lcd Monitor The
             Skinny On Lcd Monitors The Skinny on<br class="hidden md:block"/> Lcd Monitors
           </p>
-          <section class="fit-content flex ml-auto px-0">
+          <section class="fit-content flex m-auto xl:m-0 md:ml-auto px-0">
             <div class="editor md:w-11/12 flex flex-col md:flex-row rounded-lg m-auto pb-1 md:px-0 md:pb-0">
               <div
                 class="space-img-comtainer md:w-6/12 flex flex-col justify-center md:items-center order-1 md:order-2 rounded-t-lg md:rounded-r-lg">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="./assets/images/14.png">
-                  <source media="(min-width: 1920px)" srcset="./assets/images/14@3x.png">
-                    <img class="space-img" src="./assets/images/14.png" alt="space image">
+                  <source media="(min-width: 768px)" srcset="./assets/images/space@3x.jpg">
+                  <source media="(min-width: 1280px)" srcset="./assets/images/space@3x.jpg">
+                    <img class="space-img" src="./assets/images/space-i.png" alt="space image">
                 </picture>
               </div>
               <div class="md:w-6/12 h-full flex flex-col justify-center text-white order-2 md:order-1 p-2 md:pr-0 xl:p-4">
-                <div class="tabs hidden md:block mb-6 md:mb-10">
-                  <button class="w-20 h-8 bg-white rounded-lg"><span
-                      class="h-4 text-sm text-gray-800 font-semibold text-black">Vanilla JS</span></button>
-                  <button class="w-20 h-8  rounded-lg mr-4"><span
-                      class="h-4 text-sm font-semibold text-white">React</span></button>
-                </div>
+                <div class="tabs hidden text-white md:block mb-6 md:mb-10">
+                    <button class="w-20 h-8 active rounded-lg"  onclick="chooseEditorTabs(this)">
+                      <span class="h-4 text-sm font-semibold">
+                        Vanilla JS
+                      </span>
+                    </button>
+                    <button class="w-20 h-8 rounded-lg mr-4" onclick="chooseEditorTabs(this)"><span
+                        class="h-4 text-sm font-semibold">React</span>
+                    </button>
+                  </div>
                 <div id="vanillaJS-space"
-                  class="tabcontent md:w-11/12 h-0 md:block overflow-auto ml-8 md:mb-0">
-                  <code class="h-full text-sm text-teal-500 break-all md:mr-2">
-                    componentDidMount() {
+                  class="tabcontent md:w-11/12 h-0 md:h-full md:block overflow-auto ml-8 md:mb-8">
+                  <code class="h-full text-sm text-teal-500 break-all md:mr-2">componentDidMount() {
                     axios.get('https://newsapi.org/v1/sources')
                     .then(res => {
                     console.log(res.data.sources);
@@ -338,7 +343,7 @@ this.setState({
           <h2 class="text-lg md:text-2xl font-bold dark-blue">Built in strong basis</h2>
           <hr class="h-2 rounded-full bg-grey">
         </header>
-        <section class="build-strong-basis-section-inner hidden md:flex flex-row justify-between">
+        <section class="build-strong-basis-section-inner hidden md:flex flex-row justify-between px-0">
           <div class="self-center">
             <figure class="mb-16">
               <img src="./assets/images/unplugged.svg" alt="unplugged svg icon">

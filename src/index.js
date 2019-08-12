@@ -48,6 +48,20 @@ window.handleOpenEditor = (item, id) => {
   }
 }
 
+//Editor Tabs //
+const editorsTabs = {};
+
+window.chooseEditorTabs = (item) => {
+  const parent = item.parentElement;
+  if (editorsTabs[parent]) {
+    editorTabs[parent] = {}
+    editorTabs[parent]['children'] = parent.children;
+  }
+  const buttons = Array.from(parent.children)
+  buttons.forEach(button => button.classList.remove('active'));
+  item.classList.add('active');
+}
+
 
 //Slider//
 const slides = Array.from(document.querySelector('.slides').getElementsByTagName('figure'));
