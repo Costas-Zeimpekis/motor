@@ -1,11 +1,6 @@
-import fs from 'fs';
-
 // Sidebar //
-const imgOpen = fs.readFileSync(__dirname + '/assets/images/burger-open.svg');
-const imgClose = fs.readFileSync(__dirname + '/assets/images/burger-close.svg');
-
-const xOpen = `data:image/svg;base64,${imgOpen.toString('base64')}`;
-const xClose = `data:image/svg;base64,${imgClose.toString('base64')}`;
+import imgOpen from '/assets/images/burger-open.svg';
+import imgClose from '/assets/images/burger-close.svg';
 
 let showSideBar = true;
 const sideBar = document.getElementById('sideBar');
@@ -14,8 +9,8 @@ const imgShowSideBar = document.getElementById('imgShowSideBar');
 window.sideMenuShowHandler = () => {
   showSideBar
     ?
-    (imgShowSideBar.src = xOpen) :
-    (imgShowSideBar.src = xClose);
+    (imgShowSideBar.src = imgOpen) :
+    (imgShowSideBar.src = imgClose);
 
 
   sideBar.classList.toggle('flex', showSideBar);
