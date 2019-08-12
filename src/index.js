@@ -31,13 +31,13 @@ window.handleOpenEditor = (item, id) => {
   }
 
   if (!editors[id]['open']) {
-    editors[id]['element'].style.display = 'block';
+    editors[id]['element'].setAttribute("style", "height: 300px; margin-bottom: 55px;");
     editors[id]['button'].classList.replace('order-1', 'order-2');
     editors[id]['icon'].classList.replace('order-2', 'order-1');
     editors[id]['icon'].style.transform = "rotate(180deg)";
     editors[id]['open'] = true;
   } else {
-    editors[id]['element'].style.display = 'none';
+    editors[id]['element'].setAttribute("style", "height: 0; margin-bottom: 0;");
     editors[id]['button'].classList.replace('order-2', 'order-1');
     editors[id]['icon'].classList.replace('order-1', 'order-2');
     editors[id]['icon'].style.transform = "rotate(0deg)";

@@ -148,12 +148,8 @@ section {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* .tabs span {
-  color: #1d1e21;
-} */
-
 .tabcontent {
-  height: 300px;
+  transition: height 1s;
 }
 
 .tabcontent::-webkit-scrollbar {
