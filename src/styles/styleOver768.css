@@ -86,17 +86,19 @@
     width: 300px;
   }
 
-
-  .build-strong-basis-section-inner {
-    width: 704px;
-    height: 850px;
+  .build-strong-section {
+    width: 768px;
   }
 
-  .build-strong-basis-section-inner>div {
+  .build-strong-section section {
+    height: 700px;
+  }
+
+  .build-strong-section section>div {
     width: 208px;
   }
 
-  .build-strong-basis-section-inner>figure>img {
+  .build-strong-section section>div>figure>img {
     margin-bottom: 24px;
   }
 
@@ -140,7 +142,7 @@
   }
 
   .bg-wave-2 {
-    top: 3583px;
+    top: 3445px;
     background-image: url("../assets/images/bg-wave-2@2x.svg");
   }
 

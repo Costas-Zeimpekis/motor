@@ -159,7 +159,7 @@ section {
 
 .tabcontent {
   transition: height 1s;
-  padding-right: 15px;
+  padding-right: 10px;
 }
 
 .tabcontent::-webkit-scrollbar {
@@ -403,7 +403,7 @@ footer nav ul li {
   background-image: url("../assets/images/bg-wave-1.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
 
 .bg-wave-2 {
@@ -413,7 +413,7 @@ footer nav ul li {
   background-image: url("../assets/images/bg-wave-2.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
 
 
@@ -425,5 +425,5 @@ footer nav ul li {
   background-image: url("../assets/images/bg-wave-3.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }

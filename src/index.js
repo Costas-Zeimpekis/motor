@@ -75,7 +75,7 @@ window.chooseEditorTabs = item => {
 
   codes.forEach(code => {
     if (code.classList.contains(item.name)) {
-      code.style.display = 'block';
+      code.style.display = 'inline';
     } else {
       code.style.display = 'none';
     }

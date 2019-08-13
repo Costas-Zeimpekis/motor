@@ -77,12 +77,31 @@ main {
   background-image: linear-gradient(-77deg, transparent 15%, #ffffff 15%)
 }
 
+.build-strong-section {
+  width: 900px;
+}
+
 .build-strong-section header h2 {
   font-size: 36px;
 }
 
-.build-strong-basis-section-inner>div {
+.build-strong-section section {
+  height: 850px;
+}
+
+.build-strong-section section>div {
   width: 257px;
+}
+
+.build-strong-section section>div>figure {
+  width: 257px;
+  height: 314px;
+}
+
+.build-strong-section section>div>figure>img {
+  height: 88px;
+  width: 88px;
+  margin-bottom: 24px;
 }
 
 figcaption h5 {
@@ -145,7 +164,7 @@ footer nav ul li {
 }
 
 .bg-wave-2 {
-  top: 4367px;
+  top: 4650px;
   background-image: url("../assets/images/bg-wave-2@3x.svg");
 }
 
