@@ -32,6 +32,10 @@
     padding: 0 32px;
   }
 
+  .what-you-can-do-section hr {
+    width: 200px;
+  }
+
   .article-description {
     width: 588px;
   }
@@ -56,18 +60,6 @@
 
   .space-img {
     width: 100%;
-  }
-
-  .what-can-you-do-top {
-    margin-top: 24px;
-  }
-
-  .what-you-can-do-title {
-    width: 635px;
-  }
-
-  .what-can-you-do-top hr {
-    width: 200px;
   }
 
   .explore-section {

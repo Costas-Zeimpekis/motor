@@ -21,13 +21,13 @@
   background-color: #1aad26;
 }
 
-.fit-content {
-  width: fit-content;
-}
-
 .active {
   background-color: white;
   color: black;
+}
+
+.box-shadow {
+  box-shadow: 0 0 30px 0 rgba(39, 60, 74, 0.31);
 }
 
 * {
@@ -39,18 +39,12 @@ button:focus {
   outline: none;
 }
 
-.side-bar {
+#sideBar {
   background-color: var(--blue-dark);
 }
 
-.side-bar ul {
-  width: 135px;
-  height: 282px;
-}
-
-.side-bar ul li a {
-  width: 135px;
-  height: 18px;
+#sideBar ul li span {
+  line-height: 18px;
   font-size: 14px;
   color: #ffffff;
 }
@@ -68,25 +62,30 @@ button:focus {
   width: 151px;
 }
 
-header nav {
-  min-width: 24px;
-}
-
 nav ul li a {
   font-size: 14px;
   font-weight: bold;
   color: var(--blue-dark);
 }
 
-.slide-input-container {
-  width: 247px;
+main {
+  margin-bottom: 118px;
+}
+
+section {
+  max-width: 1280px;
+  padding: 0 24px;
+}
+
+.space-and-slider {
+  width: 260px;
 }
 
 .slide-input {
   -webkit-appearance: none;
   outline: none;
   height: 9px;
-  background-color: var(--line-grey)
+  width: 247px;
 }
 
 .slide-input::-webkit-slider-thumb {
@@ -100,26 +99,8 @@ nav ul li a {
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
 }
 
-main {
-  margin-bottom: 118px;
-}
-
-section {
-  max-width: 1280px;
-  padding: 0 24px;
-}
-
-.animation-slider {
-  width: 260px;
-}
-
-.animation-section h1 {
-  font-size: 24px;
-}
-
 .animation-section a {
   width: 200px;
-  box-shadow: 0 0 30px 0 rgba(39, 60, 74, 0.31);
 }
 
 .animation-section a span {
@@ -131,10 +112,9 @@ section {
   width: 272px;
 }
 
-.what-can-you-do-top hr {
+.what-you-can-do-section hr {
+  width: 178px;
   height: 10px;
-  margin: 0;
-  background-color: var(--line-grey);
 }
 
 .what-you-can-do-section nav li {
@@ -146,7 +126,7 @@ section {
   color: var(--blue-dark);
 }
 
-.what-you-can-do-section nav li span {
+.what-you-can-do-section aside nav li span {
   margin-right: 24px;
 }
 
@@ -360,7 +340,6 @@ section.slider-section {
 
 .details-section a {
   width: 385px;
-  box-shadow: 0 0 27px 0 rgba(37, 32, 86, 0.2);
 }
 
 .details-section a span {

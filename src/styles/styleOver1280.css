@@ -19,7 +19,11 @@ main {
   margin-bottom: 56px;
 }
 
-.animation-slider {
+.what-you-can-do-section hr {
+  width: 200px;
+}
+
+.space-and-slider {
   width: 427px;
 }
 

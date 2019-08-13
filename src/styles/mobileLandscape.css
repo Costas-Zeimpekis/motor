@@ -1,3 +1,7 @@
+.side-bar ul {
+  margin-top: 50px;
+}
+
 .bg-wave-1 {
   background-image: url("../assets/images/bg-wave-1@mLandscape.svg");
 }
