@@ -8,7 +8,8 @@
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.css" />
-  <link rel="stylesheet" media="screen and (min-width: 480px) and (max-width: 767px)" href="./styles/mobileLandscape.css">
+  <link rel="stylesheet" media="screen and (min-width: 480px) and (max-width: 767px)"
+    href="./styles/mobileLandscape.css">
   <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1279px)" href="./styles/styleOver768.css">
   <link rel="stylesheet" media="screen and (min-width: 1280px)" href="./styles/styleOver1280.css">
   <title>MotorCortex</title>
@@ -17,7 +18,7 @@
 <body class="relative">
   <div class="bg-wave-1 z-0 absolute w-full">
   </div>
-  <div class="bg-wave-2 z-0 absolute w-full">  
+  <div class="bg-wave-2 z-0 absolute w-full">
   </div>
   <div class="bg-wave-3 z-0 absolute w-full">
   </div>
@@ -33,20 +34,21 @@
           </div>
         </div>
         <nav class="h-4">
-            <button class="burger z-30 relative md:hidden" onclick="sideMenuShowHandler()">
-                <img id="imgShowSideBar" src="./assets/images/burger-close.svg" />
-            </button>
-            <aside id="sideBar" class="side-bar w-screen h-screen top-0 left-0 fixed justify-center items-center z-20 hidden">
-                <nav>
-                  <ul class="list-none text-center p-0">
-                    <li class="mb-8"><a>DOCUMENTATION</a></li>
-                    <li class="mb-8"><a>EXAMPLES</a></li>
-                    <li class="mb-8"><a>LIBRARY</a></li>
-                    <li class="mb-24"><a>GITHUB</a></li>
-                    <li><a>MIT-LICENCE</a></li>
-                  </ul>
-                </nav>
-              </aside>
+          <button class="burger z-30 relative md:hidden" onclick="sideMenuShowHandler()">
+            <img id="imgShowSideBar" src="./assets/images/burger-close.svg" />
+          </button>
+          <aside id="sideBar"
+            class="side-bar w-screen h-screen top-0 left-0 fixed justify-center items-center z-20 hidden">
+            <nav>
+              <ul class="list-none text-center p-0">
+                <li class="mb-8"><a>DOCUMENTATION</a></li>
+                <li class="mb-8"><a>EXAMPLES</a></li>
+                <li class="mb-8"><a>LIBRARY</a></li>
+                <li class="mb-24"><a>GITHUB</a></li>
+                <li><a>MIT-LICENCE</a></li>
+              </ul>
+            </nav>
+          </aside>
           <ul class="list-none text-center hidden md:block list-none p-0">
             <li class="inline-block"><a>DOCUMENTATION</a></li>
             <li class="inline-block"><a>EXAMPLES</a></li>
@@ -56,9 +58,9 @@
         </nav>
       </div>
     </header>
-  
-   
-    <main >
+
+
+    <main>
       <section
         class="animation-section flex flex-col md:flex-row justify-center md:justify-between items-center mb-10 md:mb-24 xl:mb-40">
         <div class="animation-slider flex flex-col items-center mb-8 md:mb-0 order-1 md:order-2 xl:w-4/12">
@@ -93,8 +95,9 @@
             Simple syntax,<br class="md:hidden" /> attractively easy to use
           </h3>
           <p class="article-description text-sm xl:text-base text-normal md:font-semibold dark-blue mb-8 xl:mb-20">
-            The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd <br class="hidden md:block"/>Monitors The Skinny on Lcd Monitor The
-            Skinny On Lcd Monitors The Skinny on<br class="hidden md:block"/> Lcd Monitors
+            The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd <br
+              class="hidden md:block" />Monitors The Skinny on Lcd Monitor The
+            Skinny On Lcd Monitors The Skinny on<br class="hidden md:block" /> Lcd Monitors
           </p>
           <section class="fit-content flex m-auto xl:m-0 xl:ml-auto px-0">
             <aside class="w-1/5 hidden xl:flex flex-col justify-center mr-6">
@@ -115,41 +118,40 @@
                 class="milky-way-img-container md:w-6/12 flex justify-center md:justify-end xl:justify-center md:items-center order-1 md:order-2 rounded-t-lg md:rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-0 md:pb-0 md:px-8">
                 <img class="milky-way-img" src="./assets/images/milky-way.svg" alt="milky way svg">
               </div>
-              <div class="md:w-6/12 flex flex-col justify-center text-white order-2 md:order-1 h-full p-2 md:pr-0 xl:p-4">
+              <div id="milky-way-tabs"
+                class="md:w-6/12 flex flex-col justify-center text-white order-2 md:order-1 h-full p-2 md:pr-0 xl:p-4">
                 <div class="tabs hidden text-white md:block mb-6 md:mb-10">
-                  <button class="w-20 h-8 rounded-lg active" onclick="chooseEditorTabs(this)"><span
-                      class="h-4 text-sm font-semibold">Vanilla JS</span></button>
-                  <button class="w-20 h-8 rounded-lg ml-4" onclick="chooseEditorTabs(this)"><span
+                  <button class="w-20 h-8 rounded-lg active" name="vanillajs-code"
+                    onclick="chooseEditorTabs(this)"><span class="h-4 text-sm font-semibold">Vanilla JS</span></button>
+                  <button class="w-20 h-8 rounded-lg ml-4" onclick="chooseEditorTabs(this)" name="react-code"><span
                       class="h-4 text-sm font-semibold ">React</span></button>
                 </div>
-                <div id="vanillaJS-milky"
-                  class="tabcontent md:w-11/12 h-0 md:h-full md:block overflow-auto ml-8 md:mb-8">
-                
-                  <code class="md:h-full text-sm text-teal-500 break-all md:mr-2">componentDidMount() {
- axios.get('https://newsapi.org/v1/sources')
-.then(res => {
-console.log(res.data.sources);
-this.props.fetchPosts(res.data.sources);
-})
-.catch(err =>
-{this.setState({ resError: true
-});
-});
-    }
- searchHadler = event => {
-  event.preventDefault();
- this.setState({
- searchTxt: event.target.value
- });
-};
-axios.get('https://newsapi.org/v1/sources')
-  .then(res => {
-   console.log(res.data.sources);
-   this.props.fetchPosts(res.data.sources);
-    })
-catch(err =>
- {this.setState({ resError: true
-  });
+                <div class="tabcontent md:w-11/12 h-0 md:h-full md:block overflow-auto ml-8 md:mb-8">
+                  <code class="vanillajs-code md:h-full text-sm text-teal-500 break-all md:mr-2">componentDidMount() {
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    .catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    catch(err =>
+                    {this.setState({ resError: true
+                    });
                     });
                     }
                     searchHadler = event => {
@@ -174,12 +176,61 @@ catch(err =>
                     searchTxt: event.target.value
                     });
                     };
-
                   </code>
-                 
+                  <code class="react-code md:h-full text-sm text-teal-500 break-all md:mr-2">import React from 'react';
+                    componentDidMount() {
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    .catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    .catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
+                  </code>
+
                 </div>
-                <button onclick="handleOpenEditor(this,'vanillaJS-milky')"
-                  class="flex flex-col items-center text-white md:hidden">
+                <button class="flex flex-col items-center text-white md:hidden" onclick="handleOpenEditor(this)">
                   <span class="text-xs mb-2 order-1">
                     Tap to se how it is coded
                   </span>
@@ -191,54 +242,81 @@ catch(err =>
         </article>
         <article class="mb-8 xl:mb-24">
           <h3 class="text-base xl:text-2xl font-semibold dark-blue mb-4 md:mb-2">
-            Runtime Control, Sequencing<br class="md:hidden"/> Tools
+            Runtime Control, Sequencing<br class="md:hidden" /> Tools
           </h3>
           <p class="article-description text-sm xl:text-base text-normal md:font-semibold dark-blue mb-8 xl:mb-20">
-            The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd <br class="hidden md:block"/>Monitors The Skinny on Lcd Monitor The
-            Skinny On Lcd Monitors The Skinny on<br class="hidden md:block"/> Lcd Monitors
+            The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd <br
+              class="hidden md:block" />Monitors The Skinny on Lcd Monitor The
+            Skinny On Lcd Monitors The Skinny on<br class="hidden md:block" /> Lcd Monitors
           </p>
-          <section class="fit-content flex m-auto xl:m-0 xl:mr-auto px-0">
-            <div class="editor flex flex-col md:flex-row rounded-lg m-auto pb-1 md:px-0 md:pb-0">
+          <section class="flex px-0">
+            <div class="editor flex flex-col md:flex-row rounded-lg m-auto xl:m-0 xl:mr-auto pb-1 md:px-0 md:pb-0">
               <div
                 class="planet-earth-img-container md:w-6/12 flex justify-center md:justify-start xl:justify-center md:items-center order-1 rounded-t-lg md:rounded-r-lg pt-10 pb-20 px-4 md:pt-0 md:pb-0 md:px-8">
                 <img class="planet-img" src="./assets/images/planet-earth.svg" alt="planet earth svg image">
               </div>
-              <div class="md:w-6/12 h-full flex flex-col justify-center text-white order-2 p-4 md:p-2">
+              <div id="planet-earth-tabs"
+                class="md:w-6/12 h-full flex flex-col justify-center text-white order-2 p-4 md:p-2">
                 <div class="tabs hidden text-white md:block mb-6 md:mb-10">
-                  <button class="w-20 h-8 active rounded-lg"  onclick="chooseEditorTabs(this)">
+                  <button class="w-20 h-8 active rounded-lg" onclick="chooseEditorTabs(this)" name="vanillajs-code">
                     <span class="h-4 text-sm font-semibold">
                       Vanilla JS
                     </span>
                   </button>
-                  <button class="w-20 h-8 rounded-lg mr-4" onclick="chooseEditorTabs(this)"><span
+                  <button class="w-20 h-8 rounded-lg mr-4" onclick="chooseEditorTabs(this)" name="react-code"><span
                       class="h-4 text-sm font-semibold">React</span>
                   </button>
                 </div>
-                <div id="vanillaJS-planet"
-                  class="tabcontent md:w-11/12 h-0 md:h-full break-all md:block overflow-auto ml-8 md:mb-8">
-                  <code class="h-full text-sm text-teal-500 break-all mr-2 md:mr-6">componentDidMount() {
-    axios.get('https://newsapi.org/v1/sources')
-    .then(res => {
-       console.log(res.data.sources);
-  this.props.fetchPosts(res.data.sources);
-  })
-  .catch(err =>
-  {this.setState({ resError: true
- });
-});
-}
- searchHadler = event => {
-   event.preventDefault();
-this.setState({
-searchTxt: event.target.value
-});
-};
- setCategoryHandler = event => {
- event.preventDefault();
-this.setState({
- selectCategory: event.target.value
-});
- };
+                <div class="tabcontent md:w-11/12 h-0 md:h-full break-all md:block overflow-auto ml-8 md:mb-8">
+                  <code class="vanillajs-code h-full text-sm text-teal-500 break-all mr-2 md:mr-6">componentDidMount() {
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    .catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
+                    setCategoryHandler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    selectCategory: event.target.value
+                    });
+                    };
+                  </code>
+                  <code class="react-code h-full text-sm text-teal-500 break-all mr-2 md:mr-6"> import React from
+                    'react';
+                    componentDidMount() {
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    .catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
+                    setCategoryHandler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    selectCategory: event.target.value
+                    });
+                    };
                   </code>
                 </div>
                 <button onclick="handleOpenEditor(this,'vanillaJS-planet')"
@@ -254,33 +332,60 @@ this.setState({
             Powerful API, Smooth<br class="md:hidden" /> Animations, Full Compatibility
           </h3>
           <p class="article-description text-sm xl:text-base text-normal md:font-semibold dark-blue mb-8 xl:mb-20">
-            The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd <br class="hidden md:block"/>Monitors The Skinny on Lcd Monitor The
-            Skinny On Lcd Monitors The Skinny on<br class="hidden md:block"/> Lcd Monitors
+            The Skinny On Lcd Monitors The Skinny on Lcd Monitor The Skinny On Lcd <br
+              class="hidden md:block" />Monitors The Skinny on Lcd Monitor The
+            Skinny On Lcd Monitors The Skinny on<br class="hidden md:block" /> Lcd Monitors
           </p>
-          <section class="fit-content flex m-auto xl:m-0 md:ml-auto px-0">
-            <div class="editor md:w-11/12 flex flex-col md:flex-row rounded-lg m-auto pb-1 md:px-0 md:pb-0">
+          <section class="flex px-0">
+            <div class="editor flex flex-col md:flex-row rounded-lg m-auto xl:m-0 xl:ml-auto pb-1 md:px-0 md:pb-0">
               <div
                 class="space-img-comtainer md:w-6/12 flex flex-col justify-center md:items-center order-1 md:order-2 rounded-t-lg md:rounded-r-lg">
                 <picture>
                   <source media="(min-width: 768px)" srcset="./assets/images/space@3x.jpg">
                   <source media="(min-width: 1280px)" srcset="./assets/images/space@3x.jpg">
-                    <img class="space-img" src="./assets/images/space-i.png" alt="space image">
+                  <img class="space-img" src="./assets/images/space-i.png" alt="space image">
                 </picture>
               </div>
-              <div class="md:w-6/12 h-full flex flex-col justify-center text-white order-2 md:order-1 p-2 md:pr-0 xl:p-4">
+              <div id="space-tabs"
+                class="md:w-6/12 h-full flex flex-col justify-center text-white order-2 md:order-1 p-2 md:pr-0 xl:p-4">
                 <div class="tabs hidden text-white md:block mb-6 md:mb-10">
-                    <button class="w-20 h-8 active rounded-lg"  onclick="chooseEditorTabs(this)">
-                      <span class="h-4 text-sm font-semibold">
-                        Vanilla JS
-                      </span>
-                    </button>
-                    <button class="w-20 h-8 rounded-lg mr-4" onclick="chooseEditorTabs(this)"><span
-                        class="h-4 text-sm font-semibold">React</span>
-                    </button>
-                  </div>
-                <div id="vanillaJS-space"
-                  class="tabcontent md:w-11/12 h-0 md:h-full md:block overflow-auto ml-8 md:mb-8">
-                  <code class="h-full text-sm text-teal-500 break-all md:mr-2">componentDidMount() {
+                  <button class="w-20 h-8 active rounded-lg" onclick="chooseEditorTabs(this)" name="vanillajs-code">
+                    <span class="h-4 text-sm font-semibold">
+                      Vanilla JS
+                    </span>
+                  </button>
+                  <button class="w-20 h-8 rounded-lg mr-4" onclick="chooseEditorTabs(this)" name="react-code"><span
+                      class="h-4 text-sm font-semibold">React</span>
+                  </button>
+                </div>
+                <div class="tabcontent md:w-11/12 h-0 md:h-full md:block overflow-auto ml-8 md:mb-8">
+                  <code class="vanillajs-code h-full text-sm text-teal-500 break-all md:mr-2">componentDidMount() {
+                    axios.get('https://newsapi.org/v1/sources')
+                    .then(res => {
+                    console.log(res.data.sources);
+                    this.props.fetchPosts(res.data.sources);
+                    })
+                    .catch(err =>
+                    {this.setState({ resError: true
+                    });
+                    });
+                    }
+                    searchHadler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    searchTxt: event.target.value
+                    });
+                    };
+                    setCategoryHandler = event => {
+                    event.preventDefault();
+                    this.setState({
+                    selectCategory: event.target.value
+                    });
+                    };
+                  </code>
+                  <code class="react-code h-full text-sm text-teal-500 break-all md:mr-2">
+                    import React from 'react';
+                    componentDidMount() {
                     axios.get('https://newsapi.org/v1/sources')
                     .then(res => {
                     console.log(res.data.sources);
@@ -318,7 +423,8 @@ this.setState({
         <div>
           <h2
             class="explore-section-title text-center md:text-right font-bold text-xl xl:text-3xl leading-snug md-26 md:mr-24">
-            Explore galaxies<br class="md:hidden" /> of 'ready to use'<br claas="hidden md:block" /> animations and plugins
+            Explore galaxies<br class="md:hidden" /> of 'ready to use'<br claas="hidden md:block" /> animations and
+            plugins
           </h2>
           <div class="flex flex-col md:flex-row  md:justify-between items-center">
             <div class="w-11/12 md:w-6/12 flex flex-col items-center md:items-start mb-10 md:mb-0">
@@ -336,7 +442,7 @@ this.setState({
             </a>
           </div>
         </div>
-     
+
       </section>
       <section class="build-strong-section xl:w-8/12 flex flex-col items-center m-auto md:mb-64">
         <header class="md:mb-8 xl:mb-20">
@@ -359,8 +465,8 @@ this.setState({
               <figcaption>
                 <h5>Tested</h5>
                 <p class="text-center">
-                  Error-Free<br/>
-                  Bug-Free<br/>
+                  Error-Free<br />
+                  Bug-Free<br />
                   Expandable
                 </p>
               </figcaption>
@@ -475,7 +581,7 @@ this.setState({
           </h2>
           <hr class="h-3 bg-white rounded-full m-0" />
         </header>
-        <section class="px-0" >
+        <section class="px-0">
           <article class="flex justify-between mb-3 md:mb-1">
             <h4 class="w-7/12 xl:w-9/12 text-base xl:text-xl text-white">
               <spann class="xl:hidden">Open Source</spann>
@@ -557,7 +663,8 @@ this.setState({
       </section>
       <section class="created-section flex flex-col items-start md:items-end">
         <h4 class="flex justify-start items-center mb-10">
-          <span class="text-base md:text-2xl xl:text-4xl font-semibold text-right dark-blue mr-2 md:mr-3">Created with</span>
+          <span class="text-base md:text-2xl xl:text-4xl font-semibold text-right dark-blue mr-2 md:mr-3">Created
+            with</span>
           <picture>
             <source media="(min-width: 768px)" srcset="./assets/images/heart.png">
             <source media="(min-width: 1920px)" srcset="./assets/images/heart@2x.png">

@@ -4,23 +4,19 @@ import imgClose from '/assets/images/burger-close.svg';
 import imgUp from './assets/images/chevron-top-solid.svg';
 import imgDown from './assets/images/chevron-bottom-solid.svg';
 
-
 let showSideBar = true;
 const sideBar = document.getElementById('sideBar');
 const imgShowSideBar = document.getElementById('imgShowSideBar');
 
 window.sideMenuShowHandler = () => {
   showSideBar
-    ?
-    (imgShowSideBar.src = imgOpen) :
-    (imgShowSideBar.src = imgClose);
-
+    ? (imgShowSideBar.src = imgOpen)
+    : (imgShowSideBar.src = imgClose);
 
   sideBar.classList.toggle('flex', showSideBar);
   sideBar.classList.toggle('hidden', !showSideBar);
   showSideBar = !showSideBar;
-}
-
+};
 
 //Tap to open//
 const editors = {};
@@ -34,38 +30,65 @@ window.handleOpenEditor = (item, id) => {
   }
 
   if (!editors[id]['open']) {
-    editors[id]['element'].setAttribute("style", "height: 300px; margin-bottom: 55px;");
+    editors[id]['element'].setAttribute(
+      'style',
+      'height: 300px; margin-bottom: 55px;'
+    );
     editors[id]['button'].classList.replace('order-1', 'order-2');
     editors[id]['icon'].classList.replace('order-2', 'order-1');
     editors[id]['icon'].src = imgUp;
     editors[id]['open'] = true;
   } else {
-    editors[id]['element'].setAttribute("style", "height: 0; margin-bottom: 0;");
+    editors[id]['element'].setAttribute(
+      'style',
+      'height: 0; margin-bottom: 0;'
+    );
     editors[id]['button'].classList.replace('order-2', 'order-1');
     editors[id]['icon'].classList.replace('order-1', 'order-2');
     editors[id]['icon'].src = imgDown;
     editors[id]['open'] = false;
   }
-}
+};
 
 //Editor Tabs //
 const editorsTabs = {};
 
-window.chooseEditorTabs = (item) => {
-  const parent = item.parentElement;
-  if (editorsTabs[parent]) {
-    editorTabs[parent] = {}
-    editorTabs[parent]['children'] = parent.children;
-  }
-  const buttons = Array.from(parent.children)
-  buttons.forEach(button => button.classList.remove('active'));
-  item.classList.add('active');
-}
+window.chooseEditorTabs = item => {
+  const parent = item.parentElement.parentElement;
 
+  if (!editorsTabs[parent]) {
+    editorsTabs[parent.id] = {};
+    editorsTabs[parent.id]['buttons'] = parent.getElementsByTagName('button');
+    editorsTabs[parent.id]['codes'] = parent.getElementsByTagName('code');
+  }
+
+  const buttons = Array.from(editorsTabs[parent.id]['buttons']);
+  const codes = Array.from(editorsTabs[parent.id]['codes']);
+
+  buttons.forEach(button => {
+    if (button === item) {
+      button.classList.add('active');
+    } else {
+      button.classList.remove('active');
+    }
+  });
+
+  codes.forEach(code => {
+    if (code.classList.contains(item.name)) {
+      code.style.display = 'block';
+    } else {
+      code.style.display = 'none';
+    }
+  });
+};
 
 //Slider//
-const slides = Array.from(document.querySelector('.slides').getElementsByTagName('figure'));
-const dots = Array.from(document.querySelector('.dots').getElementsByTagName('a'));
+const slides = Array.from(
+  document.querySelector('.slides').getElementsByTagName('figure')
+);
+const dots = Array.from(
+  document.querySelector('.dots').getElementsByTagName('a')
+);
 
 let index;
 let nextIndex;
@@ -73,26 +96,26 @@ let slide;
 let startPoint;
 let endPoint;
 
-window.changeDotsColor = (nextIndex) => {
-  dots.forEach(dot => dot.className = "bg-gray-400")
-  dots[nextIndex].className = "bg-gray-800";
-}
+window.changeDotsColor = nextIndex => {
+  dots.forEach(dot => (dot.className = 'bg-gray-400'));
+  dots[nextIndex].className = 'bg-gray-800';
+};
 
 changeDotsColor(0);
 
-window.setActiveDot = (step) => {
+window.setActiveDot = step => {
   nextIndex = index + step;
-  changeDotsColor(nextIndex)
-}
+  changeDotsColor(nextIndex);
+};
 
 slides.forEach(slide => {
-  slide.ontouchstart = function (event) {
+  slide.ontouchstart = function(event) {
     const that = this;
-    slide = slides.find(slide => slide.id === that.id)
+    slide = slides.find(slide => slide.id === that.id);
     index = slides.indexOf(slide);
     startPoint = event.touches[0].screenX;
-  }
-  slide.ontouchmove = function (event) {
+  };
+  slide.ontouchmove = function(event) {
     startPoint > event.touches[0].screenX ? setActiveDot(1) : setActiveDot(-1);
-  }
-})
+  };
+});

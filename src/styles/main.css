@@ -279,8 +279,6 @@ section.slider-section {
   overflow: hidden;
 }
 
-
-
 .slides {
   height: 400px;
   display: flex;
@@ -356,8 +354,6 @@ section.slider-section {
   height: 63px;
 }
 
-
-
 .details-section {
   margin-bottom: 118px;
 }
@@ -393,7 +389,6 @@ footer {
   width: 138px;
   height: 15px;
 }
-
 
 footer nav ul li {
   display: block;
