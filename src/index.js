@@ -19,17 +19,16 @@ window.sideMenuShowHandler = () => {
 };
 
 //Tap to open//
-const tabcontents = document.querySelectorAll('.tabcontent');
-window.onresize = tabcontentWindowResize;
+// const tabcontents = document.querySelectorAll('.tabcontent');
+// window.onresize = tabcontentWindowResize;
 
-function tabcontentWindowResize() {
-  console.log(window.innerWidth);
-  if (window.innerWidth > 768) {
-    Array.from(tabcontents).forEach(
-      tabcontent => (tabcontent.style.height = '300px')
-    );
-  }
-}
+// function tabcontentWindowResize() {
+//   if (window.innerWidth > 768) {
+//     Array.from(tabcontents).forEach(
+//       tabcontent => (tabcontent.style.height = '300px')
+//     );
+//   }
+// }
 
 const editors = {};
 
