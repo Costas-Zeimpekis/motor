@@ -125,7 +125,7 @@
                   <button class="w-20 h-8 rounded-lg ml-4" onclick="chooseEditorTabs(this)" name="react-code"><span
                       class="h-4 text-sm font-semibold ">React</span></button>
                 </div>
-                <div class="tabcontent h-0 md:h-full md:block overflow-auto ml-8 md:mb-8">
+                <div id="milky-way-code" class="tabcontent h-0 md:h-full md:block overflow-auto ml-8 md:mb-8">
                   <code class="vanillajs-code md:h-full text-sm text-teal-500 break-all">componentDidMount() {
                     axios.get('https://newsapi.org/v1/sources')
                     .then(res => {
@@ -229,7 +229,8 @@
                   </code>
 
                 </div>
-                <button class="flex flex-col items-center text-white md:hidden" onclick="handleOpenEditor(this)">
+                <button class="flex flex-col items-center text-white md:hidden"
+                  onclick="handleOpenEditor(this, 'milky-way-code')">
                   <span class="text-xs mb-2 order-1">
                     Tap to se how it is coded
                   </span>
@@ -266,7 +267,8 @@
                       class="h-4 text-sm font-semibold">React</span>
                   </button>
                 </div>
-                <div class="tabcontent h-0 md:h-full break-all md:block overflow-auto ml-8 md:mb-8">
+                <div id="planet-earth-code"
+                  class="tabcontent h-0 md:h-full break-all md:block overflow-auto ml-8 md:mb-8">
                   <code class="vanillajs-code h-full text-sm text-teal-500 break-all ">componentDidMount() {
                     axios.get('https://newsapi.org/v1/sources')
                     .then(res => {
@@ -318,7 +320,7 @@
                     };
                   </code>
                 </div>
-                <button onclick="handleOpenEditor(this,'vanillaJS-planet')"
+                <button onclick="handleOpenEditor(this,'planet-earth-code')"
                   class="flex flex-col items-center text-white md:hidden">
                   <span class="text-xs mb-2 order-1">Tap to se how it is coded</span>
                   <img class="order-2 mb-2" src="./assets/images/chevron-bottom-solid.svg" alt="arrow icon">
@@ -357,7 +359,7 @@
                       class="h-4 text-sm font-semibold">React</span>
                   </button>
                 </div>
-                <div class="tabcontent h-0 md:h-full md:block overflow-auto ml-8 md:mb-8">
+                <div id="space-code" class="tabcontent h-0 md:h-full md:block overflow-auto ml-8 md:mb-8">
                   <code class="vanillajs-code h-full text-sm text-teal-500 break-all">componentDidMount() {
                     axios.get('https://newsapi.org/v1/sources')
                     .then(res => {
@@ -409,7 +411,7 @@
                     };
                   </code>
                 </div>
-                <button onclick="handleOpenEditor(this,'vanillaJS-space')"
+                <button onclick="handleOpenEditor(this,'space-code')"
                   class="flex flex-col items-center text-white md:hidden">
                   <span class="text-xs mb-2 order-1">Tap to se how it is coded</span>
                   <img class="order-2 mb-2" src="./assets/images/chevron-bottom-solid.svg" alt="arrow icon">
