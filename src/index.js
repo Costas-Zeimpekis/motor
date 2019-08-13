@@ -83,6 +83,10 @@ window.chooseEditorTabs = item => {
 };
 
 //Slider//
+let index;
+let nextIndex;
+let startPoint;
+
 const slides = Array.from(
   document.querySelector('.slides').getElementsByTagName('figure')
 );
@@ -90,22 +94,18 @@ const dots = Array.from(
   document.querySelector('.dots').getElementsByTagName('a')
 );
 
-let index;
-let nextIndex;
-let slide;
-let startPoint;
-let endPoint;
-
 window.changeDotsColor = nextIndex => {
   dots.forEach(dot => (dot.className = 'bg-gray-400'));
-  dots[nextIndex].className = 'bg-gray-800';
+  if (nextIndex >= 0 && nextIndex <= slides.length - 1)
+    dots[nextIndex].className = 'bg-gray-800';
 };
 
 changeDotsColor(0);
 
 window.setActiveDot = step => {
   nextIndex = index + step;
-  changeDotsColor(nextIndex);
+  if (nextIndex >= 0 && nextIndex <= slides.length - 1)
+    changeDotsColor(nextIndex);
 };
 
 slides.forEach(slide => {
