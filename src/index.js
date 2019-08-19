@@ -106,27 +106,39 @@ const dots = Array.from(
 );
 
 window.changeDotsColor = nextIndex => {
-  dots.forEach(dot => (dot.className = 'bg-gray-400'));
-  if (nextIndex >= 0 && nextIndex <= slides.length - 1)
-    dots[nextIndex].className = 'bg-gray-800';
+  dots.forEach(dot => (dot.className = 'bg-gray-400'))
+  dots[nextIndex].className = 'bg-gray-800';
 };
 
 changeDotsColor(0);
 
 window.setActiveDot = step => {
-  nextIndex = index + step;
-  if (nextIndex >= 0 && nextIndex <= slides.length - 1)
-    changeDotsColor(nextIndex);
+ switch (step) {
+   case 0: 
+   changeDotsColor(0);
+   break;
+   case 164:
+   changeDotsColor(1);
+   break;
+    case 385:
+    changeDotsColor(2);
+    break;
+    case 606:
+    changeDotsColor(3);
+              break; 
+              case 827:
+              changeDotsColor(4);
+              break; 
+              case 990:
+                  changeDotsColor(5);
+                  break; 
+ }
 };
 
-slides.forEach(slide => {
-  slide.ontouchstart = function(event) {
-    const that = this;
-    slide = slides.find(slide => slide.id === that.id);
-    index = slides.indexOf(slide);
-    startPoint = event.touches[0].screenX;
-  };
-  slide.ontouchmove = function(event) {
-    startPoint > event.touches[0].screenX ? setActiveDot(1) : setActiveDot(-1);
-  };
-});
+
+
+const slidesContainer = document.querySelector('.slides');
+slidesContainer.ontouchend = function() {
+  setTimeout(setActiveDot(slidesContainer.scrollLeft), 1000);
+  
+}
